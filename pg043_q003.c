@@ -5,7 +5,9 @@ int main (int argc, char* argv[] ){
    * Input one double value followed by a newline
    * Output one double value on a line by itself - no newline
    * Do not print any extra strings/prompts */
-  
+  double height = 0;
+  scanf("%lf", &height);
+  printf("%f", height * 2.54);
   
   return 0;
 }
