@@ -7,7 +7,7 @@ int main (int argc, char* argv[] ){
    * Do not print any extra strings/prompts */
   
   double inches=0,cms=0;
-  printf("Enter value in inches : ");
+  printf("Enter value in inches : \n");
   scanf("%lf",&inches);
   cms=2.54*inches;
   printf("Result in cms = %.2lf",cms);
