@@ -7,7 +7,7 @@ int main (int argc, char* argv[] ){
    * Do not print any extra strings/prompts */
   double height = 0;
   scanf("%lf", &height);
-  printf("%f", height * 2.54);
+  printf("%.2f", height * 2.54);
   
   return 0;
 }
