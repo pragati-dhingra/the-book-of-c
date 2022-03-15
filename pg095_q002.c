@@ -9,9 +9,9 @@ int main (int argc, char* argv[] ){
   *         Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Incorrect input 
   * Note that output is case sensitive */
   int day;
-	printf("Please enter day:");
-	scanf("%d", &day);	
-	switch(day){
+  printf("Please enter day:");
+  scanf("%d", &day);	
+  switch(day){
      case 1: printf("Monday");
          break;
      case 2: printf("Tuesday");
