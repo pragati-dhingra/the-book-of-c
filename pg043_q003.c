@@ -10,5 +10,5 @@ int main (int argc, char* argv[] ){
   scanf("%lf", &inchvalue);
   cmvalue = inchvalue * 2.54;
   printf("%0.2lf", cmvalue);  
-  return 0
+  return 0;
 }
