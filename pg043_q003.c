@@ -7,6 +7,7 @@ int main (int argc, char* argv[] ){
    * Do not print any extra strings/prompts */
   int inches=20;
   double cms;
+  cms=2.54*inches;
   printf("value in centimeter is:%.2f",cms);
     return 0;
 }
