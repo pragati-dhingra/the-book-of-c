@@ -7,8 +7,8 @@ int main (int argc, char* argv[] ){
    * Do not print any extra strings/prompts */
 double inches = 0;  
 double centimeter=0;
-printf("Enter inches\n");
 scanf("%lf",&inches);
+printf("\n");
 centimeter = 2.54 * inches;  
 printf ("%.2f ", centimeter);   
 return 0;
