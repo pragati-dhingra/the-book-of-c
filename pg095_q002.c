@@ -8,7 +8,7 @@ int main (int argc, char* argv[] ){
   * Output: One of the following depending on input value
   *         Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Incorrect input 
   * Note that output is case sensitive */
-    int day=0;
+  int day=0;
   printf("Enter day of the week in number(1-7):  ");
   scanf("%d",&day);
   switch(day)
