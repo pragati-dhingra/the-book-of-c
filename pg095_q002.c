@@ -7,7 +7,7 @@ int main (int argc, char* argv[] ){
   * Input: one integer value. You are not expected to check for non-integer values.
   * Output: One of the following depending on input value
   *         Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Incorrect input 
-  * Note that output is case sensitive. There should be no newline at the end of input 
+  * Note that output is case sensitive. There should be no newline at the end of input. 
   * For example, if input was 1, output should be simply Monday */
   
   return 0
