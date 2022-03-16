@@ -25,7 +25,7 @@ int main (int argc, char* argv[] ){
             break;
     case 6: printf("Saturday");
             break;
-    case 7: printf("Saturday");
+    case 7: printf("Sunday");
             break; 
     default: printf("Incorrect input");
    }
