@@ -8,8 +8,7 @@ int main (int argc, char* argv[] ){
 double inches = 0;  
 double centimeter=0;
 scanf("%lf",&inches);
-printf("\n");
 centimeter = 2.54 * inches;  
-printf ("%.2f ", centimeter);   
+printf ("\n%.2f ", centimeter);   
 return 0;
 }
