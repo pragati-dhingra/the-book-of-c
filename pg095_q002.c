@@ -18,7 +18,7 @@ int main (int argc, char* argv[] ){
             break;
     case 3: printf("Wednesday");
             break;
-    case 4: printf("Thrusday");
+    case 4: printf("Thursday");
             break;
     case 5: printf("Friday");
             break;
