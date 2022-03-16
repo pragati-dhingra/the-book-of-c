@@ -10,6 +10,6 @@ int main ()
     printf("Enter length in inches: ");
     scanf("%f", &inches);
     cm = inches * 2.54;
-    printf("%f inches = %f cm\n", cm);
+    printf("%f inches = %f cm\n", inches, cm);
     return 0;
 }
