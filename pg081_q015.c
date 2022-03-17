@@ -18,27 +18,26 @@ int main (int argc, char* argv[] ){
 	{
 		if(2==month)
 		{
-			printf("4 sundays\n");
+			printf("4 sundays");
 		}
 		else
 		{
 			if((1==month||3==month||5==month||7==month||8==month||10==month||12==month)&&(5==day||6==day||7==day))
 			{
-				printf("5 sundays in 31 days\n");
+				printf("5 sundays in 31 days");
 			}
 			else
 			{
 				if((4==month||6==month||9==month||11==month)&&(7==day||6==day))
 				{
-					printf("5 sundays in 30 days\n");
+					printf("5 sundays in 30 days");
 				}
 				else
 				{
-					printf("4 sundays\n");
+					printf("4 sundays");
 				}
 			}
 		}
 	}
-	printf("good bye");
   return 0
 }
