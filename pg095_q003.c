@@ -44,7 +44,7 @@ Winners post 2015 are not required.
 				break;
 	case 2015: printf("Australia");
 				break;
-	default: printf("invalid input");
+	default: printf("Invalid input");
 	}
   return 0
 }
