@@ -8,7 +8,6 @@ int main (int argc, char* argv[] ){
   double inch=0,cm=0;
 	//printf("enter value in inches");
 	scanf("%lf",&inch);
-	printf("\n");
 	cm=inch*2.54;
 	printf("%.2lf",cm);
   
