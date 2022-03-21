@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main (int argc, char* argv[] ){
   /* Write a program using switch case that takes day of the week (1-7) as user input and prints the name of the day.
   * E.g. Monday for 1, Tuesday for 2, and so on. 
@@ -9,6 +8,34 @@ int main (int argc, char* argv[] ){
   *         Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Incorrect input 
   * Note that output is case sensitive. There should be no newline at the end of input. 
   * For example, if input was 1, output should be simply Monday */
-  
-  return 0
+    int Day=0;
+    printf("Enter day of week (1 to 7): ");
+    scanf("%d",&Day);
+ 
+    switch(Day) {
+        case 1:
+            printf("Monday\n");
+            break;
+        case 2:
+            printf("Tuesday\n");
+            break;
+        case 3:
+            printf("Wednesday\n");
+            break;
+        case 4:
+            printf("Thursday\n");
+            break;
+        case 5:
+            printf("Friday\n");
+            break;
+        case 6:
+            printf("Saturday\n");
+            break;
+        case 7:
+            printf("Sunday\n");
+            break;
+        default:
+            printf("Invalid input\n");
+    }
+    return 0;
 }
