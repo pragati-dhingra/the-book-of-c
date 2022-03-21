@@ -1,0 +1,8 @@
+#include <stdio.h>
+ 
+int main () {
+    int datastructure = 90, algo = 76;
+    double avg = 8.5;
+    printf("datastructure is %d, algo is %d, and average is %f\n", datastructure, algo, avg);
+    return 0;
+}
