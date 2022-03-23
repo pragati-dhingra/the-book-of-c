@@ -8,15 +8,15 @@ int main (int argc, char* argv[] ){
           Second integer is day of week, 1 for Monday, 2 for Tuesday ...
   Output: One integer showing number of sundays in that month. No newline to be printed
           In case of invalid input, print -1 as output */
-  int month = 0, date = 0, day = 0;
+ int month = 0, date = 0, day = 0;
  
     printf("Enter the current month between 1 to 12: ");
     scanf("%d", &month);
-    printf("Enter first day of month between 1 to 7: ");
+    printf("Enter  day of month between 1 to 7: ");
     scanf("%d", &day);
  
     if ( month < 1 || month > 12 || day < 1 || day > 7) {
-        printf("Invalid input\n");
+        printf("-1\n");
     } else {
         if (2 == month) {
             printf("Month has 4 Sundays\n");
@@ -34,6 +34,7 @@ int main (int argc, char* argv[] ){
             }
         }
     }
-    printf("Good Bye!\n");
-  return 0;
+    
+return 0;
 }
+
