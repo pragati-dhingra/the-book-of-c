@@ -39,7 +39,7 @@ Winners post 2015 are not required.
 				break;
 	case 2007: printf("Australia");
 				break;
-	case 2011: printf("India");
+	case 2011: printf("india");
 				break;
 	case 2015: printf("Australia");
 				break;
