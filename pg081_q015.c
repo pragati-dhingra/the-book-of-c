@@ -15,8 +15,8 @@ int main (int argc, char* argv[] ){
         printf("-1");
     } else {
         if ( month==2) {
-            x=5;
-			printf("%d",x);
+            x=4;
+		printf("%d",x);
         } else {
             if (( month==1 || month==3 || month==5 || month==7 ||
                 month==8 || month==10 || month==12)) {
