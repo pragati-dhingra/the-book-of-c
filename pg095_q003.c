@@ -18,6 +18,50 @@ If world cup was not played in the year entered by the user, program should prin
 There should be no newlines after the printed output
 Winners post 2015 are not required.
 */
+  double year;
+  printf("enter the year");
+  scanf("%lf",&year);
   
-  return 0
+  switch(year)
+  {
+    case 1975:
+      printf("winner country is West Indies");
+      break;
+      
+      case 1975:
+      printf("winner country is West Indies");
+      break;
+      case 1979:
+      printf("winner country is West Indies");
+      break;
+      case 1983:
+      printf("winner country is West Indies");
+      break;
+      case 1987:
+      printf("winner country is West Indies");
+      break;
+      case 1992:
+      printf("winner country is West Indies");
+      break;
+      case 1996:
+      printf("winner country is West Indies");
+      break;
+      case 1999:
+      printf("winner country is West Indies");
+      break;
+      case 2003:
+      printf("winner country is West Indies");
+      break;
+    case 2007:
+      printf("winner country is West Indies");
+      break;
+      case 2011:
+      printf("winner country is West Indies");
+      break;
+    default:
+      printf("invalid year");
+      
+      
+  
+  return 0;
 }
