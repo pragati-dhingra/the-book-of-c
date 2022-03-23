@@ -35,28 +35,31 @@ Winners post 2015 are not required.
       printf("winner country is West Indies");
       break;
       case 1983:
-      printf("winner country is West Indies");
+      printf("winner country is India");
       break;
       case 1987:
-      printf("winner country is West Indies");
+      printf("winner country is Australia");
       break;
       case 1992:
-      printf("winner country is West Indies");
+      printf("winner country is pakistan");
       break;
       case 1996:
-      printf("winner country is West Indies");
+      printf("winner country is Sri Lanka");
       break;
       case 1999:
-      printf("winner country is West Indies");
+      printf("winner country is Australia ");
       break;
       case 2003:
-      printf("winner country is West Indies");
+      printf("winner country is Australia");
       break;
     case 2007:
-      printf("winner country is West Indies");
+      printf("winner country is Australia");
       break;
       case 2011:
-      printf("winner country is West Indies");
+      printf("winner country is India");
+      break;
+      case 2015:
+      printf("winner country is Australia");
       break;
     default:
       printf("invalid year");
