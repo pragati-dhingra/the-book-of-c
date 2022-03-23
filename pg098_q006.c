@@ -54,9 +54,9 @@ Winners post 2015 are not required.
  		case 2011:
  			printf("India");
  			break;
- 		case 2015:
- 			printf("Australia");
- 			break;
+ 	//	case 2015:
+ 	//		printf("Australia");
+ 	//		break;
  		default:
  			printf("Invalid input");
 	 }
