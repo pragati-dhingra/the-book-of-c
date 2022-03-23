@@ -19,5 +19,48 @@ There should be no newlines after the printed output
 Winners post 2015 are not required.
 */
   
-  return 0
+   printf("Enter year of match: ");
+    scanf("%d",&year);
+ 
+    switch(year) {
+        case 1975:
+            printf("West Indies won in 1975");
+            break;
+        case 1979:
+            printf("West Indies won in 1979");
+            break;
+        case 1983:
+            printf("India won in 1983");
+            break;
+        case 1987:
+            printf("Australia won in 1987");
+            break;
+        case 1992:
+            printf("Pakistan won in 1992");
+            break;
+        case 1996:
+            printf("Sri Lanka won in 1996");
+            break;
+        case 1999:
+            printf("Australia won in 1999\n");
+            break;
+        case 2003:
+            printf("Australia won in 2003\n");
+            break;
+        case 2007:
+            printf("Australia won in 2007\n");
+            break;
+        case 2011:
+            printf("India won  in 2011");
+            break;
+        case 2015:
+            printf("Australia won in 2015");
+            break;
+        default:
+            printf("Invalid Input %d", year);
+    }
+ 
+    return 0;
 }
+  
+ 
