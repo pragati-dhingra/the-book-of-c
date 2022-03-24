@@ -9,5 +9,34 @@ int main (int argc, char* argv[] ){
   Output: One integer showing number of sundays in that month. No newline to be printed
           In case of invalid input, print -1 as output */
   
-  return 0
+  	int month = 0, day = 0;
+		scanf("%d %d",&month, &day);
+		
+		if (month < 1 || month > 12 || day < 1 || day > 7)
+		{
+			printf("-1"); // for invalid input
+		}
+		else
+		{
+			if (2 == month) // February having 28 days
+			{
+				printf("4");
+			}
+			else
+			{
+				if ((1 == month || 3 == month || 5 == month || 7 == month || 8 == month || 10 == month || 12 == month) && (5 == day || 6 == day || 7 == day))
+				{
+					printf("5");
+				}
+				else
+				{
+					if ((2 == month || 4 == month || 6 == month || 9 == month || 11 == month) && (1 == day || 2 == day || 3 == day || 4 == day || 5 == day))
+					{
+						printf("4");
+					}
+				}
+			}
+		}
+		
+	return 0;
 }
