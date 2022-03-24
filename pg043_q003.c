@@ -10,6 +10,6 @@ printf("Enter inches");
 scanf("%lf", &inches); 
 double centimeter;  
 centimeter = 2.54 * inches;  
-printf ("%.2f \n", centimeter);   
+printf ("%.2lf", centimeter);   
 return 0;
 }
