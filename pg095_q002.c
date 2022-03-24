@@ -36,5 +36,5 @@ int main (int argc, char* argv[] ){
         default: 
             printf("Invalid input! Please enter week number between 1-7.");
     }
-  return 0
+  return 0;
 }
