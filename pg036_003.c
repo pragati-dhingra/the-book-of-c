@@ -1,4 +1,4 @@
-/*Program to swap contents of variable*/
+/*Program to swap contents of variable new*/
 #include<stdio.h>
 void main()
 {
