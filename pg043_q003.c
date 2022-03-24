@@ -6,10 +6,10 @@ int main (int argc, char* argv[] ){
    * Output one double value with two decimal places on a line by itself - no newline.
    * Do not print any extra strings/prompts */
 double inches;
-printf("Enter inches");
 scanf("%lf", &inches); 
 double centimeter;  
 centimeter = 2.54 * inches;  
-printf ("%.2lf", centimeter);   
+printf ("%.2lf \n", centimeter);   
 return 0;
 }
+
