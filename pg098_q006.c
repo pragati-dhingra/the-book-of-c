@@ -47,8 +47,7 @@ Winners post 2015 are not required.
             default:
             printf("Invalid Input");
     }
- 
-    return 0;
+  return 0;
 }
  
 
