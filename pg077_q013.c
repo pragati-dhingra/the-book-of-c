@@ -9,31 +9,46 @@ int main (int argc, char* argv[] ){
   Output is case sensitive */
   
   int day = 0;
-    printf("Enter any number to know day of week [1-7]: ");
+    printf("Enter any number to know day of month [1-12]: ");
     scanf("%d",&day);
  
     switch(day)
     {
         case 1:
-            printf("Monday\n");
+            printf("January");
             break;
         case 2:
-            printf("Tuesday\n");
+            printf("February");
             break;
         case 3:
-            printf("Wednesday\n");
+            printf("March");
             break;
         case 4:
-            printf("Thursday\n");
+            printf("April");
             break;
         case 5:
-            printf("Friday\n");
+            printf("May");
             break;
         case 6:
-            printf("Saturday\n");
+            printf("June");
             break;
         case 7:
-            printf("Sunday\n");
+            printf("July");
+            break;
+        case 8:
+            printf("August");
+            break;
+        case 9:
+            printf("September");
+            break;
+        case 10:
+            printf("October");
+            break;
+        case 11:
+            printf("Novmber");
+            break;
+        case 12:
+            printf("December");
             break;
         default:
             printf("Invalid value\n");
