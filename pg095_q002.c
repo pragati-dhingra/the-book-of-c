@@ -8,9 +8,6 @@ int main (int argc, char* argv[] ){
   * Output: One of the following depending on input value
   *         Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Incorrect input 
   * Note that output is case sensitive */
-  #include <stdio.h>
- 
-int main (int argc, char * argv[]) {
     int day = 0;
     scanf("%d",&day);
      switch(day) {
