@@ -8,5 +8,52 @@ int main (int argc, char* argv[] ){
   In case of invalid input, output should be "Invalid" (without quotes) 
   Output is case sensitive */
   
-  return 0
-}
+	int month;
+	//printf("Please enter month number:");
+	scanf("%d", &month);	
+	
+	if(month ==1)
+	    printf("January");
+	 
+	if (month == 2)
+	    printf("February");
+	
+	if (month==3)
+	    printf("March");
+	
+	if (month==4)
+        printf("April");
+	
+	if (month==5)
+	    printf("May");
+	
+	if (month==6)
+	    printf("June");
+	
+	if (month==7)
+	    printf("July");
+	
+	if (month==8)
+	    printf("August");
+	
+	if (month==9)
+	    printf("September");
+	
+	if (month==10)
+	    printf("October");
+	        
+	if (month==11)
+	    printf("November");
+
+    if (month==12)
+	   	printf("December");
+
+	if(month<=0)
+		printf("Invalid");
+    
+	if(month>12)
+		printf("Invalid");
+	
+	return 0;     
+	}
+
