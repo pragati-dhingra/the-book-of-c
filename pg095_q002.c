@@ -33,7 +33,7 @@ int main (int argc, char* argv[] ){
             printf("Sunday");
             break;
         default: 
-            printf("Incorrect Input");
+            printf("Incorrect input");
     }
   return 0;
 }
