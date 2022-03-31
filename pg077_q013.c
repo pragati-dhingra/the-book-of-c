@@ -9,10 +9,8 @@ int main (int argc, char* argv[] ){
   Output is case sensitive */
   
   int day = 0;
-    printf("Enter any number to know day of month [1-12]: ");
     scanf("%d",&day);
- 
-    switch(day)
+     switch(day)
     {
         case 1:
             printf("January");
