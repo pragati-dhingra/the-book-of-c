@@ -12,7 +12,6 @@ int main (int argc, char* argv[] ){
   
   int weekday;
   scanf("%d", &weekday);
-  
   switch (weekday)
   {
   case 1:
