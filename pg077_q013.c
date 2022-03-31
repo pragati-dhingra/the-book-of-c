@@ -49,7 +49,7 @@ int main (int argc, char* argv[] ){
             printf("December");
             break;
         default:
-            printf("Invalid value\n");
+            printf("Invalid");
     }
   return 0;
 }
