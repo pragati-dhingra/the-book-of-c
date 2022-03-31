@@ -11,34 +11,33 @@ int main (int argc, char* argv[] ){
   * For example, if input was 1, output should be simply Monday */
   {
   int weekday;
-  printf(" Please Enter the Day Number 1 to 7:");
   scanf("%d", &weekday);
   
   switch (weekday)
   {
   case 1:
-  		printf("\n  Monday");
+  		printf("Monday");
 		  break;
   case 2:
-  		printf("\n  Tuesday");
+  		printf("Tuesday");
 		  break;
   case 3:
-  		printf("\n Wednesday"); 
+  		printf("Wednesday"); 
 		  break;
   case 4:
-  		printf("\nThursday"); 
+  		printf("Thursday"); 
 		  break;
   case 5:
-  		printf("\n Friday"); 
+  		printf("Friday"); 
 		  break;
   case 6:
-  		printf("\n Saturday");
+  		printf("Saturday");
 		  break;
   case 7:
-  		printf("\n Sunday");
+  		printf("Sunday");
 		  break;
 	default:
-		printf("\n Please enter Valid number");
+		printf("Incorrect Input");
   }
   return 0;
 }
