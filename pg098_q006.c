@@ -22,11 +22,8 @@ Winners post 2015 are not required.
     scanf("%d",&year);
  
     switch(year) {
-        case 1975:
-            printf("West Indies won in 1975");
-            break;
-        case 1979:
-            printf("West Indies won in 1979");
+      case 1975 || 1979:          
+        printf("West Indies won in 1975 and 1979");
             break;
         case 1983:
             printf("India won in 1983");
