@@ -7,6 +7,6 @@ int main (int argc, char* argv[] ){
    * Do not print any extra strings/prompts */
     double inches = 0;
     scanf("%lf", &inches);
-    printf("%.2f inches = %f cms", inches, inches*2.54);
+    printf("%.2f",inches*2.54);
     return 0;
 }
