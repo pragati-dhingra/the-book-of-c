@@ -9,7 +9,7 @@ int main (int argc, char* argv[] ){
   Output: One integer showing number of sundays in that month. No newline to be printed
           In case of invalid input, print -1 as output */
   
-  int month = 0, date = 0, day = 0;
+  int month = 0, day = 0;
  
     printf("Enter the current month (1-12): ");
     scanf("%d%d", &month ,&day);
