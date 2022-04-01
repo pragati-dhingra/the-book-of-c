@@ -16,18 +16,18 @@ int main (int argc, char* argv[] ){
         printf("-1");
     } else {
         if (2==month) {
-            printf("Month has 4 Sundays");
+            printf("4");
         } else {
             if ((1==month||3==month||5==month||7==month||8==month||10==month||12==month)) {
                 if((5==day||6==day||7==day)) {
-                    printf("Month has 5 Sundays");
+                    printf("5");
                 } else {
-                    printf("Month has 4 Sundays");
+                    printf("4");
                 }
             } else if (6==day||7==day) {
-                printf("Month has 5 Sundays");
+                printf("5");
             } else {
-                printf("Month has 4 Sundays");
+                printf("4");
             }
         }
     }
