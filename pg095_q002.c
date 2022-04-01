@@ -9,37 +9,25 @@ int main (int argc, char* argv[] ){
   *         Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Incorrect input 
   * Note that output is case sensitive */
     
-  int week=0;
-    /* Input week number from user */
-    printf("Enter week number(1-7): ");
-    scanf("%d", &week);
-    
-    switch(week)
-    {
-        case 1: 
-            printf("Monday");
+  int day=0;
+  scanf("%d",&day);
+  switch(day)
+  {
+    case 1: printf("Monday");
             break;
-        case 2: 
-            printf("Tuesday");
+    case 2: printf("Tuesday");
             break;
-        case 3: 
-            printf("Wednesday");
+    case 3: printf("Wednesday");
             break;
-        case 4: 
-            printf("Thursday");
+    case 4: printf("Thursday");
             break;
-        case 5: 
-            printf("Friday");
+    case 5: printf("Friday");
             break;
-        case 6: 
-            printf("Saturday");
+    case 6: printf("Saturday");
             break;
-        case 7: 
-            printf("Sunday");
-            break;
-        default: 
-            printf("Invalid input! Please enter week number between 1-7.");
-    }
-
-    return 0;
+    case 7: printf("Sunday");
+            break; 
+    default: printf("Incorrect input");
+   }
+ return 0;
 }
