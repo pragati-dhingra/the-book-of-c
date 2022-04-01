@@ -8,33 +8,35 @@ int main (int argc, char* argv[] ){
           Second integer is day of week, 1 for Monday, 2 for Tuesday ...
   Output: One integer showing number of sundays in that month. No newline to be printed
           In case of invalid input, print -1 as output */
-    int month = 0, date = 0, day = 0;
- 
-    printf("Enter the current month (1-12):");
-    scanf("%d", &month);
-    printf("Enter first day of month (1-7):");
-    scanf("%d", &day);
- 
-    if ( month < 1 || month > 12 || day < 1 || day > 7) {
-        printf("Invalid input\n");
+  int day=0, month=0,x=0;
+  scanf("%d%d",&month,&day);
+  
+  if ( month < 1 || month > 12 || day < 1 || day > 7) {
+        printf("-1");
     } else {
-        if (2 == month) {
-            printf("Month has 4 Sundays\n");
+        if ( month==2) {
+            x=4;
+		printf("%d",x);
         } else {
-            if ((1 == month|| 3 == month|| 5 == month|| 7 == month ||
-                8 == month || 10 == month || 12 == month)) {
-                if((5 == day || 6 == day || 7 == day)) {
-                    printf("Month has 5 Sundays\n");
+            if (( month==1 || month==3 || month==5 || month==7 ||
+                month==8 || month==10 || month==12)) {
+                if((day==5 || day==6 || day==7)) {
+                    x=5;
+					printf("%d",x);
                 } else {
-                    printf("Month has 4 Sundays\n");
+                    x=4;
+                    printf("%d",x);
                 }
-            } else if (6 == day || 7 == day) {
-                printf("Month has 5 Sundays\n");
+            } else if ( day== 6 || day==7) {
+            	x=5;
+                printf("%d",x);
             } else {
-                printf("Month has 4 Sundays\n");
+					x=4;
+                printf("%d",x);
             }
         }
     }
-    printf("good try!\n");
-    return 0;
+  
+  return 0;
+  
 }
