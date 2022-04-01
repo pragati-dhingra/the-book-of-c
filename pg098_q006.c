@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-int main (int argc, char* argv[] ){
+int main (int argc, char* argv[] ) {
   /* Write a program using switch case that takes year as input and prints the name of cricket world cup winning country for that year, 
   SUCH THAT there is ONLY ONE print statement for each winning country irrespective of number of times it has won the world cup
 a.	1975: West Indies
@@ -18,35 +17,35 @@ If world cup was not played in the year entered by the user, program should prin
 There should be no newlines after the printed output
 Winners post 2015 are not required.
 */
-    int year=0;
-    printf("Enter year of world cup: ");
-    scanf("%d",&year);
- 
-    switch(year) {
-        case 1975:
-        case 1979:
-            printf("West Indies won the world cup in %d\n", year);
-            break;
-        case 1983:
-        case 2011:
-            printf("Great India won the world cup in %d\n", year);
-            break;
-        case 1987:
-        case 1999:
-        case 2003:
-        case 2007:
-        case 2015:
-            printf("Australia won the world cup in %d\n", year);
-            break;
-        case 1992:
-            printf("Pakistan won the world cup in %d\n", year);
-            break;
-        case 1996:
-            printf("Sri Lanka won the world cup in %d\n", year);
-            break;
-        default:
-            printf("There was no world cup played in %d\n", year);
-    }
- 
-    return 0;
-}
+  	int year=0;
+ 	
+ 	scanf("%d",&year);
+ 	
+ 	switch(year){
+ 		
+ 		case 1975:
+ 		case 1979:
+		 	printf("West Indies");
+		break;
+ 		case 1983:
+		case 2011:
+			printf("India");
+		break;
+ 		case 1987:
+		case 1999:
+		case 2003:
+		case 2007:
+		case 2015:
+ 			printf("Australia");
+ 		break;
+ 		case 1992: 
+ 			printf("Pakistan");
+ 			break;
+ 		case 1996:
+ 			printf("Sri Lanka");
+ 			break;
+  		default:
+ 			printf("Invalid input");
+	 }
+ 	return 0;
+ }
