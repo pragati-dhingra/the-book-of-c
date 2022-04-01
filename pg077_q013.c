@@ -38,5 +38,5 @@ int main (int argc, char* argv[] ){
         printf("December");
     }
  
-  return 0
+  return 0;
 }
