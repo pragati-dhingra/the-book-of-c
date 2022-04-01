@@ -8,9 +8,7 @@ int main (int argc, char* argv[] ){
     double inches = 0;
     printf("Enter length in inches: ");
     scanf("%lf", &inches);
-    printf("%f inches = %f cms\n", inches, inches*2.54);
+    printf("%.2f", inches*2.54);
     return 0;
 }
-  
-  return 0;
-}
+ 
