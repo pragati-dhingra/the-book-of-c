@@ -23,17 +23,17 @@ int main (int argc, char* argv[] ){
         printf("May");
     }else if(month==6){
         printf("June");
-    }else if(month ==7){
+    }else if(month==7){
         printf("July");
-    }else if(month ==8){
+    }else if(month==8){
         printf("August");
-    }else if(month ==9){
+    }else if(month==9){
         printf("September");
-    }else if(month ==10){
+    }else if(month==10){
         printf("October");
-    }else if(month ==11){
+    }else if(month==11){
         printf("November");
-    }else if(month ==12){
+    }else if(month==12){
         printf("December");
     }
    return 0;
