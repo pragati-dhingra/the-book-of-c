@@ -10,7 +10,7 @@ int main (int argc, char* argv[] ){
           In case of invalid input, print -1 as output */
   int month = 0, date = 0, day = 0;
     scanf("%d %d", &month,&day);
-    if ( month < 1 || month > 12 || day < 1 || day > 7) {
+    if ( month < 1 || month > 12 && day < 1 || day > 7) {
         printf("-1");
     } else {
         if (2 == month) {
