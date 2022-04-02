@@ -12,5 +12,5 @@ int main (int argc, char* argv[] ){
   printf("Value in Centimeters : \n");
   printf("%.2f cms", _d_inches*2.54);
 
-  return 0;
+  return 1;
 }
