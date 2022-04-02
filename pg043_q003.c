@@ -11,5 +11,5 @@ int main (int argc, char* argv[] ){
 	cm=inch*2.54;
 	printf("%.2lf",cm);
   
-  return 1;
+  return 0;
 }
