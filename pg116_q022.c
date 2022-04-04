@@ -14,18 +14,18 @@ int main (int argc, char* argv[] ){
   scanf("%d %c %d", &operand1,&operator,&operand2);
 switch(operator) {
         case '+':
-            printf("%d\n", operand1 + operand2);
+            printf("%d", operand1 + operand2);
             break;
         case '-':
-            printf("%d\n", operand1 - operand2);
+            printf("%d", operand1 - operand2);
             break;
         case '*':
-            printf("%d\n", operand1 * operand2);
+            printf("%d", operand1 * operand2);
             break;
         case '/':
-            printf("%d\n", operand1 / operand2);
+            printf("%d", operand1 / operand2);
             break;
         default:
-            printf("Unrecognised operator\n");
+            printf("Unrecognised operator");
     }   return 0;
 }
