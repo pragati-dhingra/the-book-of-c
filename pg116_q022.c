@@ -16,18 +16,19 @@ int main (int argc, char* argv[] ){
     scanf("%c", &operator);
     scanf("%d", &operand2);
  
-    switch(operator) {
+        switch(operator) {
         case '+':
-            printf("%d", operand1 + operand2);
+            printf("%d + %d = %d", operand1, operand2, operand1 + operand2);
             break;
         case '-':
-            printf("%d", operand1 - operand2);
+            printf("%d + %d = %d", operand1, operand2, operand1 - operand2);
             break;
         case '*':
-            printf("%d", operand1 * operand2);
+            printf("%d * %d = %d", operand1, operand2, operand1 * operand2);
             break;
         case '/':
-            printf("%d", operand1 / operand2);
+            printf("%d / %d = %d", operand1, operand2, operand1 / operand2);
        }
+
   return 0;
 }
