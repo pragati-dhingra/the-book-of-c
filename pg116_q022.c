@@ -9,6 +9,24 @@ int main (int argc, char* argv[] ){
    * Output --> result of computation with no trailing newline 
    * No error checking is expected. Operands are int. Handle 4 arithmetic operators + - * /
    * Only integer calculator is expected. Do not create float calculator */
-  
-  return 0;
+  int operand1 = 0, operand2 = 0;
+    char operator = 0;
+    scanf("%c", &operator);
+    scanf("%d", &operand1);
+    scanf("%d", &operand2);
+        switch(operator) {
+        case '+':
+            printf("%d", operand1 + operand2);
+            break;
+        case '-':
+            printf("%d", operand1 - operand2);
+            break;
+        case '*':
+            printf("%d", operand1 * operand2);
+            break;
+        case '/':
+            printf("%d", operand1 / operand2);
+            break;
+    }
+    return 0;
 }
