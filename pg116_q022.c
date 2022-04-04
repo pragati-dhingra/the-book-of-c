@@ -11,11 +11,8 @@ int main (int argc, char* argv[] ){
    * Only integer calculator is expected. Do not create float calculator */
   int operand1 = 0, operand2 = 0;
     char operator = 0;
- scanf("%d", &operand1);
- scanf("%c", &operator);
- scanf("%d", &operand2);
- 
-    switch(operator) {
+ scanf("%d %c %d", &operand1,&operator,&operand2);
+     switch(operator) {
         case '+':
             printf("%d", operand1 + operand2);
             break;
