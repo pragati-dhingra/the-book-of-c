@@ -8,10 +8,10 @@ int main (int argc, char* argv[] ){
   * Output: One of the following depending on input value
   *         Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Incorrect input 
   * Note that output is case sensitive */
-    int day = 0;
-    printf("Enter day of week: ");
+        int day = 0;
     scanf("%d",&day);
-     switch(day) {
+ 
+    switch(day) {
         case 1:
             printf("Monday");
             break;
@@ -34,9 +34,10 @@ int main (int argc, char* argv[] ){
             printf("Sunday");
             break;
         default:
-            printf("Invalid input");
+            printf("Incorrect input");
     }
-    return 0;
 
+  return 0;
 }
+
  
