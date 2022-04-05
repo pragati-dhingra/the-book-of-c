@@ -18,10 +18,8 @@ If world cup was not played in the year entered by the user, program should prin
 There should be no newlines after the printed output
 Winners post 2015 are not required.
 */ int year;
-  printf("Enter year of match: ");
     scanf("%d",&year);
- 
-    switch(year) {
+     switch(year) {
       case 1975:
       case 1979:
         printf("West Indies");
@@ -48,6 +46,6 @@ Winners post 2015 are not required.
             printf("Invalid Input");
     }
   return 0;
-}
+
  
 
