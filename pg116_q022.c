@@ -12,20 +12,20 @@ int main (int argc, char* argv[] ){
   int operand1 = 0, operand2 = 0;
     char operator = 0;
  
-    scanf("%d %c %d", &operand1 , &operator, &operand2);
+    scanf("%d %c %d",&operand1,&operator,&operand2);
     
     switch(operator) {
         case '+':
-            printf("%d\n", operand1 + operand2);
+            printf("%d", operand1 + operand2);
             break;
         case '-':
-            printf("%d\n", operand1 - operand2);
+            printf("%d", operand1 - operand2);
             break;
         case '*':
-            printf("%d\n", operand1 * operand2);
+            printf("%d", operand1 * operand2);
             break;
         case '/':
-            printf("%d\n", operand1 / operand2);
+            printf("%d", operand1 / operand2);
             break;
         default:
             printf("Unrecognised operator");
