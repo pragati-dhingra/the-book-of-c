@@ -11,7 +11,7 @@ int main (int argc, char* argv[] ){
   * For example, if input was 1, output should be simply Monday */
   int week;
     
-       printf("Enter week number(1-7): ");
+       
     scanf("%d", &week);
     
     switch(week)
@@ -38,7 +38,7 @@ int main (int argc, char* argv[] ){
             printf("Sunday");
             break;
         default: 
-            printf("Invalid input! Please enter week number between 1-7.");
+            printf("Incorrect input");
     }
 
   return 0;
