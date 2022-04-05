@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main (int argc, char* argv[] ){
-    long phone_memory = 8589934592;
-    long memory_used = 0;
+    long long int phone_memory = 8589934592;
+    long long int memory_used = 0;
     double percent_used = 0;
 
-    scanf("%ld", &memory_used);
+    scanf("%lld", &memory_used);
     /* Add check: if user input was less than 0 or it was more than phone_memory then print "Invalid input" */
     /* In case of invalid input, rest of processing should be skipped */
   
