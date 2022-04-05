@@ -16,19 +16,20 @@ int main (int argc, char* argv[] ){
   scanf("%d" ,&operand2);
 switch(operator) {
         case '+':
-            printf("%d", operand1 + operand2);
+            printf("%d\n", operand1 + operand2);
             break;
         case '-':
-            printf("%d", operand1 - operand2);
+            printf("%d\n", operand1 - operand2);
             break;
         case '*':
-            printf("%d", operand1 * operand2);
+            printf("%d\n", operand1 * operand2);
             break;
         case '/':
-            printf("%d", operand1 / operand2);
+            printf("%d\n", operand1 / operand2);
             break;
         default:
             printf("Unrecognised operator");
-    }   return 0;
+    }  
+  return 0;
 }
   
