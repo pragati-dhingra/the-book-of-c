@@ -13,7 +13,7 @@ int main(int argc, char * argv[]) {
      int op1 = 0, op2 = 0;
     char operator = 0;
  
-    scanf("%d%c%d",&op1,&operator,&op2);
+    scanf("%d %c %d",&op1,&operator,&op2);
     
     switch(operator) {
         case '+':
@@ -26,7 +26,7 @@ int main(int argc, char * argv[]) {
             printf("%d", op1 * op2);
             break;
         case '/':
-            printf("%d\n", op1 / op2);
+            printf("%d", op1 / op2);
             break;
         
     }
