@@ -8,7 +8,7 @@ int main (int argc, char* argv[] ){
   * Output: One of the following depending on input value
   *         Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Incorrect input 
   * Note that output is case sensitive */
-  	int week;
+  	int week=0;
     
     scanf("%d", &week);
     
