@@ -38,7 +38,7 @@ int main (int argc, char* argv[] ){
 	if(num==6){
 	
 	    
-		   printf("Month of hottest:June");
+		   printf("June");
 	   }
 	if(num==7)
 {
