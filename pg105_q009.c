@@ -23,7 +23,7 @@ int main (int argc, char* argv[] ){
         } 
         else 
         {
-            printf("Still have %ld bytes free",phone_memory-memory_used);
+            printf("Still have %lld bytes free",phone_memory-memory_used);
         }
     }
     
