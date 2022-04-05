@@ -9,17 +9,20 @@ int main (int argc, char* argv[] ){
     /* Add check: if user input was less than 0 or it was more than phone_memory then print "Invalid input" */
     /* In case of invalid input, rest of processing should be skipped */
   
-   if (memory_used < 0 || memory_used > phone_memory) {
-        printf("Invalid input");
-    } else {
+   if (memory_used < 0 || memory_used > phone_memory) 
+   {
+       printf("Invalid input");
+       return 0;
+    } 
+    else 
+    {
         percent_used = (memory_used*100.0)/phone_memory;
- if(percent_used==0)
- {
-     printf("idle");
- }
-        if (percent_used > 90) {
+        if (percent_used > 90) 
+        {
             printf("Running out of storage, cleanup now");
-        } else {
+        } 
+        else 
+        {
             printf("Still have %ld bytes free",phone_memory-memory_used);
         }
     }
