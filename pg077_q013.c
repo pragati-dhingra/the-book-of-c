@@ -8,8 +8,8 @@ int main (int argc, char* argv[] ){
   In case of invalid input, output should be "Invalid" (without quotes) 
   Output is case sensitive */
   int num;
-   printf("Input Month No : ");
-   scanf("%d",&num);
+   
+   scanf("%d", &num);
    if(num==1)
    {
    
@@ -67,6 +67,10 @@ int main (int argc, char* argv[] ){
 	if(num>12)
 {
 		   	       printf("Invalid");
-      
+	}
+	if(num<1)
+	{
+		printf("Invalid");
+	}      
   return 0;
 }
