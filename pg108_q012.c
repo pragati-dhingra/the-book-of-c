@@ -1,11 +1,8 @@
-#include <stdio.h>
- 
+#include<stdio.h>
 int main(int argc, char * argv[]) {
     float percent = 0, average = 0;
-    printf("Enter your percent score: ");
-    scanf("%f",&percent);
-    printf("Enter class average score: ");
-    scanf("%f",&average);
+    
+    scanf("%f %f",&percent, &average);
  
     if (percent < 0 || percent > 100 || average < 0 || average > 100) {
         printf("Invalid input\n");
