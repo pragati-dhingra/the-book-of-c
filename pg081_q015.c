@@ -10,27 +10,27 @@ int main (int argc, char* argv[] ){
           In case of invalid input, print -1 as output */
  int month = 0, date = 0, day = 0;
  
-    printf("Enter the current month between 1 to 12: ");
-    scanf("%d", &month);
-    printf("Enter  day of month between 1 to 7: ");
-    scanf("%d", &day);
+    
+    scanf("%d %d", &month, &day);
+   
+    
  
     if ( month < 1 || month > 12 || day < 1 || day > 7) {
-        printf("-1\n");
+        printf("-1");
     } else {
         if (2 == month) {
-            printf("Month has 4 Sundays\n");
+            printf("4");
         } else {
             if ((1 == month|| 3 == month|| 5 == month|| 7 == month ||
                 8 == month || 10 == month || 12 == month)&&(5==day ||6==day||7==day)) {
                  
-                    printf("This Month has 5 Sundays\n");
+                    printf("5");
                 
                 }
             } else if (6 == day || 7 == day) {
-                printf("This Month has 5 Sundays\n");
+                printf("5");
             } else {
-                printf("This Month has 4 Sundays\n");
+                printf("4");
             }
         }
     }
