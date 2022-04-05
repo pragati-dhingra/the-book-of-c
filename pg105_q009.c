@@ -13,8 +13,10 @@ int main(int argc, char * argv[]) {
         percent_used = (memory_used*100.0)/phone_memory;
  
         if (percent_used > 90) {
+            /*print out of memory message*/
             printf("OOM");
         } else {
+            /*print number of free bytes*/
             printf(" %ld ",phone_memory-memory_used);
         }
     }
