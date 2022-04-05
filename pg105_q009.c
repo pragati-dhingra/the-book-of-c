@@ -15,7 +15,7 @@ int main (int argc, char* argv[] ){
         percent_used = (memory_used*100.0)/phone_memory;
  
         if (percent_used > 90) {
-            printf("Running out of storage, cleanup now\n");
+            printf("Running out of storage, cleanup now");
         } else {
             printf("Still have %ld bytes free",phone_memory-memory_used);
         }
