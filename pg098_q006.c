@@ -17,35 +17,39 @@ k.	2015: Australia
 If world cup was not played in the year entered by the user, program should print "Invalid input"
 There should be no newlines after the printed output
 Winners post 2015 are not required.
-*/ int year;
-    scanf("%d",&year);
-     switch(year) {
-      case 1975:
-      case 1979:
-        printf("West Indies");
-            break;
-        case 1983:
-        case 2011:
-        printf("India ");
-            break;
-        case 1987:
-        case 2007:
-        case 2015:
-        case 1999:
-        case 2003:
-            printf("Australia");
-            break;
-        case 1992:
-            printf("Pakistan");
-            break;
-        case 1996:
-            printf("Sri Lanka");
-            break;
-            
-            default:
-            printf("Invalid Input");
-    }
+*/
+  int year=0;
+scanf("%d",&year);
+switch(year)
+{
+          case 1975:
+          case 1979:
+                      printf("West Indies");
+                      break;
+          case 1983:
+          case 2011: 
+                    printf("India");
+                    break;
+          case 1987:
+          case 1999:
+          case 2003:
+          case 2007:
+          case 2015:
+                    printf("Australia");
+                    break;
+          case 1992:
+                    printf("Pakistan");
+                    break;
+          case 1996:
+                        printf("Sri Lanka");
+                    break;                
+          default:
+                  printf("Invalid input");
+        }
+  
   return 0;
+}
+
 
  
 
