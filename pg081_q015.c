@@ -12,7 +12,7 @@ int main (int argc, char* argv[] ){
  
     scanf("%d %d", &month, &day);
     if ( month < 1 || month > 12 || day < 1 || day > 7) {
-        printf("Invalid input\n");
+        printf("-1");
     } else {
         if (2 == month) {
             printf("4");
@@ -31,6 +31,5 @@ int main (int argc, char* argv[] ){
             }
         }
     }
-    printf("-1\n"); 
-  return 0;
+    return 0;
 }
