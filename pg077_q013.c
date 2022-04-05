@@ -13,61 +13,60 @@ int main (int argc, char* argv[] ){
    if(num==1)
    {
    
-	       printf("Very 1st month of year:January\n");
+	       printf("January");
 	   }
 	if(num==2)
 	{
 	
-	       printf("Month of love:February\n");
+	       printf("February");
 	   }
 	   
 	if(num==3)
 	{
 	
-	       printf("Month of my birthday:March\n");
+	       printf("March");
 	   }
 	if(num==4){
 	
-	       printf("Month of making fool others:April\n");
+	       printf("April");
 	   }
 	if(num==5)
 	{
 	
-	       printf("Month of starting of summers:May\n");
+	       printf("May");
 	   }
 	if(num==6){
 	
 	    
-		   printf("Month of hottest:June\n");
+		   printf("Month of hottest:June");
 	   }
 	if(num==7)
 {
-		   	       printf("Month of Moonsoon:July\n");
+		   	       printf("July");
 	   }
 	if(num==8)
 {
-		       printf("Month of Friendship:August\n");
+		       printf("August");
 	   }
 	if(num==9)
 {
-			       printf("Month of bhai's bday:'September\n");
+			       printf("September");
 	   }
 	if(num==10)
 {
-		   	       printf("Best Month of Outing:October\n");
+		   	       printf("October");
 	   }
 	if(num==11)
 {
-			       printf("Month of Starting of winters: November\n");
+			       printf("November");
 	   }
 	if(num==12)
 	       {
-		   printf("Perfect Month of marriage:December\n");
+		   printf("December");
 	   }
 	if(num>12)
 {
-		   	       printf("Oops invalid Month number......");
-	   }
+		   	       printf("Invalid");
       
   return 0;
 }
