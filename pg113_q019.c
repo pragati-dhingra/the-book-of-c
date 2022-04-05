@@ -4,6 +4,6 @@ int main (int argc, char* argv[] ){
        "In C \\ prints \ on console"
      */
     char c='"';
-    printf(" %c In C \\\\ prints \\ on console %c",c,c);
+    printf("%cIn C \\\\ prints \\ on console%c",c,c);
     return 0;
 }
