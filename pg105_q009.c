@@ -11,13 +11,14 @@ int main (int argc, char* argv[] ){
   
      if (memory_used < 0 || memory_used > phone_memory) {
         printf("Invalid input");
-    } else {
+    } else 
+     {
         percent_used = (memory_used*100.0)/phone_memory;
  
         if (percent_used > 90) {
-            printf("Running out of storage, cleanup now");
+            printf("OOM");
         } else {
-            printf("Still have %ld bytes free",phone_memory-memory_used);
+            printf("%ld",phone_memory-memory_used);
         }
     }
     return 0;
