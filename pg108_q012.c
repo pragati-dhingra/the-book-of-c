@@ -16,6 +16,8 @@ int main(int argc, char * argv[]) {
         printf("Qualify");
     } else {
         printf("Oops");
-    }
+    }}
     return 0;
 }
+
+    
