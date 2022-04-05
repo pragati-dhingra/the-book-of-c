@@ -31,5 +31,4 @@ switch(operator) {
             printf("Unrecognised operator");
     }   return 0;
 }
-  return 0;
-}
+  
