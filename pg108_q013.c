@@ -7,10 +7,11 @@ int main(int argc, char * argv[]) {
      * If found out of range then print "Invalid input" and skip further processing 
      * Modify the below qualifying criteria to include additional condition of percent >= 80 */
 
-    if (percent > average) {
+        if (percent > average) {
         printf("Qualify");
     } else {
         printf("Oops");
     }
     return 0;
 }
+
