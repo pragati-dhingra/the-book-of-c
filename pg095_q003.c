@@ -29,10 +29,10 @@ Winners post 2015 are not required.
             printf("West Indies");
             break;
         case 1983:
-            printf("India won");
+            printf("India");
             break;
         case 1987:
-            printf("Australia ");
+            printf("Australia");
             break;
         case 1992:
             printf("Pakistan");
