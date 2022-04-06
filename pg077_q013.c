@@ -43,7 +43,7 @@ int main (int argc, char* argv[] ){
             printf("October");
             break;
         case 11:
-            printf("Novmber");
+            printf("November");
             break;
         case 12:
             printf("December");
