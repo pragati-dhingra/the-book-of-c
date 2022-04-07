@@ -17,8 +17,7 @@ k.	2015: Australia
 If world cup was not played in the year entered by the user, program should print "Invalid input"
 There should be no newlines after the printed output
 Winners post 2015 are not required.
-*/  int year;
-   
+*/  
     int year = 0;
    scanf("%d",&year);
  
