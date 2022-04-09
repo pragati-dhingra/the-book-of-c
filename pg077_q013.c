@@ -7,42 +7,50 @@ int main (int argc, char* argv[] ){
   Please do not use abbreviations. First character is capital, rest are small case,  no trailing newline
   In case of invalid input, output should be "Invalid" (without quotes) 
   Output is case sensitive */
-  int m = 0;
-    printf("Input Month No : ");
-    scanf("%d", &m);
-    if (1==m)
-    {
-        printf("January");
-    }
-    else if(2==m)
-    {
-    
-        printf("February");
-    }
-    else if(3==m)
-        printf("March");
-        
-    else if(4==m)
-        printf("April");
-    else if(5==m)
-        printf("May");
-    else if(6==m)
-        printf("June");
-    else if(7==m)  
-        printf("July");
-    else if(8==m)    
-        printf("August");
-    else if(9==m)   
-        printf("September");
-    else if(10==m)
-        printf("October");
-    else if(11==m)
-        printf("November");
-    else if(12==m)
-        printf("December");
-    else
-        printf("Invalid");
-        
-    
+  int m;
+   printf("Input Month No : ");
+   scanf("%d",&m);
+   switch(m)
+   {
+	case 1:
+	       printf("January");
+	       break;
+	case 2:
+	       printf("February");
+	       break;
+	case 3:
+	       printf("March");
+	       break;
+	case 4:
+	       printf("April");
+	       break;
+	case 5:
+	       printf("May");
+	       break;
+	case 6:
+	       printf("June");
+	       break;
+	case 7:
+	       printf("July");
+	       break;
+	case 8:
+	       printf("August");
+	       break;
+	case 9:
+	       printf("September");
+	       break;
+	case 10:
+	       printf("October");
+	       break;
+	case 11:
+	       printf("November");
+	       break;
+	case 12:
+	       printf("December");
+	       break;
+	default:
+	       printf("Invalid");
+	       break;
+      }
   return 0;
 }
