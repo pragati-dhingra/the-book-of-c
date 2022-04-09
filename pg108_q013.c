@@ -13,7 +13,7 @@ int main(int argc, char * argv[]) {
     } 
     else {
 
-    if (percent > average && percent >= 80) {
+    if (percent >= average && percent >= 80) {
         printf("Qualify");
     } else {
         printf("Oops");
