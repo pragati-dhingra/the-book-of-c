@@ -12,7 +12,6 @@ int main(int argc, char * argv[]) {
         printf("Invalid input");
     } 
     else {
-
     if (percent >= average && percent >= 80) {
         printf("Qualify");
     } else {
