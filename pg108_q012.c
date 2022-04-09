@@ -14,5 +14,6 @@ int main(int argc, char * argv[]) {
     } else {
         printf("Oops");
     }
+    }
     return 0;
 }
