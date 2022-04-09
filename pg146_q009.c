@@ -9,7 +9,7 @@ int num = 0, i = 0, sum = 0;
  
     printf("Enter a number [1-1000]: ");
     scanf("%d", &num);
-    if (num < 1 || num > 1000) {
+    if (num <= 1 || num >= 1000) {
         printf("Invalid input");
     } else {
         for (i=1; i <= num; i++) {
