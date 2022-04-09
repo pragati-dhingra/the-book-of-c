@@ -6,6 +6,13 @@ int main (int argc, char* argv[] ){
     double percent_used = 0;
 
     scanf("%ld", &memory_used);
+    if(memory_used<0 || memory_used>=phone_memory)
+    {
+        printf("Invalid Input");
+        exit();
+    }
+    else
+    {
     /* Add check: if user input was less than 0 or it was more than phone_memory then print "Invalid input" */
     /* In case of invalid input, rest of processing should be skipped */
   
@@ -18,7 +25,7 @@ int main (int argc, char* argv[] ){
         /* Print number of free bytes */
         printf("%ld",phone_memory-memory_used);
     }
-    
+    }
   
     return 0;
 }
