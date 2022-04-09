@@ -1,3 +1,5 @@
+#include<stdio.h>
+
 int main (int argc, char* argv[] ){
     /* Print numbers 10 to 1 using a for loop
     * All numbers should appear on a single line separated by a single space
@@ -6,8 +8,7 @@ int main (int argc, char* argv[] ){
     int i=0;
     for(i=10;i>=1;i--)
     {
-        printf("%d ",i);
+        printf("%d ", i);
     }
-  
-    return 0;
+      return 0;
 }
