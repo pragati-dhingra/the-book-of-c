@@ -6,6 +6,23 @@ int main (int argc, char* argv[] ){
     * output -> 7
     * input -> -110
     * output -> 2  */
+    
+    int n = 0, d = 0, sum = 0;
+    scanf_s("%d", &n);
+    if (n < 0)
+    {
+        n = -n;
+    }
+    
+    d = n;
+    while (d != 0)
+    {
+        d = n % 10;
+        n = n / 10;
+        sum = sum + d;
+    }
+    printf("%d", sum);
+    
 
     return 0;
 }
