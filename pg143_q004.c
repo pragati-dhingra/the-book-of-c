@@ -6,5 +6,10 @@ int main (int argc, char* argv[] ){
     * Expected output -> "2 4 6 8 10 12 14 16 18 20 " without quotes. 
     * Note there is one space character after each number */
 
+    int i = 0;
+    for (i=1; i < 11; i++)
+    {
+        printf("%d ", i*2);
+    }
     return 0;
 }
