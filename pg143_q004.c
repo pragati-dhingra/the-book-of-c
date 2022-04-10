@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main (int argc, char* argv[] ){
     /* Print table of 2 using a for loop
     * All numbers should appear on a single line separated by a single space
@@ -10,6 +9,5 @@ int main (int argc, char* argv[] ){
     	mul=2*i;
         printf(" %d", mul);
     }
-
-    return 0;
+ return 0;
 }
