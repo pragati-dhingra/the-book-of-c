@@ -21,7 +21,7 @@ int num = 0, i = 1;
             }
             i++;
         }
-        else if(num != i*i) {
+         if(num != i*i) {
             printf("No");
         }
     }
