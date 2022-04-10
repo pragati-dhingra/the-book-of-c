@@ -13,7 +13,7 @@ int num = 0, i = 1;
  
    /* if (num < 1) {
         printf("Invalid input");
-    }*/ else {
+    }*/ if {
         while (i*i <= num) {
             if(i*i == num) {
                  printf("Yes");
@@ -21,7 +21,7 @@ int num = 0, i = 1;
             }
             i++;
         }
-        if(num != i*i) {
+        else if(num != i*i) {
             printf("No");
         }
     }
