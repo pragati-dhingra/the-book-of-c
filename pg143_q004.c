@@ -7,7 +7,7 @@ int main (int argc, char* argv[] ){
     int i=1, mul=0;
     for(; i<=10; i++){
     	mul=2*i;
-        printf(" %d", mul);
+        printf("%d ", mul);
     }
  return 0;
 }
