@@ -5,6 +5,16 @@ int main (int argc, char* argv[] ){
     * Validate that input should be in the range 1 to 1000 - both inclusive
     * If input is outside of this range then print "Invalid input" and skip rest of processing
     * If input was valid then, using a for loop, print the sum of first n natural numbers on a line by itself with no trailing newline */
-
+    int num = 0, i = 0, sum = 0;
+    printf("Enter a number [1 to 1000]: ");
+    scanf("%d", &num);
+    if (num < 1 || num > 1000) {
+        printf("Invalid Input\n");
+    } else {
+        for (i=1; i <= num; i++) {
+            sum += i;
+        }
+        printf("Sum of 1 to %d is %d\n", num, sum);
+    }
     return 0;
 }
