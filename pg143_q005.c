@@ -5,6 +5,10 @@ int main (int argc, char* argv[] ){
     * All numbers should appear on a single line separated by a single space
     * Expected output -> "1 4 9 16 25 36 49 64 81 100 " without quotes.
     * Note there is one space character after each number */
-
+    int i=1;
+    for(; i<=10; i++){
+        printf("%d ", i*i);
+    }
     return 0;
 }
+
