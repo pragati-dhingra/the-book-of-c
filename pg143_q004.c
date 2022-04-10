@@ -6,8 +6,8 @@ int main (int argc, char* argv[] ){
     * Note there is one space character after each number */
     int i=1, mul=0;
     for(; i<=10; i++){
-    	mul=2*i;
+        mul=2*i;
         printf("%d ", mul);
     }
- return 0;
+    return 0;
 }
