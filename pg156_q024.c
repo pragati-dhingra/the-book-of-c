@@ -1,3 +1,4 @@
+#include<stdio.h>
 int main (int argc, char* argv[] ){
     /* Write a program to print sum of all digits of a number
     * input -> an integer
