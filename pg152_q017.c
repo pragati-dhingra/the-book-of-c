@@ -10,7 +10,7 @@ int main (int argc, char* argv[] ){
     * Yes */
      int num = 0, i = 1;
      scanf("%d", &num);
-     if (num<1 && num>10) {
+     if (num<=0 && num>10) {
         printf("Invalid input");
     } else {
         while (i*i <= num) {
