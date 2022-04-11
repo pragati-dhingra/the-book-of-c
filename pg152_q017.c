@@ -8,6 +8,25 @@ int main (int argc, char* argv[] ){
     * E.g. 
     * 4
     * Yes */
+    int num = 0, i = 1;
+ 
+    printf("Enter a number >1: ");
+    scanf("%d", &num);
+ 
+    if (num < 1) {
+        printf("Invalid Input\n");
+    } else {
+        while (i*i <= num) {
+            if(i*i == num) {
+                 printf("Yes");
+                 break;
+            }
+            i++;
+        }
+        if(num != i*i) {
+            printf("No");
+        }
+    }
 
     return 0;
 }
