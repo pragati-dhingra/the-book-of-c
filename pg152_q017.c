@@ -11,7 +11,7 @@ int main (int argc, char* argv[] ){
     int num =0, i = 1;
    
     scanf("%d", &num);
-     if (num<0||num>9) {
+     if (num<=0||num>=9) {
         printf("Invalid input");
     } else {
         while (i*i<=num) {
