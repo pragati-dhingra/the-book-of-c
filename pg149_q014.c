@@ -7,7 +7,7 @@ int main (int argc, char* argv[] ){
     * If input was valid then, using a while loop, print the sum of first n natural numbers on a line by itself with no trailing  newline */
     int n = 0, i = 1, sum = 0;
     scanf("%d", &n);
-    if (n<0||n>1001) {
+    if (n<=0||n>=1001) {
          printf("Invalid input");
     } else {
         while(i<=n) {
