@@ -7,13 +7,13 @@ int main (int argc, char* argv[] ){
     * If input was valid then, using a for loop, print the sum of first n natural numbers on a line by itself with no trailing newline */
     int n = 0, i = 0, sum = 0;
      scanf("%d", &n);
-    if(n<0||n>1001) {
-        printf("Invalid Input");
+    if(n<=1||n>=100) {
+        printf("Invalid input");
     } else {
         for (i=1;i<=n;i++) {
             sum+=i;
         }
-        printf("Sum of 1 to %d is %d",sum);
+        printf("%d ",sum);
     }
 
     return 0;
