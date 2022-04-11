@@ -12,16 +12,16 @@ int main (int argc, char* argv[] ){
     * Note that there is one space after each number */
    int num = 0, i = 1;
    scanf("%d", &num);
-     if (num<1) {
+     if (num<=0) {
         printf("Invalid input");
     } else {
     do {
-        if (num % i == 0) {
-            printf("%d ", i);
+        if (num%i== 0) {
+            printf("%d ",i);
         }
         i++;
     }while(i<=num/2);
-     printf("%d", num);
+     printf("%d",num);
      }
     return 0;
 }
