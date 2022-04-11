@@ -8,6 +8,16 @@ int main (int argc, char* argv[] ){
     * E.g. 
     * 4
     * Yes */
-
+int i, n;
+        scanf("%d", &n);
+    for(i = 0; i <= n; i++)
+    {
+        if (n == i * i)
+        {
+            printf("Yes");
+            return 0;
+        }
+    }
+    printf("No");
     return 0;
 }
