@@ -12,7 +12,7 @@ int nth = 0, num = 2, count = 0, i = 0;
     
     scanf("%d", &nth);
  
-    if(nth <1 || nth > 100) {
+    if(nth<=1||nth>=100) {
         printf("Invalid input");
     } else {
         do {
