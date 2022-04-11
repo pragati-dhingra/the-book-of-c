@@ -8,11 +8,11 @@ int main (int argc, char* argv[] ){
     * E.g. 
     * 4
     * Yes */
-    int num = 0, i = 1;
+    int num =0, i = 1;
    
     scanf("%d", &num);
-     if (num<10) {
-        printf("Invalid Input");
+     if (num<0 && num>10) {
+        printf("Invalid input");
     } else {
         while (i*i<=num) {
             if(i*i==num) {
