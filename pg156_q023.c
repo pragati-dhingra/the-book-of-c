@@ -20,7 +20,7 @@ int main (int argc, char* argv[] ){
             printf("%d ",i);
         }
         i++;
-    }while(i<=num/2);
+    }while(i<num);
      printf("%d",num);
      }
     return 0;
