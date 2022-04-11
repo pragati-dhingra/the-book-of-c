@@ -6,6 +6,17 @@ int main (int argc, char* argv[] ){
     * output -> 7
     * input -> -110
     * output -> 2  */
+int n=0,a=0,d=0;
+    scanf("%d", &n);
 
+    while (n != 0)
+    {
+        d = n % 10;
+        n=n/10;
+        a=a+d;
+    }
+if(a<0)
+    a=a*(-1);
+    printf("%d",a);
     return 0;
 }
