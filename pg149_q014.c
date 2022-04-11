@@ -11,7 +11,7 @@ int main (int argc, char* argv[] ){
          printf("Invalid input");
     } else {
         while(i<=n) {
-            sum += i;
+            sum=sum+i;
             i++;
         }
         printf("%d", sum);
