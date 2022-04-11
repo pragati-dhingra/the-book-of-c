@@ -13,6 +13,6 @@ int main (int argc, char* argv[] ){
         sum+=num%10;
         num/=10;
     }while(num);
-     printf("%d ",sum);
+     printf("%d",sum);
     return 0;
 }
