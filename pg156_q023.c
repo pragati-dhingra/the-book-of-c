@@ -10,6 +10,16 @@ int main (int argc, char* argv[] ){
     * input -> 10
     * output -> "1 2 5 10 ", without quotes
     * Note that there is one space after each number */
-
+int num = 0, i = 1;
+    scanf("%d", &num);
+       do {
+        if (num % i == 0) {
+            printf("%d ", i);
+        }
+        i++;
+    }while(i<=num/2);
+ 
+    printf("%d ", num);
+ 
     return 0;
 }
