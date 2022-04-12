@@ -7,7 +7,7 @@ int main (int argc, char* argv[] ){
     * Note there is one space character after each number */
 int i=1;
     for(; i<=10; i++){
-        printf("Square of %d is %d\n", i, i*i);
+        printf("Square of %d is %d", i, i*i);
     }
     return 0;
 }
