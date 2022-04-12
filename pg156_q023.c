@@ -14,7 +14,7 @@ int main (int argc, char* argv[] ){
     scanf("%d", &num);
     if (num < 1) {
         printf("Invalid input");
-    } else {
+    } else if(num>1){
     do {
         if (num % i == 0) {
             printf("%d ", i);
@@ -24,5 +24,8 @@ int main (int argc, char* argv[] ){
  
     printf("%d ", num);
     }
+    else{
+    printf("%d ", num);	
+	}
     return 0;
 }
