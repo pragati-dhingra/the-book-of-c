@@ -9,8 +9,8 @@ int main (int argc, char* argv[] ){
     * 4
     * Yes */
     int num = 0, i = 1;
-    scanf("%d",&num);
-     if (num<0||num >=10) {
+     scanf("%d",&num);
+     if (num<=0 && num>=10) {
         printf("Invalid Input");
     } else {
         while (i*i <= num) {
@@ -19,10 +19,12 @@ int main (int argc, char* argv[] ){
                  break;
             }
             i++;
-        }
+         }
         if(num != i*i) {
             printf("No");
         }
     }
     return 0;
+
 }
+
