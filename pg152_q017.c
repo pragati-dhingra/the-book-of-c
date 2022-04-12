@@ -16,7 +16,7 @@ int main (int argc, char* argv[] ){
     } else {
         while (i*i <= num) {
             if(i*i == num) {
-                 printf("Yes",);
+                 printf("Yes");
                  break;
             }
             i++;
