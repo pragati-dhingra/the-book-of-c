@@ -6,8 +6,7 @@ int main (int argc, char* argv[] ){
     * Expected output -> "0 1 1 2 3 " without quotes. Note there is one space character after each number */
     int i=0,f1=0,f2=1,f3=0;
     printf("%d %d",f1,f2);
-    for(i=1;i<=3;i++)
-    {
+    for(i=1;i<=3;i++)  {
         f3=f1+f2;
         printf(" %d",f3);
         f1=f2;
