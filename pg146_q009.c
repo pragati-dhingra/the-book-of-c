@@ -17,5 +17,6 @@ int main (int argc, char* argv[] ){
             sum=sum+i;
         }
        printf("%d",sum);
+    }
     return 0;
 }
