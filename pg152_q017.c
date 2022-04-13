@@ -10,9 +10,10 @@ int main (int argc, char* argv[] ){
     * Yes */
 int num = 0, i = 1;
     scanf("%d", &num);
-     if (num < 1) {
-        printf("Invalid Input");
-    } else {
+     if (num < 0) {
+        printf("No");
+    } else if (num>0) {
+         
         while (i*i <= num) {
             if(i*i == num) {
                  printf("Yes");
@@ -23,6 +24,9 @@ int num = 0, i = 1;
         if(num != i*i) {
             printf("No");
         }
+    }
+    else {
+        printf("Yes");
     }
     return 0;
 }
