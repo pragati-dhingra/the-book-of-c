@@ -1,3 +1,4 @@
+#include<stdio.h>
 int main (int argc, char* argv[] ){
     /* Write a program to print sum of all digits of a number
     * input -> an integer
@@ -5,17 +6,16 @@ int main (int argc, char* argv[] ){
     * E,g. input -> 7
     * output -> 7
     * input -> -110
-    * output -> 2  */ 
-    int n,sum=0,m;    
-    printf("Enter a number:");    
-    scanf("%d",&n);    
-    while(n>0)
-    {
-        m=n%10;    
-        sum=sum+m;    
-        n=n/10;    
-    }
-    printf("Sum is=%d",sum);
-    return 0;  
-}   
-    
+    * output -> 2  */
+int num = 0, sum = 0;
+    scanf("%d", &num);
+     do {
+        sum += num%10;
+        num /= 10;
+    }while(num);
+ 
+    printf("%d", sum);
+ 
+
+    return 0;
+}
