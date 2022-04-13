@@ -21,7 +21,7 @@ int nth = 0, num = 2, count = 0, i = 0;
                 }
             }
             if(i>num/2) {
-                printf("%d", num);
+              
                 count++;
             }
             if (count == nth) {
