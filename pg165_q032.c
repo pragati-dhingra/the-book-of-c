@@ -9,10 +9,9 @@ int main (int argc, char* argv[] ){
     * input -> 9
     * output -> 23 */
     int nth = 0, num = 2, count = 0, i = 0;
-    printf("Enter a number (5-100) ");
-    scanf("%d", &nth);
+     scanf("%d", &nth);
      if(nth<1||nth>100) {
-        printf("Invalid input");
+       printf("Invalid input");
     } else {
         do {
             for(i=2; i<=num/2; i++) {
@@ -21,8 +20,7 @@ int main (int argc, char* argv[] ){
                 }
             }
             if(i>num/2) {
-                printf("%d", num);
-                count++;
+              count++;
             }
             if (count==nth) {
                 printf("%d",num);
