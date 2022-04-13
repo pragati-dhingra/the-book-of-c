@@ -21,9 +21,9 @@ int main (int argc, char* argv[] ){
         }
         i++;
     }while(i<=num/2);
-     printf("%d",num);
+     printf("%d ",num);
      }
     else
-        printf("%d",num);
+        printf("%d ",num);
     return 0;
 }
