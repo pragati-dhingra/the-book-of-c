@@ -9,14 +9,14 @@ int main (int argc, char* argv[] ){
     * input -> 9
     * output -> 23 */
   int nth = 0, num = 2, count = 0, i = 0;
-    printf("Enter a number (5-100) ");
     scanf("%d", &nth);
-     if(nth<=1||nth>100) {
-        printf("Invalid input\n");
+ 
+    if(nth < 1 || nth > 100) {
+        printf("Invalid input");
     } else {
         do {
             for(i=2; i<=num/2; i++) {
-                if(num%i==0) {
+                if(num%i == 0) {
                    break;
                 }
             }
@@ -25,7 +25,7 @@ int main (int argc, char* argv[] ){
                 count++;
             }
             if (count == nth) {
-                printf("%d",num);
+                printf("%d", num);
                 break;
             }
             num++;
@@ -33,4 +33,3 @@ int main (int argc, char* argv[] ){
     }
     return 0;
 }
- 
