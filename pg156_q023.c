@@ -23,9 +23,7 @@ int main (int argc, char* argv[] ){
         }
         i++;
     }while(i<=num/2);
- }
+    }
     printf("%d", num);
- 
-
     return 0;
-}
+  }
