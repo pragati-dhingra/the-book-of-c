@@ -6,13 +6,14 @@ int main (int argc, char* argv[] ){
     * E.g. if input was 25089 then output should be 5 */
     int num=0,c=0;
     scanf("%d",&num);
-    if(num==0)
+    if(num==0){
         c++;
-    while(num>0)
+    } else {
+    while(num)
     {
-        c++;
         num=num/10;
-    }
+        c++;
+    }}
     printf("%d",c);
     return 0;
 }
