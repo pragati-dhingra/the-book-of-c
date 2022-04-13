@@ -14,5 +14,3 @@ int main (int argc, char* argv[] ){
 
   printf("Number of digits: %d", count);
 }
-    return 0;
-}
