@@ -9,5 +9,22 @@ int main (int argc, char* argv[] ){
     * 4
     * Yes */
 
+       int a=0, n=0,count=0;
+    scanf("%d", &n);
+    for (a = 0; a <= n; a++)
+    {
+        if (n == a * a)
+        {
+            count++; 
+        }
+    }
+    if (count == 1)
+    {
+        printf("Yes");
+    }
+    else
+    {
+        printf("No");
+    }
     return 0;
 }
