@@ -8,6 +8,7 @@ int main (int argc, char* argv[] ){
     do
     {
         printf("%d ",i*7);
+        i++;
     }while(i<=10);
     return 0;
 }
