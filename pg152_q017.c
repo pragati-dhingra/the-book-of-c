@@ -8,7 +8,7 @@ int main (int argc, char* argv[] ){
     * E.g. 
     * 4
     * Yes */
-    int num = 0, i = 1;
+    int num = 0, i =0;
      scanf("%d",&num);
      if (num<0) {
         printf("No");
