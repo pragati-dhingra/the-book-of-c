@@ -8,10 +8,10 @@ int main (int argc, char* argv[] ){
     * output -> 2
     * input -> 9
     * output -> 23 */
-int nth = 0, num = 2, count = 0, i = 0;
-    scanf("%d", &nth);
-    if(nth<=1||nth>=100) {
-        printf("Invalid input");
+    int nth = 0, num = 2, count = 0, i = 0;
+     scanf("%d", &nth);
+     if(nth<1||nth>100) {
+       printf("Invalid input");
     } else {
         do {
             for(i=2; i<=num/2; i++) {
@@ -20,8 +20,7 @@ int nth = 0, num = 2, count = 0, i = 0;
                 }
             }
             if(i>num/2) {
-                printf("%d", num);
-                count++;
+              count++;
             }
             if (count==nth) {
                 printf("%d",num);
