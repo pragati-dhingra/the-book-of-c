@@ -7,11 +7,11 @@ int main (int argc, char* argv[] ){
     long  number=0;
     int count=0;
     scanf("%ld",&number);
-    while(number!=0)
+    do
     {
         number /= 10;
         count++;
-    }
+    }while(number!=0)
     printf("%d",count);
     return 0;
     
