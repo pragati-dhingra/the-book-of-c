@@ -11,7 +11,7 @@ int main (int argc, char* argv[] ){
     {
         number /= 10;
         count++;
-    }while(number!=0)
+    }while(number!=0);
     printf("%d",count);
     return 0;
     
