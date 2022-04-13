@@ -9,8 +9,9 @@ int main (int argc, char* argv[] ){
     * input -> 9
     * output -> 23 */
   int nth = 0, num = 2, count = 0, i = 0;
+
     scanf("%d", &nth);
- 
+
     if(nth < 1 || nth > 100) {
         printf("Invalid input");
     } else {
@@ -21,8 +22,7 @@ int main (int argc, char* argv[] ){
                 }
             }
             if(i>num/2) {
-                printf("%d", num);
-                count++;
+                 count++;
             }
             if (count == nth) {
                 printf("%d", num);
@@ -31,5 +31,7 @@ int main (int argc, char* argv[] ){
             num++;
         } while(1);
     }
+
+
     return 0;
 }
