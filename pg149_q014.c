@@ -15,14 +15,10 @@ int main (int argc, char* argv[] ){
         sum += i;
         ++i;
     }
-
-    printf("Sum = %d", sum);
-    
-}
+        printf("Sum = %d", sum);
+   }
 else
 {printf("Invalid input");
 }
-   
-    
-    return 0;
+ return 0;
 }
