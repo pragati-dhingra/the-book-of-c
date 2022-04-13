@@ -13,7 +13,7 @@ int main (int argc, char* argv[] ){
  
     if (num < 0) {
         printf("No");
-    } else {
+    } else if {
         while (i*i <= num) {
             if(i*i == num) {
                  printf("Yes");
@@ -24,6 +24,9 @@ int main (int argc, char* argv[] ){
         if(num != i*i) {
             printf("No");
         }
+    }
+    else{
+        printf("Yes");
     }
     return 0;
 }
