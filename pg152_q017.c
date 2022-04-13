@@ -11,8 +11,8 @@ int main (int argc, char* argv[] ){
     int num = 0, i = 1;
     scanf("%d", &num);
  
-    if (num < 1) {
-        printf("Invalid input");
+    if (num < 0) {
+        printf("No");
     } else {
         while (i*i <= num) {
             if(i*i == num) {
