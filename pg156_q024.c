@@ -1,11 +1,17 @@
-int main (int argc, char* argv[] ){
-    /* Write a program to print sum of all digits of a number
-    * input -> an integer
-    * Expected output -> print sum of all digits of that number on a single line with no trailing newline
-    * E,g. input -> 7
-    * output -> 7
-    * input -> -110
-    * output -> 2  */
-
+#include <stdio.h>
+ 
+int main(int argc, char * argv[]) {
+    int num = 0, sum = 0;
+ 
+    printf("Enter a number: ");
+    scanf("%d", &num);
+ 
+    do {
+        sum += num%10;
+        num /= 10;
+    }while(num);
+ 
+    printf("sum of digits = %d\n", sum);
+ 
     return 0;
 }
