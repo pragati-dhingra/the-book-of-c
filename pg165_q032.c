@@ -11,7 +11,7 @@ int main (int argc, char* argv[] ){
 int nth = 0, num = 2, count = 0, i = 0;
     scanf("%d", &nth);
  
-    if(nth < 5 || nth > 100) {
+    if(nth < 1 || nth > 100) {
         printf("Invalid input");
     } else {
         do {
@@ -21,7 +21,6 @@ int nth = 0, num = 2, count = 0, i = 0;
                 }
             }
             if(i>num/2) {
-                printf("%d", num);
                 count++;
             }
             if (count == nth) {
