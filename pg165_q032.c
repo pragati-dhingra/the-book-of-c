@@ -12,7 +12,7 @@ int main (int argc, char* argv[] ){
     printf("Enter a number (5-100) ");
     scanf("%d", &nth);
      if(nth<=1||nth>100) {
-        printf("Invalid input\n");
+        printf("Invalid input");
     } else {
         do {
             for(i=2; i<=num/2; i++) {
@@ -24,7 +24,7 @@ int main (int argc, char* argv[] ){
                 printf("%d", num);
                 count++;
             }
-            if (count == nth) {
+            if (count==nth) {
                 printf("%d",num);
                 break;
             }
