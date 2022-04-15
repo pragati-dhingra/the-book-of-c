@@ -10,12 +10,17 @@ int main (int argc, char* argv[] ){
     * input -> 10
     * output -> "1 2 5 10 ", without quotes
     * Note that there is one space after each number */
-int num = 0, sum = 0;
-	    scanf("%d", &num);
-	     do {
-	        sum += num%10;
-	        num /= 10;
-	    }while(num);
-	    printf("%d", sum);	
+int main(int argc, char * argv[]) {
+    int num = 0, i = 1;
+    printf("Enter a number>1: ");
+    scanf("%d", &num);
+    printf("Factors are");
+    do {
+        if (num % i==0) {
+            printf("%d ",i);
+        }
+        i++;
+    }while(i<=num/2);
+    printf("%d\n",num);
 	    return 0;
 	}
