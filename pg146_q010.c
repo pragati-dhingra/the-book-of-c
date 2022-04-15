@@ -10,7 +10,7 @@ int main (int argc, char* argv[] ){
  
     for(i=0; i<3; i++) {
         f = f0 + f1;
-        printf(" %d", f);
+        printf("%d ", f);
         f0 = f1;
         f1 = f;
     }
