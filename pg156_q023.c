@@ -24,7 +24,8 @@ int main (int argc, char* argv[] ){
             if(number%i==0)
             printf("%d ",i);
         }
-    }
+    
         printf("%d ",number);
-        return 0;
+    }
+    return 0;
 }
