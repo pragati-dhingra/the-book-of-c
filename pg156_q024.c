@@ -10,6 +10,9 @@ int main (int argc, char* argv[] ){
     * output -> 2  */
     int number =0,sum=0;
     scanf("%d",&number);
+    if(number<0){
+        number=number*(-1);
+    }
         while(number !=0)
         {
             sum=sum+number%10;
