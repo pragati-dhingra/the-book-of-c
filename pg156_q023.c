@@ -10,6 +10,22 @@ int main (int argc, char* argv[] ){
     * input -> 10
     * output -> "1 2 5 10 ", without quotes
     * Note that there is one space after each number */
-
+    
+    int number=0,i=1;
+    scanf("%d",&number);
+    if(number<1)
+    {
+        printf("Invalid input");
+    }
+    else
+    {
+        for(;i<=number/2 ;i++)
+        {
+            if(number%i==0)
+            printf("%d ",i);
+        }
+    
+        printf("%d ",number);
+    }
     return 0;
 }
