@@ -9,7 +9,6 @@ int main (int argc, char* argv[] ){
     * 4
     * Yes */
 int num =0, i = 1;
-	   
 	    scanf("%d", &num);
 	     if (num<=0 && num>=9) {
 	        printf("Invalid input");
@@ -22,7 +21,7 @@ int num =0, i = 1;
 	            i++;
 	        }
 	        if(num!=i*i) {
-	            printf("No");
+	           printf("No");
 	        }
 	    }
     return 0;
