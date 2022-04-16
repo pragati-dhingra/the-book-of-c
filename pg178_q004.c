@@ -23,6 +23,6 @@ int main (int argc, char* argv[] ){
 float celsius_to_fahreheit(int C)
 {
     float F=0.0;
-    F = (C × 9/5) + 32;
+    F = (C * 9/5.0) + 32;
     return F;
 }
