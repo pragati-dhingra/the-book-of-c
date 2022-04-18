@@ -8,6 +8,9 @@ int main (int argc, char* argv[] ){
     * E.g. Input ->  6 10 20
     * Output -> 12.00
     */
-
-    return 0;
+    float average(int val1, int val2, int val3) {
+    return (val1 + val2+ val3)/3.0;
 }
+
+
+  
