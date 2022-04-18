@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 float average(int val1, int val2, int val3){
-	float avg=0;
-    avg=(val1+val2+val3)/3.0;
-    return avg;
+    return (val1+val2+val3)/3.0;
 }
 int main (int argc, char* argv[] ){
     /* Write a program that:
@@ -17,7 +15,6 @@ int main (int argc, char* argv[] ){
 	float var=0;
     scanf("%d %d %d",&a,&b,&c);
     var=average(a,b,c);
-    printf("%.2f",var);
-    
+    printf("%.2f",var);   
 return 0;
 }
