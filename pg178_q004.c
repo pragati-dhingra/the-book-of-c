@@ -1,7 +1,7 @@
 #include <stdio.h>
-float celsius_to_fahreheit(float cel){
-	float fahr=0;
-    fahr= ((cel *9)/5) + 32;
+double celsius_to_fahreheit(double cel){
+	double fahr=0;
+    fahr= (cel *9/5) + 32;
     return fahr;
 }
 int main (int argc, char* argv[] ){
