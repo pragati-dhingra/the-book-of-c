@@ -10,8 +10,10 @@ float average(int val1, int val2, int val3);
     * Output -> 12.00
     */
 int var1 ,var2,var3;
-    scanf("%d%d%d",&var1,&var2,&var3);
-    printf("%0.2f",average(val1,val2,val3));
+float avg;
+ scanf("%d %d %d",&var1,&var2,&var3);
+  avg= average(val1,val2,val3); 
+  printf("%0.2f",avg);
         
     return 0;
 }
