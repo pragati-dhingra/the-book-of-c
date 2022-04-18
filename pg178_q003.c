@@ -9,9 +9,9 @@ float average(int val1, int val2, int val3);
     * E.g. Input ->  6 10 20
     * Output -> 12.00
     */
-int var1 ,var2,var3;
+int val1 ,val2,val3;
 float avg;
- scanf("%d %d %d",&var1,&var2,&var3);
+ scanf("%d %d %d",&val1,&val2,&val3);
   avg=average(val1,val2,val3); 
   printf("%.2f",avg);
         
