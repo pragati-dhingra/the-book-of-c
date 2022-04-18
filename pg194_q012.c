@@ -13,7 +13,7 @@ int main (int argc, char* argv[] ){
 	{
 		printf("Invalid input");
 	}
-	if(is_cube(num)==1)
+	else if(is_cube(num)==1)
 		printf("yes");
 	else
 		printf("no");
