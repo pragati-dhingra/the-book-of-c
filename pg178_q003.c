@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 float average(int a1, int a2, int a3) {
-    float avg=0.0;
-    avg=(a1+a2+a3)/3.0;
-    return avg;
+    return((a1+a2+a3)/3.0);
+   
 }
 int main (int argc, char* argv[] ){
     /* Write a program that:
