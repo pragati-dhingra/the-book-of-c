@@ -11,14 +11,14 @@ int main (int argc, char* argv[] ){
 int num;
     int cube;
     scanf("%d" ,&num);
-    if(num<1)
+    if(num < 1)
     {
         printf("Invalid input");
     }
     else
     {
     cube=is_cube(num);
-        if(cube==0){
+        if(0 == cube){
             printf("no");
         }
         else{
