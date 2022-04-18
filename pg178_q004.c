@@ -1,5 +1,5 @@
 #include <stdio.h>
-float celsius_to_fahreheit(float C); 
+float celsius_to_fahreheit(double C); 
 
 int main (int argc, char* argv[] ){
     /* Write a program that:
@@ -10,11 +10,11 @@ int main (int argc, char* argv[] ){
     * Output -> 32.00
     * (C × 9/5) + 32 = F
     */
-    float C ;
+    double C ;
     scanf("%f",&C);
     printf("%.2f",celsius_to_fahreheit(C));
     return 0;
 }
-float celsius_to_fahreheit(float cel) {
+float celsius_to_fahreheit(double cel) {
     return ((cel *9)/5) + 32;
 }
