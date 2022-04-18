@@ -11,7 +11,7 @@ int main (int argc, char* argv[] ){
     * Output -> 12.00
     */
 int a=0, b=0, c=0;
-float var=0;
+float var=0.0;
     scanf("%d %d %d",&a,&b,&c);
     var=average(a,b,c);
         printf("%.2f",var);
