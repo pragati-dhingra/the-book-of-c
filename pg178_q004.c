@@ -1,8 +1,6 @@
 #include <stdio.h>
 double celsius_to_fahreheit(double cel){
-	double fahr=0;
-    fahr= (cel *9/5) + 32;
-    return fahr;
+    return (cel *9/5) + 32;
 }
 int main (int argc, char* argv[] ){
     /* Write a program that:
