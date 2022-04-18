@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+float celsius_to_fahreheit(float C); 
 int main (int argc, char* argv[] ){
     /* Write a program that:
     * 1. Reads a double - temp in degree C
@@ -9,12 +9,12 @@ int main (int argc, char* argv[] ){
     * Output -> 32.00
     * (C × 9/5) + 32 = F
     */
-    double c ;
-    scanf("%lf",&c);
-    printf("%0.2f",celsius_to_fahreheit(c));
+    double C ;
+    scanf("%lf",&C);
+    printf("%0.2f",celsius_to_fahreheit(C));
     return 0;
 }
 double celsius_to_fahreheit(double c) {
-    return (c *9/5 + 32);
+    return (C* 9/5) + 32;
 }
 
