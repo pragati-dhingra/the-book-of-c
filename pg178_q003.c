@@ -8,6 +8,17 @@ int main (int argc, char* argv[] ){
     * E.g. Input ->  6 10 20
     * Output -> 12.00
     */
-
+void average(int a, int b, int c);
+    int a=0,b=0,c=0;
+scanf("%d %d %d", &a, &b, &c);
+    average(a,b,c);
     return 0;
 }
+average(int a, int b, int c)
+{
+    float average=0;
+    average=(a+b+c)/3;
+    printf("%.2f", average);
+    return 0;
+}
+   
