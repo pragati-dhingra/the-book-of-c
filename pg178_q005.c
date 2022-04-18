@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+void max(int a, int b);
 int main (int argc, char* argv[] ){
     /* Write a program that:
     * 1. Reads three integers on a single line separated by single space character.
@@ -9,5 +9,18 @@ int main (int argc, char* argv[] ){
     * E.g. Input ->  -10 0 10
     * Output -> 10
     */
+    int a,b,c, maxi;
+    scanf("%d %d %d", &a,&b,&c);
+    maxi=max(max(a,b),c);
+    printf("%d",maxi);
     return 0;
+}
+max(int a, int b)
+{
+    int temp=0;
+    if(a<b)
+        temp=b;
+    else
+        temp=a;
+    return temp;
 }
