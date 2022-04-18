@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+float average(int val1, int val2, int val3) {
+    float avg=0.0;
+    avg=(val1+val2+val3)/3.0;
+    return avg;
+}
 int main (int argc, char* argv[] ){
     /* Write a program that:
     * 1. Reads three integers on a single line
@@ -8,16 +13,11 @@ int main (int argc, char* argv[] ){
     * E.g. Input ->  6 10 20
     * Output -> 12.00
     */
-    int val1=0, val2=0, val3=0;
-    float avg=0.0 , val=0.0;
-    scanf("%d %d %d",&val1,&val2,&val3);
-    average(val1, val2,val3);
-    val= avg;
+    int a=0, b=0, c=0;
+    float  val=0.0;
+    scanf("%d %d %d",&a,&b,&c);
+    val=average(a, b,c);
+    printf("%.2f",val);
     return 0;
-}
-float average(int val1, int val2, int val3) {
-    float avg=0.0;
-    avg=(val1+val2+val3)/3.0;
-    return avg;
 }
    
