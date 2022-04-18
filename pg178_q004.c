@@ -1,5 +1,5 @@
 #include <stdio.h>
-float celsius_to_fahreheit(float C); 
+double celsius_to_fahreheit(double C); 
 
 int main (int argc, char* argv[] ){
     /* Write a program that:
@@ -16,6 +16,6 @@ int main (int argc, char* argv[] ){
     printf("%.2lf",celsius_to_fahreheit(C));
     return 0;
 }
-float celsius_to_fahreheit(float cel) {
+double celsius_to_fahreheit(double cel) {
     return (cel *9/5) + 32;
 }
