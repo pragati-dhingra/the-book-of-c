@@ -7,7 +7,7 @@ int main (int argc, char* argv[] ){
     * 3. Define a function is_cube() that determines if a number is cube or not
     * 4. Call is_cube from main with the user input 
     * 5. In main, use the returned value to print "yes" if number was a cube and print "no" if number was not a cube - no trailing newline */
-    return 0;
+    
 int num;
     int cube;
     scanf("%d" ,&num);
@@ -25,7 +25,7 @@ int num;
             printf("yes");
     }
     }
-    
+   return 0; 
 }
 int is_cube(int num) {
     int i = 1;
