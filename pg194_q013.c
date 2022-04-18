@@ -46,14 +46,14 @@ int main (int argc, char * argv[]) {
     {
         
     prime = is_sum_of_prime(num);
-        if (prime>0) {
-            printf("yes");
+        if (prime==0) {
+            printf("no");
             
         }
      else {
         
     
-        printf("no");
+        printf("yes");
     }
     return 0;
 }
