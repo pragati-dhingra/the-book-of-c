@@ -1,4 +1,5 @@
 #include <stdio.h>
+float celsius_to_fahreheit(float C); 
 
 int main (int argc, char* argv[] ){
     /* Write a program that:
