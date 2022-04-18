@@ -10,17 +10,23 @@ int main (int argc, char* argv[] ){
     * input -> 10
     * output -> "1 2 5 10 ", without quotes
     * Note that there is one space after each number */
-int main(int argc, char * argv[]) {
-    int num = 0, i = 1;
-    printf("Enter a number>1: ");
+int num = 0, i = 1;
+ 
+    
     scanf("%d", &num);
-    printf("Factors are");
-    do {
-        if (num % i==0) {
-            printf("%d ",i);
+    if(num<1)
+    	printf("Invalid input");
+    else if(num>1) {
+	    do {
+        if (num % i == 0) {
+            printf("%d ", i);
         }
         i++;
     }while(i<=num/2);
-    printf("%d\n",num);
-	    return 0;
-	}
+    printf("%d ", num);
+ }else {
+ 
+    printf("%d ", num); }
+ 
+    return 0;
+  }
