@@ -9,5 +9,14 @@ int main (int argc, char* argv[] ){
     * Output -> 32.00
     * (C × 9/5) + 32 = F
     */
+    double temp=0.0;
+    
+    scanf("%ld",&temp);
+    celsius_to_fahreheit(cel);
+    
+    float celsius_to_fahreheit(float cel) {
+    return ((cel *9)/5) + 32;
+}
+ 
     return 0;
 }
