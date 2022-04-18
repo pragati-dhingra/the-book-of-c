@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-float average(int val1, int val2, int val3) {
+float average(int a1, int a2, int a3) {
     float avg=0.0;
-    avg=(val1+val2+val3)/3.0;
+    avg=(a1+a2+a3)/3.0;
     return avg;
 }
 int main (int argc, char* argv[] ){
