@@ -9,5 +9,18 @@ int main (int argc, char* argv[] ){
     * Output -> 12.00
     */
 
+     int num1=0, num2=0, num3=0;
+    double avg=0.0;
+    scanf("%d%d%d",&num1,&num2,&num3);
+    avg = average(num1,num2,num3);
+    printf("%.2f",avg);
+
+    return 0;
+}
+
+double average(int n1,int n2,int n3)
+{
+    return ((n1+n2+n3)/3.0);
+}
     return 0;
 }
