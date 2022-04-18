@@ -22,6 +22,8 @@ int main (int argc, char* argv[] ){
     {
         printf("Invalid input");
     }
+    else
+    {
     var=is_cube(a);
     if(var==1)
     {
@@ -31,5 +33,8 @@ int main (int argc, char* argv[] ){
     {
         printf("no");
     }
-    return 0;
+
+    }        
+        
+return 0;
 }
