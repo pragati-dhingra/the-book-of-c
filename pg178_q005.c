@@ -1,4 +1,6 @@
 #include <stdio.h>
+int max_2(int val1, int val2);
+int max_3(int val1, int val2, int val3);
 
 int main (int argc, char* argv[] ){
     /* Write a program that:
