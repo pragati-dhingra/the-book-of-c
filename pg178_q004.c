@@ -17,5 +17,5 @@ int main (int argc, char* argv[] ){
     return 0;
 }
 float celsius_to_fahreheit(float cel) {
-    return ((cel *9)/5) + 32;
+    return (cel *9/5) + 32;
 }
