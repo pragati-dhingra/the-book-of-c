@@ -11,7 +11,7 @@ int main (int argc, char* argv[] ){
     */
     double cel=0;
     scanf("%lf",&cel);
-    printf("%.2lf", celsius_to_fahreheit(cel));
+    printf("%.2f", celsius_to_fahreheit(cel));
     return 0;
 }
  float celsius_to_fahreheit(float cel)
