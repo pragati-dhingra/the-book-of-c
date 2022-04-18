@@ -11,10 +11,10 @@ int main (int argc, char* argv[] ){
     * (C × 9/5) + 32 = F
     */
     double C ;
-    scanf("%f",&C);
-    printf("%.2f",celsius_to_fahreheit(C));
+    scanf("%lf",&C);
+    printf("%.2lf",celsius_to_fahreheit(C));
     return 0;
 }
-float celsius_to_fahreheit(double cel) {
+double celsius_to_fahreheit(double cel) {
     return ((cel *9)/5) + 32;
 }
