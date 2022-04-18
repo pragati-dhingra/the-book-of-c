@@ -24,3 +24,17 @@ int main (int argc, char* argv[] ){
         printf("no");
     }
 }
+
+int is_cube(int num) {
+    int i = 1;
+    do {
+        if(i * i * i == num) {
+            return 1;
+        }
+        i++;
+    } while (i * i * i <= num);
+
+    return 0;
+}
+    
+ 
