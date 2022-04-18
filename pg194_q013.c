@@ -7,9 +7,7 @@ int main (int argc, char* argv[] ){
     * 3. Define a function is_sum_of_primes() that determines if a number can be expressed as sum of prime numbers
     * 4. Call is_sum_of_primes from main with the user input 
     * 5. In main, use the returned value to print "yes" if number is a sum of prime numbers else print "no" - no trailing newline */
-int main()
-{
-int n, i;
+int n=0, i=0;
 printf("Enter the number: ");
 scanf("%d", &n);
 int flag = 0;
@@ -24,7 +22,6 @@ flag = 1;
 }
 }
 }
-
 if (flag == 0)
 printf("no");
 return 0;
