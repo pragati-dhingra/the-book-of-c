@@ -10,7 +10,7 @@ int main (int argc, char* argv[] ){
     */
     int val1=0,val2=0,val3=0;
     scanf("%d%d%d",&val1,&val2,&val3);
-    printf("%.2lf",Average(val1,val2,val3));
+    printf("%.2lf",average(val1,val2,val3));
     return 0;
     }
 float average(int val1,int val2,int val3)
