@@ -18,7 +18,7 @@ int main (int argc, char* argv[] ){
     * 5. In main, use the returned value to print "yes" if number was a cube and print "no" if number was not a cube - no trailing newline */
     int a=0, var=0;
     scanf("%d",&a);
-    if(a<0)
+    if(a<1)
     {
         printf("Invalid input");
     }
