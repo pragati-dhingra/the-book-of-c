@@ -19,14 +19,13 @@ int main (int argc, char* argv[] ){
 		printf("no");
     return 0;
 }
-int num=0;
-	scanf("%d",&num);
-	if(num<1)
-	{
-		printf("Invalid input");
-	}
-	else if(is_cube(num)==1)
-		printf("yes");
-	else
-		printf("no");
-    }
+int is_cube(int num) {
+    int i = 1;
+    do {
+        if(i * i * i == num) {
+            return 1;
+        }
+        i++;
+    } while (i * i * i <= num);
+    return 0;
+}
