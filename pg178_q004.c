@@ -1,8 +1,6 @@
 #include <stdio.h>
 float celsius_to_fahreheit(float cel){
-	float fahr=0;
-	fahr=((cel *9)/5) + 32;
-	return fahr;
+	return ((cel *9)/5) + 32;
 }
 int main (int argc, char* argv[] ){
    /* Write a program that:
@@ -13,8 +11,8 @@ int main (int argc, char* argv[] ){
     * Output -> 32.00
     * (C × 9/5) + 32 = F
     */
-double tem=0;
-double val;
+double tem=0.0;
+double val=0.0;
     scanf("%lf",&tem);
     val=celsius_to_fahreheit(tem);
     printf("%.2f",val);
