@@ -7,5 +7,18 @@ int main (int argc, char* argv[] ){
     * input -> -110
     * output -> 2  */
 
+     int num = 0, sum = 0;
+
+    scanf("%d",&num);
+
+    if(num<0){
+    	num=num*-1;
+	}
+     do {
+        sum += num%10;
+        num /= 10;
+    }while(num);
+
+    printf("%d",sum);
     return 0;
 }
