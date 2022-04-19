@@ -9,5 +9,21 @@ int main (int argc, char* argv[] ){
     * 4
     * Yes */
 
+     int num = 0, i =0;
+     scanf("%d",&num);
+     if (num<0) {
+        printf("No");
+    } else {
+        while (i*i <= num) {
+            if(i*i == num) {
+                 printf("Yes");
+                 break;
+            }
+            i++;
+         }
+        if(num != i*i) {
+            printf("No");
+        }
+    }
     return 0;
 }
