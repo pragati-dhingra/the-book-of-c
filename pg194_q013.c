@@ -1,33 +1,47 @@
-#include <stdio.h>
-int max_2(int val1, int val2);
-int max_3(int val1, int val2, int val3);
-int main (int argc, char* argv[] ){
-    /* Write a program that:
-    * 1. Reads three integers on a single line separated by single space character.
-    * 2. Defines a function named max to return higher of two integer parameters. 
-    * 3. Determines max of 3 input integers by using this max function
-    * 4. Prints the highest of 3 input integers as output on a line by itself with no trailing space or newline
-    * E.g. Input ->  -10 0 10
-    * Output -> 10
-    */
-    int val1,val2,val3;
-    scanf("%d %d %d",&val1,&val2,&val3);
-    int max;
-    max=max_2(val1,val2);
-    max=max_3(val1,val2,val3);
-    printf("%d",max);
-    return 0;
-}
-int max_2(int val1, int val2) {
-    if(val1 > val2) {
-        return val1;
+	#include <stdio.h>
+int is_prime(int num) {
+    int i=0;
+ 
+    for(i=2; i<=num/2; i++) {
+        if (num%i== 0) {
+            return 0;
+        }
     }
-    return val2;
+ 
+    return 1;
 }
  
-int max_3(int val1, int val2, int val3) {
-    int higher = 0;
-    higher = max_2(val1, val2);
-    higher = max_2(val3, higher);
-    return higher;
+int is_sum_of_prime(int num) {
+    int i=0;
+    for(i=2; i<=num/2; i++) {
+        if(is_prime(i)) {
+            if(is_prime(num-i)) {
+                return i;
+            }
+        }
+    }
+ 
+    return 0;
 }
+int main (int argc, char* argv[] ){
+    /* Write a program that:
+    * 1. Reads a natural number as input (1, 2, 3 …)
+    * 2. If input was not a natural number then print "Invalid input" - without quotes with no trailing newline
+    * 3. Define a function is_sum_of_primes() that determines if a number can be expressed as sum of prime numbers
+    * 4. Call is_sum_of_primes from main with the user input 
+    * 5. In main, use the returned value to print "yes" if number is a sum of prime numbers else print "no" - no trailing newline */
+   int a=0, var=0;
+   scanf("%d",&a);
+   if(a<1){
+   	printf("Invalid input");
+   }
+   else{
+   	var=is_sum_of_prime(a);
+   	if(var==0){
+	printf("no");  
+	}
+   	else{
+   		printf("yes");
+	   }
+   }
+    return 0;
