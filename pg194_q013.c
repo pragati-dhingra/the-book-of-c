@@ -42,9 +42,8 @@ int main (int argc, char* argv[] ){
         prime = is_sum_of_prime(num);
         if (prime) {
             printf("yes");
-            return 0;
-        }
-    } else {
+             }
+     else {
         printf("Invalid input");
     }
     if(!prime) {
