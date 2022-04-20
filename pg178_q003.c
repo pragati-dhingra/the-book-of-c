@@ -1,5 +1,8 @@
+#include<stdio.h>
 float average(int a1, int a2, int a3) {
-    return((a1+a2+a3)/3.0);
+    float f=0;
+    f=(a1+a2+a3)/3.0;
+    return(f);
    
 }
 int main (int argc, char* argv[] ){
@@ -11,9 +14,12 @@ int main (int argc, char* argv[] ){
     * Output -> 12.00
     */
     int a=0, b=0, c=0;
-    float  val=0;
+    float  ret=0;
+
     scanf("%d %d %d",&a,&b,&c);
-    val=average(a, b,c);
-    printf("%0.2f",val);
+    fflush(stdin);
+
+    ret=average(a, b,c);
+    printf("\n%0.2f",ret);
     return 0;
 }
