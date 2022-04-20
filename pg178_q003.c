@@ -17,9 +17,9 @@ int main (int argc, char* argv[] ){
     float  ret=0;
 
     scanf("%d %d %d",&a,&b,&c);
-    fflush(stdin);
+    
 
     ret=average(a, b,c);
-    printf("\n%0.2f",ret);
+    printf("%0.2f",ret);
     return 0;
 }
