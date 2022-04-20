@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+float average(int val1, int val2, int val3){
+	return (val1+val2+val3)/3.0;
+}
 int main (int argc, char* argv[] ){
     /* Write a program that:
     * 1. Reads three integers on a single line
