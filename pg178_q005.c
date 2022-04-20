@@ -7,10 +7,10 @@ int max(int val1, int val2) {
 }
  
 int max_of_three(int val1, int val2, int val3) {
-    int max = 0;
-    max = max(val1, val2);
-    max = max(val3, higher);
-    return max;
+    int max1 = 0;
+    max1 = max(val1, val2);
+    max1 = max(val3, higher);
+    return max1;
 }
 
 int main (int argc, char* argv[] ){
