@@ -6,11 +6,11 @@ int max(int val1, int val2) {
     return val2;
 }
  
-int max_of_three(int val1, int val2, int val3) {
-    int max1 = 0;
-    max1 = max(val1, val2);
-    max1 = max(val3, higher);
-    return max1;
+int max_3(int val1, int val2, int val3) {
+    int higher = 0;
+    higher = max(val1, val2);
+    higher = max(val3, higher);
+    return higher;
 }
 
 int main (int argc, char* argv[] ){
@@ -22,9 +22,9 @@ int main (int argc, char* argv[] ){
     * E.g. Input ->  -10 0 10
     * Output -> 10
     */
-    int a=0, b=0, c=0, maximum=0;
-    scanf("%d %d %d",&a, &b, &c);
-    maximum=max_of_three(a,b,c);
-    printf("%d", maximum);
+   int a=0, b=0, c=0, maximum=0;
+   scanf("%d %d %d",&a, &b, &c);
+   maximum=max_3(a,b,c);
+   printf("%d", maximum);
     return 0;
 }
