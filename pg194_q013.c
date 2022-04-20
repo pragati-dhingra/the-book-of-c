@@ -16,7 +16,7 @@ int main (int argc, char * argv[]) {
     
     if(num<1)
     {
-        printf("invalid input");
+        printf("Invalid input");
     }
     
     else
