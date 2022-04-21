@@ -1,7 +1,14 @@
 #include <stdio.h>
+double average(int a, int b, int c)
+{
+    double av;
+    av = (a + b + c) / 3.0;
+    return av;
+}
 
-int main (int argc, char* argv[] ){
-    /* Write a program that:
+int main (int argc, char* argv[] )
+{
+     /* Write a program that:
     * 1. Reads three integers on a single line
     * 2. Invoke a function named average to compute  average of three numbers. The function should return the average value
     * 3. Receives the returned average value in main and prints it on a line by itself with two decimal points and no trailing newline
@@ -9,5 +16,10 @@ int main (int argc, char* argv[] ){
     * Output -> 12.00
     */
 
+    int a,b,c;
+    double avg;
+    scanf("%d %d %d",&a,&b,&c);
+    avg=average(a,b,c);
+    printf("%.2lf",avg);
     return 0;
 }
