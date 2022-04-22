@@ -1,5 +1,9 @@
 #include <stdio.h>
-
+float average(int a1, int a2, int a3) {
+    float f=0;
+    f=(a1+a2+a3)/3.0;
+    return(f);
+   }
 int main (int argc, char* argv[] ){
     /* Write a program that:
     * 1. Reads three integers on a single line
@@ -10,10 +14,7 @@ int main (int argc, char* argv[] ){
     */
 int a=0, b=0, c=0;
     float  ret=0;
-
     scanf("%d %d %d",&a,&b,&c);
-    
-
     ret=average(a, b,c);
     printf("%0.2f",ret);
     return 0;
