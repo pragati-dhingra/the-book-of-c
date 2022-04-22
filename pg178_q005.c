@@ -9,5 +9,24 @@ int main (int argc, char* argv[] ){
     * E.g. Input ->  -10 0 10
     * Output -> 10
     */
+    int value1,value2,value3;
+    scanf("%d %d %d",&value1,&value2,&value3);
+    int max;
+    max=max_2(value1,value2);
+    max=max_3(value1,value2,value3);
+    printf("%d",max);
     return 0;
+}
+int max_2(int value1, int value2) {
+    if(value1 > value2) {
+        return val1;
+    }
+    return value2;
+}
+
+int max_3(int value1, int value2, int value3) {
+    int higher = 0;
+    higher = max_2(value1, value2);
+    higher = max_2(value3, higher);
+    return higher;
 }
