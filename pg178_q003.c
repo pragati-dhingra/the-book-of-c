@@ -8,6 +8,14 @@ int main (int argc, char* argv[] ){
     * E.g. Input ->  6 10 20
     * Output -> 12.00
     */
+int a=0, b=0, c=0;
+    float  ret=0;
 
+    scanf("%d %d %d",&a,&b,&c);
+    
+
+    ret=average(a, b,c);
+    printf("%0.2f",ret);
     return 0;
 }
+© 2022 GitHub,
