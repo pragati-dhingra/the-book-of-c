@@ -1,5 +1,6 @@
 #include <stdio.h>
 float celsius_to_fahreheit(float);
+
 int main (int argc, char* argv[] ){
     /* Write a program that:
     * 1. Reads a double - temp in degree C
