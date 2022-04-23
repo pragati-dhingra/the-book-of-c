@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-double celsius_to_fahreheit(int);
+double celsius_to_fahreheit(double);
 
 int main (int argc, char* argv[] ){
     /* Write a program that:
@@ -19,7 +19,7 @@ int main (int argc, char* argv[] ){
     return 0;
 }
 
-double celsius_to_fahreheit(int C)
+double celsius_to_fahreheit(double C)
 {
     double F=0.0;
     F = (C * 9/5.0) + 32;
