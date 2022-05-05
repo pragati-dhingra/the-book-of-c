@@ -25,27 +25,27 @@ Winners post 2015 are not required.
     switch(year) {
         case 1975:
         case 1979:
-            printf("West Indies won the world cup in %d\n", year);
+            printf("West Indies );
             break;
         case 1983:
         case 2011:
-            printf("India won the world cup in %d\n", year);
+            printf("India);
             break;
         case 1987:
         case 1999:
         case 2003:
         case 2007:
         case 2015:
-            printf("Australia won the world cup in %d\n", year);
+            printf("Australia);
             break;
         case 1992:
-            printf("Pakistan won the world cup in %d\n", year);
+            printf("Pakistan);
             break;
         case 1996:
-            printf("Sri Lanka won the world cup in %d\n", year);
+            printf("Sri Lanka);
             break;
         default:
-            printf("There was no world cup played in %d\n", year);
+            printf("There was no world cup played r);
     }
  
     return 0;
