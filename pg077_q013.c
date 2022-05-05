@@ -8,5 +8,17 @@ int main (int argc, char* argv[] ){
   In case of invalid input, output should be "Invalid" (without quotes) 
   Output is case sensitive */
   
-  return 0
+ int num1 = 0, num2 = 0;
+    printf("Enter first number ");
+    scanf("%d",&num1);
+    printf("Enter second number ");
+    scanf("%d",&num2);
+ 
+    if(num1 > num2) {
+        printf("%d is larger\n", num1);
+    }
+    if(num2 > num1) {
+        printf("%d is larger\n", num2);
+    }
+    return 0;
 }
