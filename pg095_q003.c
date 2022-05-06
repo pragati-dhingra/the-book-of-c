@@ -19,46 +19,44 @@ There should be no newlines after the printed output
 Winners post 2015 are not required.
 */
   int year = 0;
-    printf("Enter year of world cup: ");
     scanf("%d",&year);
  
     switch(year) {
         case 1975:
-            printf("West Indies won the world cup in 1975\n");
+            printf("West Indies");
             break;
         case 1979:
-            printf("West Indies won the world cup in 1979\n");
+            printf("West Indies");
             break;
         case 1983:
-            printf("India won the world cup in 1983\n");
+            printf("India");
             break;
         case 1987:
-            printf("Australia won the world cup in 1987\n");
+            printf("Australia");
             break;
         case 1992:
-            printf("Pakistan won the world cup in 1992\n");
+            printf("Pakistan");
             break;
         case 1996:
-            printf("Sri Lanka won the world cup in 1996\n");
+            printf("Sri Lanka");
             break;
         case 1999:
-            printf("Australia won the world cup in 1999\n");
+            printf("Australia");
             break;
         case 2003:
-            printf("Australia won the world cup in 2003\n");
+            printf("Australia");
             break;
         case 2007:
-            printf("Australia won the world cup in 2007\n");
+            printf("Australia");
             break;
         case 2011:
-            printf("India won the world cup in 2011\n");
+            printf("India");
             break;
         case 2015:
-            printf("Australia won the world cup in 2015\n");
+            printf("Australia");
             break;
         default:
-            printf("There was no world cup played in %d\n", year);
-    }
- 
-    return 0;
+            printf("Invalid input");
+    } 
+  return 0;
 }
