@@ -7,7 +7,7 @@ int main (int argc, char* argv[] ){
     * 2. Prints the average mark of each student on a single line
     * one float with two decimal places per student
     * each float separated by single space
-    * no trailing spaces or newline.
+    * no extra trailing newline.
     * For example: Input 
     * 1
     * 2
