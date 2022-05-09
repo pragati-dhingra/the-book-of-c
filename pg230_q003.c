@@ -25,6 +25,6 @@ int main (int argc, char* argv[] ){
     for (int i = 0; i < 10; i++) {
         avg += arr[i];
     }
-    printf("%.2f", (avg/10));
+    printf("%.2f", (avg));
     return 0;
 }
