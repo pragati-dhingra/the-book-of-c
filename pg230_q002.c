@@ -23,7 +23,7 @@ int main (int argc, char* argv[] ){
      * all elements of array were negative. */
     for(int i=0; i<10 ;i++)
     {
-        scanf("%d\n",a[i]);
+        scanf("%d\n",&arr[i]);
     }
     int max = arr[0];
  
