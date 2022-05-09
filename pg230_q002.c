@@ -17,5 +17,23 @@ int main (int argc, char* argv[] ){
     * 1
     * Output:
     * 190 */
+        int arr [] = {0};
+ 
+    /* If we initialize max to 0, program will fail if
+     * all elements of array were negative. */
+    for(int i=0; i<10 ;i++)
+    {
+        scanf("%d\n",a[i]);
+    }
+    int max = arr[0];
+ 
+    for(int i=1; i<10; i++) {
+        if(arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    printf("Max value in array is %d\n", max);
     return 0;
+}
+return 0;
 }
