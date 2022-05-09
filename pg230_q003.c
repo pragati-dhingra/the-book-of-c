@@ -17,11 +17,11 @@ int main (int argc, char* argv[] ){
     * 1
     * Output:
     * 1.00 */
-    int arr[10]={0};
+    float arr[10]={0.0};
     int i=0;
     float average=0.0;
     for(i=0;i<10;i++)
-        scanf("%d\n",&arr[i]);
+        scanf("%f\n",&arr[i]);
     for(i=0; i<10; i++) {
         average += arr[i];
     }
