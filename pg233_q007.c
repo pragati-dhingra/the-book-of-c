@@ -1,4 +1,5 @@
 #include <stdio.h>
+void add(int arr1[], int arr2[]);
 
 int main (int argc, char* argv[] ){
     /* Write a program that:
@@ -32,5 +33,38 @@ int main (int argc, char* argv[] ){
     * "12 14 16 18 20 22 24 26 28 30 "
     * without quotes.
     */
+    
+    int arr1[10] = { 0 }, arr2[10] = { 0 }, i = 0, j = 0;
+    
+     for (i = 0; i < 10; i++)
+    {
+        for(j = 0; j < 10; j++)
+        { scanf_s("%d", &arr1[i]); }
+    }
+    
+    for (i = 0; i < 10; i++)
+    {
+        for(j = 0; j < 10; j++)
+        { scanf_s("%d", &arr2[i]); }
+    }
+    
+    add(arr1, arr2);
     return 0;
+}
+
+void add(int arr1[], int arr2[])
+{
+    int arr3[] = { 0 }, i = 0, j = 0;
+    
+   for (i = 0; i < 10; i++)
+    {
+        for(j = 0; j < 10; j++)
+        { arr3[i] = arr1[i] + arr2[i]; }
+    }
+      
+ for (i = 0; i < 10; i++)
+    {
+        for(j = 0; j < 10; j++)
+        { printf("%d ",arr3[i]); }
+    }
 }
