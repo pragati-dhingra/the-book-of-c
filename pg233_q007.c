@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+#define ARRAY_SIZE 10
+void read_arr(int [], int);
+void add_arr(int [], int [], int [], int);
 int main (int argc, char* argv[] ){
     /* Write a program that:
     * 1. Reads twenty int as input in two arrays, ten int per array, one int per line
@@ -32,5 +34,35 @@ int main (int argc, char* argv[] ){
     * "12 14 16 18 20 22 24 26 28 30 "
     * without quotes.
     */
+ 
+ 
+   int i=0;
+	int arr1[ARRAY_SIZE] = { 0 };
+    int arr2[ARRAY_SIZE] = { 0 };
+    int result[ARRAY_SIZE] = { 0 };
+ 
+    read_arr(arr1, ARRAY_SIZE);
+    read_arr(arr2, ARRAY_SIZE);
+    add_arr(arr1, arr2, result, ARRAY_SIZE);
+    for(i=0; i<ARRAY_SIZE; i++) {
+        printf("%d\n",result[i]);
+    }
     return 0;
 }
+ 
+void read_arr(int arr[], int size) {
+    int i=0;
+	for(i=0; i<size; i++) {
+        printf("Enter element %d ", i+1);
+        scanf("%d\n", &arr[i]);
+    }
+}
+ 
+void add_arr(int arr1[], int arr2[], int result[], int size) {
+    int i=0;
+	for(i=0; i<size; i++) {
+        result[i] = arr1[i] + arr2[i];
+    }
+}
+
+    
