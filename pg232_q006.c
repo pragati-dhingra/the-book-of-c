@@ -27,7 +27,15 @@ int main (int argc, char* argv[] ){
     {
         scanf("%d\n",&a[i]);
     }
-    
+    scanf("%d",&val);
+	 i=find_val(a,10,val);
+	 if(i==-1)
+	  printf("no");
+	 else
+	  printf("yes");
+	
+	return 0;
+	}
     int find_val(int a[], int n, int val){
     for(int i=0; i<n; i++) {
         if(a[i] == val) {
