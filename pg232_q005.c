@@ -31,10 +31,10 @@ for(i=0; i<10 ;i++)
             scanf("%d",&marks[i]);
         }
      average = compute_average(marks, 10);
-     printf("Average score is %0.2f", average);
+     printf("%0.2f ",average);
      max = find_max(marks,10);
-    min = find_min(marks,10);
-     printf("%d%d",max,min);    
+     min = find_min(marks,10);
+     printf("%d %d ",max,min);    
     return 0;
 }
 
@@ -44,7 +44,7 @@ for(i=0; i<10 ;i++)
      for(i=0; i<10; i++) {
          sum = sum + marks[i];
     }
-     return ((1.0*sum)/size);
+     return ((1.0*sum)/10);
  }
 
     
@@ -58,7 +58,8 @@ for(i=0; i<10 ;i++)
     return max;
 }
  
-int find_min(int marks[], int size){
+int find_min(int marks[], int size)
+{
     int min = marks[0];
     for(int i=1; i<10; i++) {
         if(marks[i] < min) {
