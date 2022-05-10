@@ -22,5 +22,37 @@ int main (int argc, char* argv[] ){
     * 17
     * Output:
     * no */
+    
+     int arr[10] = { 0 }, i=0, val = 0, present = 0;
+     
+     do {
+         scanf("%d",&arr[i]);
+         i++;
+     }while(i<10);
+
+     scanf("%d",&val);
+    
+     present = find(arr, 10, val);
+     
+    if(present == -1)
+    {
+     printf("no");
+    }
+    else
+    {
+        printf("yes");
+    }
     return 0;
+}
+
+int find(int arr[], int size, int value)
+{
+    for(int i=0; i<size; i++) 
+    {
+        if(arr[i] == value) 
+        {
+            return i;
+        }
+    }
+    return -1;
 }
