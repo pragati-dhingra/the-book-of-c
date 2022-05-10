@@ -23,15 +23,15 @@ int main (int argc, char* argv[] ){
     * Output:
     * no */
     
-    int arr[] = {0};
+   int arr[10] = {0};
     int i=0;
     int val=0;
     for(i=0;i<10;i++)
     {
-        scanf("%d ",&arr[i]);
+        scanf("%d",&arr[i]);
     }
- printf("enter search data");
- scanf("%d ",&val);
+ 
+ scanf("%d",&val);
  i=find_val(arr,10,val);
  if(i==-1)
   printf("no");
@@ -42,7 +42,7 @@ return 0;
 }
     int find_val(int arr[], int size, int val)
 	{ int i=0;
-    	for(i=0; i<size; i++) 
+    	for(i=0; i<10; i++) 
 		{
         if(arr[i] == val) 
 		{
@@ -51,6 +51,3 @@ return 0;
         }
     return -1;
     }
-
-
- 
