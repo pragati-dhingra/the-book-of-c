@@ -64,5 +64,4 @@ int find_min(int arr[], int size){
     }
     return min;
 }
-    return 0;
-}
+   
