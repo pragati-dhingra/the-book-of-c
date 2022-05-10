@@ -45,15 +45,14 @@ int main (int argc, char* argv[] ){
     add_arr(arr1, arr2, result, ARRAY_SIZE);
     
     for(int i=0; i<ARRAY_SIZE; i++) {
-        printf("%d + %d = %d\n", arr1[i], arr2[i], result[i]);
+        printf("%d ",result[i]);
     }
     return 0;
 }
  
 void read_arr(int arr[], int size) {
     for(int i=0; i<size; i++) {
-        printf("Enter element %d ", i+1);
-        scanf("%d\n", &arr[i]);
+         scanf("%d", &arr[i]);
     }
 }
  
@@ -63,5 +62,4 @@ void add_arr(int arr1[], int arr2[], int result[], int size) {
     }
 }
 
-    return 0;
-}
+    
