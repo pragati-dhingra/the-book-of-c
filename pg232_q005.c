@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+float compute_average(int [], int );
+int find_max(int [], int );
+int find_min(int [], int );
 int main (int argc, char* argv[] ){
     /* Write a program that:
     * 1. Reads ten int as input in an array, one int per line
@@ -18,15 +21,8 @@ int main (int argc, char* argv[] ){
     * 10
     * Output:
     * "5.50 10 1 " without quotes*/
-    #include<stdio.h>
-
-float compute_average(int [], int );
- int find_max(int [], int );
- int find_min(int [], int );
- 
-int main (int argc, char * argv[])  {
+   
     int arr[10] = {0};
- 
  	int i=0;
  	 for( i=0; i<10; i++) {
         scanf("%d",&arr[i]);
