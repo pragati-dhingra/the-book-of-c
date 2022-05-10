@@ -17,7 +17,7 @@ int sum_and_square(int val, int *sum) {
     printf("%d ",*sum);
     return val*val;
 }
-int main (int argc, char* argv[] ){
+int main (int argc, char* argv[] )
  {
  	int n=0;
 	 int *sum=&n;
