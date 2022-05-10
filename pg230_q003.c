@@ -17,7 +17,6 @@ int main (int argc, char* argv[] ){
     * 1
     * Output:
     * 1.00 */
-    int main (int argc, char * argv[])  {
     float arr[10] = {0.0};
     float average = 0.0;
  	int i=0;
