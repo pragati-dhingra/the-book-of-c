@@ -45,7 +45,7 @@ int main (int argc, char* argv[] ){
     read_arr(arr2, ARRAY_SIZE);
     add_arr(arr1, arr2, result, ARRAY_SIZE);
     for(i=0; i<ARRAY_SIZE; i++) {
-        printf("%d\n",result[i]);
+        printf("%d\t",result[i]);
     }
     return 0;
 }
