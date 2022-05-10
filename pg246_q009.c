@@ -1,4 +1,11 @@
 #include <stdio.h>
+void swap(int *a, int *b);
+int main (int argc, char * argv[]) {
+    int a = 10, b = 20;
+    swap(&a, &b);
+    printf("a = %d and b = %d", a, b);
+    return 0;
+}
  /* Write a function that swaps two ints using pointers
     * Input - two integer values on a single line separated by a single space
     * output - two integer values, print the two variables in the same order in which they were read
@@ -16,13 +23,4 @@ void swap(int *a, int *b) {
     *b = temp;
 }
  
-int main (int argc, char * argv[]) {
-    int a = 10, b = 20;
-    swap(&a, &b);
-    printf("a = %d and b = %d", a, b);
-    return 0;
-}
 
-    
-    return 0;
-}
