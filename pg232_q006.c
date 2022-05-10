@@ -25,7 +25,7 @@ int main (int argc, char* argv[] ){
     int a[] = {0};
     for(int i=0;i<10;i++)
     {
-        scanf("%d\n",&a[i]);
+        scanf("%d",&a[i]);
     }
     scanf("%d",&val);
 	 i=find_val(a,10,val);
@@ -45,5 +45,4 @@ int main (int argc, char* argv[] ){
     return -1;
 }
 
-    return 0;
-}
+   
