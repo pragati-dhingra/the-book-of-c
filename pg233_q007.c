@@ -43,7 +43,7 @@ int main (int argc, char* argv[] ){
         scanf("%d",&b[i]);} 
  	add_arr(a,b,result,10);       
      for(int i=0; i<10; i++) {
-        printf(" %d", result[i]);
+        printf("%d ", result[i]);
     }
     return 0;
 }
