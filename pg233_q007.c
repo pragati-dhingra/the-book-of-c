@@ -53,8 +53,7 @@ int main (int argc, char* argv[] ){
 void read_arr(int arr[], int size) {
     int i=0;
 	for(i=0; i<size; i++) {
-        printf("Enter element %d ", i+1);
-        scanf("%d\n", &arr[i]);
+          scanf("%d\n", &arr[i]);
     }
 }
  
