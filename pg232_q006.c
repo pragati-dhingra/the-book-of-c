@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+ int find(int a[], int n, int val);
 int main (int argc, char* argv[] ){
     /* Write a program that:
     * 1. Reads ten int as input in an array, one int per line
@@ -22,5 +22,20 @@ int main (int argc, char* argv[] ){
     * 17
     * Output:
     * no */
+    int a[] = {0};
+    for(int i=0;i<10;i++)
+    {
+        scanf("%d\n",&a[i]);
+    }
+    
+    int find_val(int a[], int n, int val){
+    for(int i=0; i<n; i++) {
+        if(a[i] == val) {
+            return i;
+        }
+    }
+    return -1;
+}
+
     return 0;
 }
