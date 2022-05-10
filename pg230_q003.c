@@ -17,20 +17,13 @@ int main (int argc, char* argv[] ){
     * 1
     * Output:
     * 1.00 */
-    
-    float a[]={0.0};
-    float avg=0.0;
-    printf("enter an array elements");
-    for(int i=0;i<10;i++)
-    {
-        scanf("%f\n",&a);
+    float arr [] = { 1.1, 2.1, 3.1, 4.1, 5.1, 6.1, 7.1, 8.1, 9.1, 10.1 };
+    float average = 0.0;
+ 
+    for(int i=0; i<10; i++) {
+        average += arr[i];
     }
-    for(int i=0;i<10;i++)
-    {
-        avg+=a[i];
-    }
-    avg/=10;
-    printf("average of the array is %.2f\n",avg);
-        
+    average /= 10;
+    printf("Average of array is %f\n", average);
     return 0;
 }
