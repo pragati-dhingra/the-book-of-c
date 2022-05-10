@@ -22,6 +22,6 @@ int main (int argc, char * argv[]) {
     int a = 0, b = 0;
     scanf("%d%d",&a ,&b);
     swap(&a, &b);
-    printf("a = %d and b = %d", a, b);
+    printf("%d %d" , a, b);
     return 0;
 }
