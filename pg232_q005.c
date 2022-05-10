@@ -18,5 +18,51 @@ int main (int argc, char* argv[] ){
     * 10
     * Output:
     * "5.50 10 1 " without quotes*/
+    #include<stdio.h>
+
+float compute_average(int [], int );
+ int find_max(int [], int );
+ int find_min(int [], int );
+ 
+int main (int argc, char * argv[])  {
+    int arr[10] = {0};
+ 
+ 	int i=0;
+ 	 for( i=0; i<10; i++) {
+        scanf("%d",&arr[i]);
+    }
+    printf("%.2f",compute_average(arr,10));
+    printf(" %d",find_max(arr,10));
+    printf(" %d",find_min(arr,10));
+    return 0;
+}
+float compute_average(int arr[], int size) {
+		float average = 0.0;
+	    int i=0;
+	    for(i=0; i<10; i++) {
+        average += arr[i];
+    }
+    average /= 10;
+    return average;
+	}
+ int find_max(int arr[], int size) {
+    int max = arr[0];
+    for(int i=1; i<size; i++) {
+        if(arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    return max;
+}
+ 
+int find_min(int arr[], int size){
+    int min = arr[0];
+    for(int i=1; i<size; i++) {
+        if(arr[i] < min) {
+            min = arr[i];
+        }
+    }
+    return min;
+}
     return 0;
 }
