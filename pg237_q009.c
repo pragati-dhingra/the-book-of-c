@@ -28,5 +28,24 @@ int main (int argc, char* argv[] ){
     * "2.00  5.00 8.00 11.00 14.00 "
     * without quotes.
     */
+    int marks[5][3] = { 0 };
+    int student=0, subject=0, sum=0;
+ 
+    for(student=0; student<5; student++) {
+        for(subject=0; subject<3; subject++) {
+            printf("Enter marks for student %d subject %d: ",student, subject);
+            scanf("%d",&marks[student][subject]);
+        }
+    }
+ 
+ 
+    for(student=0; student<5; student++) {
+        sum = 0;
+        for(subject=0; subject<3; subject++) {
+            sum = sum + marks[student][subject];
+        }
+        printf("Student %d scored total %d and average %f\n", student, sum, sum/3.0);
+    }
     return 0;
 }
+
