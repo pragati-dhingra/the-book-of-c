@@ -44,7 +44,7 @@ int main (int argc, char* argv[] ){
         for(subject=0; subject<3; subject++) {
             sum = sum + marks[student][subject];
         }
-        printf("Student %d scored total %d and average %f\n", student, sum, sum/3.0);
+        printf(".2%f\n",sum/3.0);
     }
     return 0;
 }
