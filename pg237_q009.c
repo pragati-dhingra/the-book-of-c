@@ -28,5 +28,24 @@ int main (int argc, char* argv[] ){
     * "2.00  5.00 8.00 11.00 14.00 "
     * without quotes.
     */
+    
+    int i = 0, j = 0, marks[5][3], sum = 0;
+
+    for (i = 0; i < 5; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            scanf_s("%d", &marks[i][j]);
+        }
+    }
+
+    for (i = 0; i < 5; i++) {
+        sum = 0;
+        for (j = 0; j < 3; j++) {
+            sum = sum + marks[i][j];
+        }
+        printf("%.2f ",sum / 3.0);
+    }
+    
     return 0;
 }
