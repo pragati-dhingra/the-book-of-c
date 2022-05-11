@@ -27,6 +27,6 @@ int main (int argc, char* argv[] ){
         average += arr[i];
     }
     average /= 10;
-    printf("%f",average);
+    printf("%.2f",average);
     return 0;
 }
