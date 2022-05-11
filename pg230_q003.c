@@ -20,15 +20,13 @@ int main (int argc, char* argv[] ){
     float arr [10];
     float average = 0.0;
         for(int i=0; i<10; i++){
-        scanf("%d,"&arr[i]);
+        scanf("%d",&arr[i]);
     }
  
     for(int i=0; i<10; i++) {
         average += arr[i];
     }
     average /= 10;
-    printf("Average of array is %f\n", average);
-    return 0;
-}
+    printf("%f",average);
     return 0;
 }
