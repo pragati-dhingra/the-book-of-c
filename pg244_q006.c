@@ -1,15 +1,30 @@
 #include <stdio.h>
 
-int main (int argc, char* argv[] ){
-    /* Write a calculator program for integer arithmetic that supports add, multiply, subtract, and divide operations 
-    * Respective operators are + * - /  
-    * Each operation should be implemented as a separate function
-    * all parameters to all functions should be passed as pointers
-    * Input format  int char int --> three values on a single line separated by single space followed by newline
-    * Output format - result on a single line with no trailing spaces or newline. Divide by zero check is not required
-    * Example, input:
-    * 5 / 3
-    * output:
-    * 1  */
-    return 0;
+int add(int *a, int *b);
+int subtract(int *a, int *b);
+int multiply(int *a, int *b);
+int divide(int *a, int *b);
+int main (int argc, char * argv[]) {
+ int var1, var2, sum=0,sub=0,mul=0,div=0;
+
+scanf("%d%d",&var1,&var2);
+int *ptr1 = &var1, *ptr2 = &var2;
+ sum = add(ptr1, ptr2);
+ sub=subtract(ptr1,ptr2);
+ mul=multiply(ptr1,ptr2);
+ div=divide(ptr1,ptr2);
+  printf("%d / %d = %d\n", var1, var2, div);
+return 0;
+}
+int add(int *a, int *b) {
+ return(*a + *b);
+}
+int subtract(int *a, int *b) {
+ return(*a - *b);
+}
+int multiply(int *a, int *b) {
+ return(*a * *b);
+}
+int divide(int *a, int *b) {
+ return(*a / *b);
 }
