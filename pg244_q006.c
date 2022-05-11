@@ -4,16 +4,30 @@ int add(int *a, int *b);
 int subtract(int *a, int *b);
 int multiply(int *a, int *b);
 int divide(int *a, int *b);
-int main (int argc, char * argv[]) {
- int var1, var2, sum=0,sub=0,mul=0,div=0;
 
-scanf("%d%d",&var1,&var2);
-int *ptr1 = &var1, *ptr2 = &var2;
- sum = add(ptr1, ptr2);
- sub=subtract(ptr1,ptr2);
- mul=multiply(ptr1,ptr2);
- div=divide(ptr1,ptr2);
-  printf("%d / %d = %d\n", var1, var2, div);
+int main (int argc, char * argv[]) {
+    int num1=0, num2=0;
+    char operator=0;
+ 
+    
+    scanf("%d", &num1);
+    scanf(" %c", &operator);
+    scanf("%d", &num2);
+    
+   
+ int *ptr1 = &num1, *ptr2 = &num2;
+    if('+' == operator) {
+        printf("%d",add(ptr1, ptr2));
+    } else if('-' == operator) {
+       printf("%d",subtract(ptr1, ptr2));
+    } else if('*' == operator) {
+        printf("%d",multiply(ptr1, ptr2));
+    } else if('/' == operator) {
+        printf("%d",divide(ptr1, ptr2));
+    } else {
+        printf("Invalid input");
+    }
+
 return 0;
 }
 int add(int *a, int *b) {
