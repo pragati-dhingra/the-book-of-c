@@ -25,9 +25,9 @@ int marks[10];
      int i=0, maxx=0, minn=0;
      float average = 0.0;
 
-     for(i=0; i<10; i++)  {
+     for(i=0; i<9; i++)  {
            scanf("%d\n",&marks[i]);
-     }
+     }scanf("%d",&marks[i]);
 
      average = compute_average(marks);
      maxx = find_max(marks);
