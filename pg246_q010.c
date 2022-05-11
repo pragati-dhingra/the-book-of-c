@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-int main (int argc, char* argv[] ){
     /* Write a function that takes an int pointer as argument and updates the value at that location to next highest perfect square.
     * If input number was perfect square then it should remain unchanged
     * Program input - an int on a single line, no trailing spaces
