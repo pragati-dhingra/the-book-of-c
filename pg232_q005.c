@@ -18,7 +18,7 @@ int main (int argc, char* argv[] ){
     * 10
     * Output:
     * "5.50 10 1 " without quotes*/
-   int arr[10] = {0};
+      int arr[10] = {0};
     int i=0;
     int val=0;
     for(i=0;i<10;i++)
@@ -32,9 +32,11 @@ int main (int argc, char* argv[] ){
   printf("no");
  else
   printf("yes");
-    
-  int find_val(int arr[], int size, int val)
-  { int i=0;
+
+return 0;
+}
+    int find_val(int arr[], int size, int val)
+	{ int i=0;
     	for(i=0; i<10; i++) 
 		{
         if(arr[i] == val) 
@@ -44,7 +46,4 @@ int main (int argc, char* argv[] ){
         }
     return -1;
     }
-
-return 0;
-}
    
