@@ -23,12 +23,13 @@ int main (int argc, char* argv[] ){
 
 float compute_avg(int arr[],int size)
 {
-    int i=0,sum=0.0,avg=0.0;
+    int i=0,sum=0;
+    float avg=0.0;
     for(i=0;i<size;i++)
     {
         sum = sum +arr[i];
     }
-    avg = sum/size;
+    avg = sum*1.0/size;
     
     return avg;
 }
@@ -49,7 +50,7 @@ int compute_max(int arr[],int size)
 
 int compute_min(int arr[],int size)
 {
-     int i=0,min = 0;
+     int i=0,min = arr[0];
     for(i=0;i<size;i++)
     {
         if(arr[i]<min)
