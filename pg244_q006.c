@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include<conio.h>
+
 	int add(int *a, int *b);
 	int multiply(int *a, int *b);
 	int subtract(int *a, int *b);
@@ -22,7 +22,7 @@ int main (int argc, char* argv[] ){
 		char ch;
 		
 		scanf("%d",&var1);
-		ch=getche();
+		scanf("%c",&ch);
 		scanf("%d",&var2);
 		printf("\n");
 		ptr1=&var1;
