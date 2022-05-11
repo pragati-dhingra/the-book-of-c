@@ -21,7 +21,7 @@ int main (int argc, char* argv[] ){
     int max = arr[0];
 
     for(int i=0; i<10; i++) {
-        scanf("%d\n,"&arr[i]);
+        scanf("%d\n",&arr[i]);
     }
     
     for(int i=1; i<10; i++) {
@@ -29,6 +29,6 @@ int main (int argc, char* argv[] ){
             max = arr[i];
         }
     }
-    printf("%d,"max);
+    printf("%d",max);
     return 0;
 }
