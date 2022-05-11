@@ -14,15 +14,15 @@
     
 int sum_and_square(int val, int *sum) {
     *sum = (val * (val+1))/2;
-    printf("%d ",*sum);
     return val*val;
 }
-int main (int argc, char* argv[] ){
- {
- 	int n=0;
+ int main (int argc, char * argv[]) {
+ 	int n=0,x=0;
 	 int *sum=&n;
  	scanf("%d",&n);
- 	printf("%d",sum_and_square(n,sum));
- 	return 0;
+ 	x=sum_and_square(n,sum);
+ 	printf("%d",*sum);
+ 	printf(" %d",x);
+  	return 0;
   } 
     
