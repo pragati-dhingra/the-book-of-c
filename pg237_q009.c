@@ -41,7 +41,7 @@ int main (int argc, char* argv[] ){
         } avg[i]=avg[i]/3;
     }
     for(i=0;i<5;i++){
-        printf("%f ",avg[i]);
+        printf("%.2f ",avg[i]);
     }
         
     return 0;
