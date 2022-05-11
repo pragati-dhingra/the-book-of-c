@@ -20,15 +20,26 @@
     }
  
     void update_val(int *a) {
+	int x=*a;
     *a = next_highest_perfect_square(*a);
+    if(x!=*a)
     printf("%d",*a);
     }
 
     int main (int argc, char* argv[] ){
-    {
-	int val=0;
+   	int val=0,x=1,i=1;
 	scanf("%d",&val);
-	update_val(&val);
+	while(x<=val)
+	{
+		if(x==val)
+			break;
+		x=i*i;
+		i++;
+	}
+	if(x!=val)
+		update_val(&val);
+	else
+		printf("%d",val);	
+	
 	return 0;
     }
- 
