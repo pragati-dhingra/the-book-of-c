@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+ int add(int *a, int *b);
+int subtract(int *a, int *b);
+int multiply(int *a, int *b);
+int divide(int *a, int *b);
 int main (int argc, char* argv[] ){
     /* Write a calculator program for integer arithmetic that supports add, multiply, subtract, and divide operations 
     * Respective operators are + * - /  
@@ -11,5 +14,29 @@ int main (int argc, char* argv[] ){
     * 5 / 3
     * output:
     * 1  */
+   
+ 
+    int var1=7, var2=10, sum=0;
+    int *ptr1 = &var1, *ptr2 = &var2;
+
+    sum = add(ptr1, ptr2);
+   printf("%d + %d = %d", var1, var2, sum);
+
+    
     return 0;
 }
+int add(int *a, int *b) {
+     return(*a + *b);
+ }
+int subtract(int *a, int *b) {
+    return(*a - *b);
+}
+ 
+int multiply(int *a, int *b) {
+    return(*a * *b);
+}
+ 
+int divide(int *a, int *b) {
+    return(*a / *b);
+}
+ 
