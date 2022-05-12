@@ -21,7 +21,7 @@ int main (int argc, char* argv[] ){
     char op ='+';
     
     scanf("%d", &var1);
-    scanf(" %c", &ch);
+    scanf(" %c", &op);
     scanf("%d", &var2);
     
     switch(op)
