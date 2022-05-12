@@ -21,13 +21,13 @@ int main (int argc, char* argv[] ){
     float average = 0.0;
     for(int i=0; i<10; i++)
     {
-        scanf("%f",&arr[i]);
+        scanf("%f\n",&arr[i]);
     }
  
     for(int i=0; i<10; i++) {
         average += arr[i];
     }
     average /= 10;
-    printf( "%f", average);
+    printf( "%.2f", average);
     return 0;
 }
