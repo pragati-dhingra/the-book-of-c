@@ -28,5 +28,24 @@ int main (int argc, char* argv[] ){
     * "2.00  5.00 8.00 11.00 14.00 "
     * without quotes.
     */
+    int marks[5][3]={0},i=0,j=0,sum=0;
+    float average = 0.0;
+    for(i=0;i<5;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            scanf("%d",&marks[i][j]);
+        }
+    }
+    for(i=0;i<5;i++)
+    {   sum = 0;
+        for(j=0;j<3;j++)
+        {
+            sum = sum +marks[i][j];
+        }
+        average = (sum*1.0)/3;
+        printf("%.2f ",average);
+    }
     return 0;
 }
+ 
