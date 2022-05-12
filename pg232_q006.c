@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+int find_val(int arr[], int size, int val);
 int main (int argc, char* argv[] ){
     /* Write a program that:
     * 1. Reads ten int as input in an array, one int per line
