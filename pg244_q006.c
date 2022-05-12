@@ -1,17 +1,17 @@
 #include <stdio.h>
  int add(int *a, int *b) {
-     return(*a + *b);
+     printf("%d",*a + *b);
 }
 int subtract(int *a, int *b) {
-    return(*a - *b);
+    printf("%d",*a - *b);
 }
  
 int multiply(int *a, int *b) {
-    return(*a * *b);
+	printf("%d",*a * *b);  
 }
  
 int divide(int *a, int *b) {
-    return(*a / *b);
+    printf("%d",*a / *b);
 }
 int main (int argc, char* argv[] ){
     /* Write a calculator program for integer arithmetic that supports add, multiply, subtract, and divide operations 
@@ -24,25 +24,21 @@ int main (int argc, char* argv[] ){
     * 5 / 3
     * output:
     * 1  */
-     int var1=0, var2=0, sum=0, sub=0, mul=0, div=0;
+     int var1=0, var2=0;
      int *ptr1 = &var1, *ptr2 = &var2 ;
      char c;
     scanf("%d%c%d",&var1,&c,&var2);
     if(c=='+'){
-    sum = add(ptr1, ptr2);
-     printf("%d", sum);
+    add(ptr1, ptr2);
     }
      if(c=='-'){
-    sub = subtract(ptr1, ptr2);
-     printf("%d", sub);
-     }
+ 	subtract(ptr1, ptr2);
+      }
      if(c=='*'){
-    mul = multiply(ptr1, ptr2);
-     printf("%d", mul);
+    multiply(ptr1, ptr2);
      }
      if(c=='/'){
-    div = divide(ptr1, ptr2);
-     printf("%d", div);
+    divide(ptr1, ptr2);
      }
      return 0;
  }
