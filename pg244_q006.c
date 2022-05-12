@@ -16,27 +16,36 @@ int main (int argc, char* argv[] ){
     * 1  */
    
  
-    int var1=7, var2=10, sum=0;
+    int var1=7, var2=10;
+    char c;
     int *ptr1 = &var1, *ptr2 = &var2;
-
-    sum = add(ptr1, ptr2);
-   printf("%d + %d = %d", var1, var2, sum);
-
-    
+   scanf("%d %c %d",&var1, &c, &var2);
+   if(c=='+'){  
+ add(ptr1, ptr2);
+   }
+   if(c=='-'){  
+ subtract(ptr1, ptr2);
+   } 
+  if(c=='*'){  
+ multiply(ptr1, ptr2);
+   }
+  if(c=='/'){  
+ divide(ptr1, ptr2);
+   }
     return 0;
 }
 int add(int *a, int *b) {
-     return(*a + *b);
+     printf("%d",*a + *b);
  }
 int subtract(int *a, int *b) {
-    return(*a - *b);
+    printf("%d",*a - *b);
 }
  
 int multiply(int *a, int *b) {
-    return(*a * *b);
+    printf("%d",*a * *b);
 }
  
 int divide(int *a, int *b) {
-    return(*a / *b);
+    printf("%d",*a / *b);
 }
  
