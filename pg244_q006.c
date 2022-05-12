@@ -17,12 +17,12 @@ int main (int argc, char* argv[] ){
     * 5 / 3
     * output:
     * 1  */
-        int var1=0, var2=0;
+       int var1=0, var2=0;
 	    int *ptr1 = NULL, *ptr2 = NULL;
 		char ch;
 		
-		scanf("%d",&var1);
-		scanf("%c",&ch);
+		scanf("%d ",&var1);
+		scanf(" %C ",&ch);
 		scanf("%d",&var2);
 		printf("\n");
 		ptr1=&var1;
