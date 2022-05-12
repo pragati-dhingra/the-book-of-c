@@ -1,4 +1,7 @@
 #include <stdio.h>
+float compute_avg(int arr[],int size);
+int compute_max(int arr[],int size);
+int compute_min(int arr[],int size);
 
 int main (int argc, char* argv[] ){
     /* Write a program that:
