@@ -16,11 +16,13 @@ int main (int argc, char* argv[] ){
     * output:
     * 1  */
     
-    int var1=0, var2=0, result;
+    int var1=0, var2=0, result=0;
     int *ptr1 = &var1, *ptr2 = &var2;
     char op ='+';
     
-    scanf("%d%c%d",&var1,&op,&var2);
+    scanf("%d", &var1);
+    scanf(" %c", &ch);
+    scanf("%d", &var2);
     
     switch(op)
     {
