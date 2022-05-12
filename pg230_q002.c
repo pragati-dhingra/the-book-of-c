@@ -17,5 +17,18 @@ int main (int argc, char* argv[] ){
     * 1
     * Output:
     * 190 */
+     int arr [10] = { 0 };
+    int max=0,i=0;
+    for(i=0; i<10; i++) {
+        scanf("\n%d",&arr[i]);
+    }
+    max = arr[0];
+    for(i=0; i<10; i++) {
+        if(arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    printf("%d", max);
     return 0;
 }
+© 2022 GitHub, Inc.
