@@ -27,7 +27,7 @@ int main (int argc, char* argv[] ){
      int var1=0, var2=0;
      int *ptr1 = &var1, *ptr2 = &var2 ;
      char c;
-    scanf("%d%c%d",&var1,&c,&var2);
+    scanf("%d %c %d",&var1,&c,&var2);
     if(c=='+'){
     add(ptr1, ptr2);
     }
