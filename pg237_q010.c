@@ -25,5 +25,24 @@ int main (int argc, char* argv[] ){
     * 15
     * Output:
     *  8.00 */
+    int marks[5][3]={0},i=0,j=0,sum=0;
+    float average = 0.0;
+    for(i=0;i<5;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            scanf("%d",&marks[i][j]);
+        }
+    }
+    for(i=0;i<5;i++)
+    {   
+        for(j=0;j<3;j++)
+        {
+            sum = sum +marks[i][j];
+        }
+       
+    }
+        average = (sum*1.0)/15;
+        printf("%.2f ",average);
     return 0;
 }
