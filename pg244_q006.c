@@ -19,12 +19,12 @@ int main (int argc, char* argv[] ){
     * 1  */
        int var1=0, var2=0;
 	    int *ptr1 = NULL, *ptr2 = NULL;
-		char ch;
+		char ch=0;
 		
 		scanf("%d ",&var1);
 		scanf(" %C ",&ch);
 		scanf("%d",&var2);
-		printf("\n");
+		
 		ptr1=&var1;
 		ptr2=&var2;
 		switch(ch)
@@ -41,9 +41,9 @@ int main (int argc, char* argv[] ){
 				printf("%d",subtract(ptr1, ptr2));
 	    		
 	    		break;
-	    	case '/':
-	    		printf("%d",divide(ptr1, ptr2));
-	   			break;
+	    		case '/':
+	    			printf("%d",divide(ptr1, ptr2));
+	   			
 		}
 			    
 	    return 0;
