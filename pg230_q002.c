@@ -17,5 +17,15 @@ int main (int argc, char* argv[] ){
     * 1
     * Output:
     * 190 */
+    int i, a[10], max=0;
+    for(i=0;i<10;i++)
+        scanf("%d\n",&a[i]);
+    max=a[0];
+    for(i=0;i<10;i++)
+    {
+        if(a[i]>max)
+           max=a[i];
+    }
+           printf("%d", max);
     return 0;
 }
