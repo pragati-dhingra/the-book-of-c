@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 float compute_average(int arr[]);
 int find_max(int a[]);
 int find_min(int a[]);
@@ -34,7 +33,7 @@ int main(int argc, char *argv[])
     }
     avg=compute_average(a);
     max=find_max(a);
-    max=find_min(a);
+    min=find_min(a);
     printf("%0.2f %d %d", avg, max, min);
     return 0;
 }
@@ -66,7 +65,7 @@ int find_max(int a[])
 int find_min(int a[])
 {
     int ctr = 0;
-    int min = 0;
+    int min = a[0];
     for (ctr = 0; ctr < 10; ctr++)
     {
         if (a[ctr] < min)
