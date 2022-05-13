@@ -12,7 +12,6 @@ int main (int argc, char* argv[] ){
     * output:
     * "15 25" without quotes - no trailing space or newline 
     * assume all inputs will be positive numbers */
-    return 0;
     int a=0, sum=0, b=0;
     scanf("%d",&a);
     b=sum_and_square(a,&sum);
