@@ -32,5 +32,24 @@ int main (int argc, char* argv[] ){
     * "12 14 16 18 20 22 24 26 28 30 "
     * without quotes.
     */
+       int arr1[10]={0},arr2[10]={0},arr3[10]={0};
+    int i=0;
+    for(i=0;i<10;i++)
+    {
+        scanf("%d",&arr1[i]);
+    }
+    for(i=0;i<10;i++)
+    {
+        scanf("%d",&arr2[i]);
+    }
+    for(i=0;i<10;i++)
+    {
+        arr3[i] = arr1[i] + arr2[i];
+    }
+    for(i=0;i<10;i++)
+    {
+        printf("%d ",arr3[i]);
+    }
+
     return 0;
 }
