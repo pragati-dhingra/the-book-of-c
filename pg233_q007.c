@@ -1,4 +1,9 @@
 #include <stdio.h>
+void add_arr(int a[], int b[], int result[], int SIZE) {
+    for(int i=0; i<SIZE; i++) {
+        result[i] = a[i] + b[i];
+    }
+}
 
 int main (int argc, char* argv[] ){
     /* Write a program that:
@@ -32,5 +37,17 @@ int main (int argc, char* argv[] ){
     * "12 14 16 18 20 22 24 26 28 30 "
     * without quotes.
     */
+        int a[10] = {0};
+	int b[10] = {0};
+	int result[10]={0};
+ 	int i=0;
+ 	 for( i=0; i<10; i++) {
+        scanf("%d",&a[i]);}
+ 	for( i=0; i<10; i++) {
+        scanf("%d",&b[i]);} 
+ 	add_arr(a,b,result,10);       
+     for(int i=0; i<10; i++) {
+        printf(" %d", result[i]);
+    }
     return 0;
 }
