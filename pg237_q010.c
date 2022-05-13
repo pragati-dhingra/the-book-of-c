@@ -25,5 +25,24 @@ int main (int argc, char* argv[] ){
     * 15
     * Output:
     *  8.00 */
+    int marks[5][3] = { 0 };
+    int student=0, subject=0, sum=0;
+ 
+    for(student=0; student<5; student++) {
+        for(subject=0; subject<3; subject++) {
+            scanf("%d",&marks[student][subject]);
+        }
+    }
+ 
+     
+    for(subject=0; subject<3; subject++) {
+        
+        for(student=0; student<5; student++) {
+            sum = sum + marks[student][subject];
+        }
+        
+    }
+    printf("%0.2f", sum/15.0);
     return 0;
 }
+    
