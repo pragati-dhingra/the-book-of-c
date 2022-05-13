@@ -1,4 +1,13 @@
 #include <stdio.h>
+		 	int find_val(int arr[], int size, int val){
+		    for(int i=0; i<size; i++) {
+		        if(arr[i] == val) {
+		            return i;
+		        }
+		    }
+		    return -1;
+	
+				}
 
 int main (int argc, char* argv[] ){
     /* Write a program that:
@@ -22,5 +31,19 @@ int main (int argc, char* argv[] ){
     * 17
     * Output:
     * no */
-    return 0;
+        int arr[10] = {0};
+ 	int x=0,val=0;
+ 	int i=0;
+ 	 for( i=0; i<10; i++) {
+        scanf("%d",&arr[i]);
+    }
+    scanf("%d",&val);
+	x=find_val(arr,10,val);
+ 	if(x==-1){
+ 		printf("no");
+ 		}
+ 	else {
+ 		printf("yes");
+	 }
+return 0;
 }
