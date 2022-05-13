@@ -17,5 +17,15 @@ int main (int argc, char* argv[] ){
     * 1
     * Output:
     * 1.00 */
+   int main(void) {
+ int i; 
+  float ave, a[10], sum=0;
+        for(i=0;i<9;i++)
+        scanf("%f\n",&a[i]);
+       for(i=0;i<10;i++)
+           sum=sum+a[i];
+  ave=sum/10;
+           printf("%.2f",ave);
+
     return 0;
 }
