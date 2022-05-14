@@ -1,3 +1,32 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@harshvardhan2520 
+Divya-021
+/
+the-book-of-c
+Public
+forked from pragati-dhingra/the-book-of-c
+Code
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+the-book-of-c/pg237_q009.c
+@Divya-021
+Divya-021 Update pg237_q009.c
+Latest commit 7ccabc2 21 hours ago
+ History
+ 2 contributors
+@pragati-dhingra@Divya-021
+50 lines (46 sloc)  1.22 KB
+   
 #include <stdio.h>
 
 int main (int argc, char* argv[] ){
@@ -28,5 +57,23 @@ int main (int argc, char* argv[] ){
     * "2.00  5.00 8.00 11.00 14.00 "
     * without quotes.
     */
+     int marks[5][3] = { 0 };
+    int student=0, subject=0, sum=0;
+ 
+    for(student=0; student<5; student++) {
+        for(subject=0; subject<3; subject++) {
+            printf("Enter marks for student %d subject %d: ",student, subject);
+            scanf("%d",&marks[student][subject]);
+        }
+    }
+ 
+ 
+    for(student=0; student<5; student++) {
+        sum = 0;
+        for(subject=0; subject<3; subject++) {
+            sum = sum + marks[student][subject];
+        }
+        printf("%0.2f ",sum/3.0);
+    }
     return 0;
 }
