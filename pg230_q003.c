@@ -21,7 +21,7 @@ int main (int argc, char* argv[] ){
     float average = 0.0;
     for(int i=0; i<10; i++)
     {
-        scanf("%f\n",&arr[i]);
+        scanf("%f",&arr[i]);
     }
  
     for(int i=0; i<10; i++) {
