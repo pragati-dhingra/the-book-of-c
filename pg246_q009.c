@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+ void swap(int *a, int *b);
 int main (int argc, char* argv[] ){
     /* Write a function that swaps two ints using pointers
     * Input - two integer values on a single line separated by a single space
@@ -10,5 +10,16 @@ int main (int argc, char* argv[] ){
     * 5  3
     * output:
     * "3 5" without quotes - no trailing space or newline */
+    int a = 0, b = 0;
+    scanf("%d%d",&a,&b);
+    swap(&a, &b);
+    printf("%d %d", a, b);
     return 0;
+}
+
+void swap(int *a, int *b) {
+    int temp = 0;
+    temp = *a;
+    *a = *b;
+    *b = temp;
 }
