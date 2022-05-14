@@ -1,5 +1,25 @@
 #include <stdio.h>
 
+int add(int *a, int *b) 
+{
+ return(*a + *b);
+}
+
+int subtract(int *a, int *b) 
+{
+ return(*a - *b);
+}
+
+int multiply(int *a, int *b) 
+{
+ return(*a * *b);
+}
+
+int divide(int *a, int *b) 
+{
+ return(*a / *b);
+}
+
 int main (int argc, char* argv[] ){
     /* Write a calculator program for integer arithmetic that supports add, multiply, subtract, and divide operations 
     * Respective operators are + * - /  
@@ -11,5 +31,36 @@ int main (int argc, char* argv[] ){
     * 5 / 3
     * output:
     * 1  */
+    
+    int num1=0, num2=0;
+    char operator=0;
+    int *ptr1 = &num1, *ptr2 = &num2;
+
+    printf("enter operand1");
+    scanf("%d", &num1);
+    printf("enter operator(+,-,*,/)");
+    scanf(" %c", &operator);
+    printf("enter operand2");
+    scanf("%d", &num2);
+
+
+ 
+    if('+' == operator) {
+        printf("%d",add(ptr1, ptr2));
+    } 
+    else if('-' == operator) {
+       printf("%d",subtract(ptr1, ptr2));
+    } 
+    else if('*' == operator) {
+        printf("%d",multiply(ptr1, ptr2));
+    } 
+    else if('/' == operator) {
+        printf("%d",divide(ptr1, ptr2));
+    } 
+    else {
+        printf("Invalid input");
+    }
+
+    
     return 0;
 }
