@@ -1,5 +1,37 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@harshvardhan2520 
+Divya-021
+/
+the-book-of-c
+Public
+forked from pragati-dhingra/the-book-of-c
+Code
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+the-book-of-c/pg233_q007.c
+@Divya-021
+Divya-021 Update pg233_q007.c
+Latest commit a479b9c 21 hours ago
+ History
+ 2 contributors
+@pragati-dhingra@Divya-021
+62 lines (57 sloc)  1.49 KB
+   
 #include <stdio.h>
+#define ARRAY_SIZE 10
 
+void read_arr(int arr[], int size);
+void add_arr(int arr1[], int arr2[], int result[], int size);
 int main (int argc, char* argv[] ){
     /* Write a program that:
     * 1. Reads twenty int as input in two arrays, ten int per array, one int per line
@@ -32,5 +64,28 @@ int main (int argc, char* argv[] ){
     * "12 14 16 18 20 22 24 26 28 30 "
     * without quotes.
     */
+   int arr1[ARRAY_SIZE] = { 0 };
+    int arr2[ARRAY_SIZE] = { 0 };
+    int result[ARRAY_SIZE] = { 0 };
+ 
+    read_arr(arr1, ARRAY_SIZE);
+    read_arr(arr2, ARRAY_SIZE);
+    add_arr(arr1, arr2, result, ARRAY_SIZE);
+    
+    for(int i=0; i<ARRAY_SIZE; i++) {
+        printf("%d ",result[i]);
+    }
     return 0;
+}
+ 
+void read_arr(int arr[], int size) {
+    for(int i=0; i<size; i++) {
+         scanf("%d", &arr[i]);
+    }
+}
+ 
+void add_arr(int arr1[], int arr2[], int result[], int size) {
+    for(int i=0; i<size; i++) {
+        result[i] = arr1[i] + arr2[i];
+    }
 }
