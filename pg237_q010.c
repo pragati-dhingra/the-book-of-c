@@ -25,5 +25,19 @@ int main (int argc, char* argv[] ){
     * 15
     * Output:
     *  8.00 */
+    int arr[5][3],i=0,j=0;
+    float avg=0;
+    for(i=0;i<5;i++){
+        for(j=0;j<3;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+     for(i=0;i<5;i++){
+        for(j=0;j<3;j++){
+            avg=avg+arr[i][j];
+        } 
+    }
+  avg=avg/15;
+        printf("%.2f",avg);
     return 0;
 }
