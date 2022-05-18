@@ -18,7 +18,7 @@ int main (int argc, char* argv[] ){
     Scanf("%d",arr[i]);
     }
     int sum=0;
-    sum = add_array(arr, 4);
+    sum = add_array(arr, 5);
     printf("Sum of array is %d\n",sum);
   return 0;
 }
