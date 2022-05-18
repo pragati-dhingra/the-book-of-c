@@ -12,14 +12,14 @@ int main (int argc, char* argv[] ){
     * Output: 
     * "38" without quotes - no trailing space or newline 
     */
-    int arr[5];
-    for(int i=0;i<5;i++)
-    {
-    Scanf("%d",arr[i]);
-    }
-    int sum=0;
-    sum = add_array(arr, 5);
-    printf("Sum of array is %d\n",sum);
+    int arr[5]={0};
+	int i=0;	
+	for(i=0;i<5;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	add_array(arr,5);
+
   return 0;
 }
 int add_array(int * arr, int size) {
