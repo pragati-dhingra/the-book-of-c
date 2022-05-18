@@ -12,7 +12,11 @@ int main (int argc, char* argv[] ){
     * Output: 
     * "38" without quotes - no trailing space or newline 
     */
-    int arr[4] = { 9, 3, 7, 12 };
+    int arr[5];
+    for(int i=0;i<5;i++)
+    {
+    Scanf("%d",arr[i]);
+    }
     int sum=0;
     sum = add_array(arr, 4);
     printf("Sum of array is %d\n",sum);
