@@ -15,7 +15,6 @@ int main (int argc, char* argv[] ){
     * If longer string is presented as input, use only first 29 chars
     * Include error checks for the value of n. It should be >0 and <30 
     * If value of n is outside this range then print output value as -2 instead of above values */
-    #include <stdio.h>
    char str1[20];
    char str2[20];
    int result;
@@ -39,5 +38,4 @@ int main (int argc, char* argv[] ){
 
    return 0;
 }
-    return 0;
-}
+   
