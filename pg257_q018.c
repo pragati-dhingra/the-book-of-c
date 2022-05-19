@@ -32,5 +32,4 @@ void add_array(int arr[], int size) {
     printf("%d",sum);
 }
 
-  return 0;
-}
+  
