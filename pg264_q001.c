@@ -10,12 +10,12 @@ int main (int argc, char* argv[] ){
     * I AM LEVEL 7 NINJA
     * Assume string length would be <128
     */
-    char str[31] = { '\0' };
+    char str[128] = { '\0' };
  
     printf("Enter a string (up to 30 characters) : ");
-    scanf("%30[^\n]s",str);
+    scanf("%127[^\n]s",str);
  
-    for(int i=0; i<31 && str[i]; i++) {
+    for(int i=0; i<127 && str[i]; i++) {
         if(str[i]>='a' && str[i]<='z') {
             printf("%c",str[i]-'a'+'A');
         } else {
