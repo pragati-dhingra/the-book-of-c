@@ -11,20 +11,14 @@ int main (int argc, char* argv[] ){
     * If user inputs a longer string then only first 29 characters should be processed
     */
     
-    char str[31] = { '\0' };
-    int count=0;
- 
-    printf("Enter a string (up to 30 characters) : ");
-    scanf("%30[^\n]s",str);
- 
-    for(int i=0; i<31 && str[i]; i++) {
-        if(str[i]>='a' && str[i]<='z') {
-            count++;
-        }
-    }
-    printf("%d",count);
-
-
-    
-    return 0;
+   char str[31] = { '\0' };
+ int count=0;
+ scanf("%30[^\n]s",str);
+ for(int i=0; i<29 && str[i]; i++) {
+ if(str[i]>='a' && str[i]<='z') {
+ count++;
+ }
+ }
+ printf("%d", count);
+ return 0;
 }
