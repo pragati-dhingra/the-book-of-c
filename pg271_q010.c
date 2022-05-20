@@ -11,5 +11,20 @@ int main (int argc, char* argv[] ){
     * Do not use library strcpy function
     * Returned string is printed by the calling function
     * Assume max string size of 32 chars including \0 */
+    char str1[32] = { '\0' };
+    char str2[32]= { '\0' };
+    printf("Enter a string to copy");
+    scanf("%32[^\n]",str1);
+    str2=my_strcpy (str1,str2);
+    printf("%s",str2);
     return 0;
+}
+char * my_strcpy (char *dest, const char *src) {
+        int i = 0;
+        while('\0' != src[i]) {
+        dest[i] = src[i];
+        i++;
+    }
+    dest[i] = '\0';
+    return dest;
 }
