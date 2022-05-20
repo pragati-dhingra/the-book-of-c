@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+int add_array(int arr[],int size);
 int main (int argc, char* argv[] ){
     /* Write a program that reads in five integers in an array, one integer per line
     * Defines a function add_array that adds all ints of the array using a countdown loop
@@ -13,4 +14,22 @@ int main (int argc, char* argv[] ){
     * "38" without quotes - no trailing space or newline 
     */
   return 0;
+    	int arr[5]={0};
+	int i=0;	
+	for(i=0;i<5;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	printf("%d",add_array(arr,5));
+
+	return 0;
+}
+int add_array(int arr[],int size)
+{
+	int i=0,sum=0;
+	for(i=size;i>=0;i--)
+	{
+		sum=sum+arr[i];
+	}
+	return sum;	 		
 }
