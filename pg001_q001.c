@@ -7,5 +7,5 @@ int main (int argc, char* argv[] ){
    * You should receive a comment with results on your PR and email notification (unless you have disabled notifications) */
   printf("Hello World");
   
-  return 0
+  return 0;
 }
