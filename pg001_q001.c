@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.>
 
 int main (int argc, char* argv[] ){
   /* This is a sample question to make sure your setup is working correctly
