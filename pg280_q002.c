@@ -20,6 +20,9 @@ int main (int argc, char* argv[] ){
     }
  
     score = malloc (sizeof(int) * num);
+    if (NULL == score) {
+            return 1;
+    }
     
     read_score(score, num);
     average = compute_average(score, num);
