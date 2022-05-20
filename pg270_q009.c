@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+int my_strncmp (const char * s1, const char * s2, int n);
 int main (int argc, char* argv[] ){
     /* Write an implementation of strncmp. 
     * Your program reads an int on a line by itself - this is the max number of chars to compare
@@ -15,27 +16,39 @@ int main (int argc, char* argv[] ){
     * If longer string is presented as input, use only first 29 chars
     * Include error checks for the value of n. It should be >0 and <30 
     * If value of n is outside this range then print output value as -2 instead of above values */
-   char str1[20];
-   char str2[20];
-   int result;
-
-   //Assigning the value to the string str1
-   strcpy(str1, "hello");
-
-   //Assigning the value to the string str2
-   strcpy(str2, "helLO WORLD");
-
-   //This will compare the first 3 characters
-   result = strncmp(str1, str2, 3);
-
-   if(result > 0) {
-      printf("ASCII value of first unmatched character of str1 is greater than str2");
-   } else if(result < 0) {
-      printf("ASCII value of first unmatched character of str1 is less than str2");
-   } else {
-      printf("Both the strings str1 and str2 are equal");
-   }
-
-   return 0;
+    int n=7;
+    const char str1[30]={'\0'};
+    const char str2[30]={'\0'};
+    int x=-2;
+    
+    scanf("%d",&n);  
+    
+	scanf(" %30[^\n]s",str1);
+    scanf(" %30[^\n]s",str2);
+    
+    
+    if(n>0 && n<30){
+    	
+    	printf("%d",my_strncmp(str1,str2,n));
+	}else{
+		printf("%d",x);
+	}
+       
+    return 0;
 }
-   
+int my_strncmp (const char * s1, const char * s2, int n) {
+    int count = 0;
+    while ( (*s1 != '\0') && (*s1 == *s2) && count != n-1) {
+        s1++;
+        s2++;
+        count++;
+    }
+    if (*s1-*s2==0){
+    	return 0;
+	}else if(*s1>*s2){
+		return 1;
+	}else{
+		return -1;
+	}		
+	
+}
