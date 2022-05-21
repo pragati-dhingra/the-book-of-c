@@ -15,7 +15,7 @@ int main (int argc, char* argv[] ){
  
     scanf("%30[^\n]s",str);
  
-    for(int i=0; i<29 && str[i]; i++) {
+    for(int i=0; i<31 && str[i]; i++) {
         if(!((str[i]>='a' && str[i]<='z') || (str[i]>='A' && str[i]<='Z'))) {
             count++;
         }
