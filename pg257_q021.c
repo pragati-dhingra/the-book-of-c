@@ -1,19 +1,33 @@
+#include <stdio.h>
+int add_array(int arr[],int size);
 int main (int argc, char* argv[] ){
-    /* Write a program that reads in an int n where n<30. This is the number of input values.
-    * Followed by n float inputs, one on each line 
-    * and prints average of last 7 inputs on a line by itself
-    * followed by average of all n values on a line by itself
-    * If n < 7 the first output should be printed as 0
-    * Both output values should have two decimal places and no trailing space or newline  
+    /* Write a program that reads in five integers in an array, one integer per line
+    * Defines a function add_array that adds all ints of the array using a countdown loop
     * For example, input:
     * 3
-    * 42.2
-    * 44.4
-    * 47.0
+    * 7
+    * 10
+    * 15
+    * 3
     * Output: 
-    * 0.00
-    * 44.53
-    * Error checking value of n is not expected. 0 < n < 30 
+    * "38" without quotes - no trailing space or newline 
     */
-    return 0;
+    	int arr[5]={0};
+	int i=0;	
+	for(i=0;i<5;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	printf("%d",add_array(arr,5));
+	
+	return 0;
+}
+int add_array(int arr[],int size)
+{
+	int i=0,sum=0;
+	for(i=size;i>=0;i--)
+	{
+		sum=sum+arr[i];
+	}
+	return sum;	 		
 }
