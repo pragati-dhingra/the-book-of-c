@@ -20,7 +20,7 @@ int main (int argc, char* argv[] ){
         float avg = 0,sum=0;
         scanf("%d",&n);
         for(i=0; i<n;i++) {
-            scanf("%f",&arr[i]);
+            scanf("%f",&arr[i]); 
         }
         if(n<7)
         {
