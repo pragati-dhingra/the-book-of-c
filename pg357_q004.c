@@ -21,11 +21,17 @@ int main (int argc, char *argv[]) {
     printf("Enter a positive number: ");
     scanf("%u", &num);
  
-    if(num == 0 || num < 1) {
+    if(num == 0 ) {
         printf("0");
-    } else {
+    } 
+    if(num <1){
+          printf("0");
+    }
+    if(num>1)
+        {
+        
         result = factorial(num);
     }
-    printf("%u! = %lu\n", num, result);
+    printf("%lu",result);
     return 0;
 }
