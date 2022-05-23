@@ -22,3 +22,14 @@ int main (int argc, char* argv[] ){
 	printf("%s",str2);
     return 0;
 }
+char * my_strcpy (char *dest, const char *src) {
+    int i = 0;
+ 
+   
+    while('\0' != src[i]) {
+        dest[i] = src[i];
+        i++;
+    }
+    dest[i] = '\0'; 
+    return dest;
+}
