@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<stdlib.h>
 
 double compute_average(int *, int);
 void read_score(int *, int);
