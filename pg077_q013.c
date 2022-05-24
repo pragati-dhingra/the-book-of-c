@@ -35,7 +35,7 @@ int main (int argc, char* argv[] ){
   }else if(month == 12){
     printf("december");
   }else if(month < 1 || month > 12 {
-    printf("invalid");
+    printf("Invalid");
       }
   return 0
 }
