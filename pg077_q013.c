@@ -45,5 +45,8 @@ int main (int argc, char* argv[] ){
    else if(n==12){
     printf("December");
   }
-  return 0
+  else if(n<1 || n>12) {
+    printf("Invalid");
+  }
+  return 0;
 }
