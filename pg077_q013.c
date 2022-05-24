@@ -47,7 +47,7 @@ int main (int argc, char* argv[] ){
   }
   else if(month == 10)
   {
-    printf("Octuber");
+    printf("October");
   }
   else if(month == 11)
   {
