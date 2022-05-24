@@ -23,7 +23,7 @@ int main (int argc, char* argv[] ){
     
     scanf("%d",&n);  
     
-	scanf(" %30[^\n]s",str1);
+    scanf(" %30[^\n]s",str1);
     scanf(" %30[^\n]s",str2);
     
     
