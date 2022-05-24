@@ -9,7 +9,7 @@ int main (int argc, char* argv[] ){
   Output is case sensitive */
   int month;
   scanf("%d"&month);
-  printf(Entre the month:);
+  printf("Entre the month:");
   if(month==1){
     printf("January");
   }
