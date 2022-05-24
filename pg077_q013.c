@@ -13,7 +13,7 @@ int main (int argc, char* argv[] ){
     printf("January");
   }
   else if(month==2){
-    printf("Februray");
+    printf("February");
   }
   else if(month==3){
     printf("March");
