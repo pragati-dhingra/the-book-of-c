@@ -43,7 +43,7 @@ int main (int argc, char* argv[] ){
   }
   else if(month == 9)
   {
-    printf("Setember");
+    printf("September");
   }
   else if(month == 10)
   {
@@ -61,4 +61,5 @@ int main (int argc, char* argv[] ){
   {
     printf("Invalid");
   }
+  return 0;
 }
