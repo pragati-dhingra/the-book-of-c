@@ -9,6 +9,5 @@ int main (int argc, char* argv[] ){
   scanf("%lf",&inches);
   cms=2.54*inches;
   printf("%.2f",cms);
-  
   return 0;
 }
