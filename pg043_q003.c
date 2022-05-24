@@ -6,6 +6,9 @@ int main (int argc, char* argv[] ){
    * Output one double value with two decimal places on a line by itself - no newline.
    * Do not print any extra strings/prompts */
   
-  
+  ddouble inches =0, cms=0;
+  scanf("%if",&inches);
+  cms=2.54*inches;
+  printf("%.2f",cms);
   return 0;
 }
