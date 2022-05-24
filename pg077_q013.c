@@ -7,6 +7,59 @@ int main (int argc, char* argv[] ){
   Please do not use abbreviations. First character is capital, rest are small case,  no trailing newline
   In case of invalid input, output should be "Invalid" (without quotes) 
   Output is case sensitive */
-  
+  int month = 0;
+  scanf("%d",&month);
+  if(month == 1)
+  {
+    printf("January");
+  }
+  else if(month == 2)
+  {
+    printf("February");
+  }
+  else if(month == 3)
+  {
+    printf("March");
+  }
+  else if(month == 4)
+  {
+    printf("April");
+  }
+  else if(month == 5)
+  {
+    printf("May");
+  }
+  else if(month == 6)
+  {
+    printf("June");
+  }
+  else if(month == 7)
+  {
+    printf("July");
+  }
+  else if(month == 8)
+  {
+    printf("August");
+  }
+  else if(month == 9)
+  {
+    printf("Setember");
+  }
+  else if(month == 10)
+  {
+    printf("Octuber");
+  }
+  else if(month == 11)
+  {
+    printf("November");
+  }
+  else if(month == 12)
+  {
+    printf("December");
+  }
+  else if(month , 1 || month > 12)
+  {
+    printf("Invalid");
+  }
   return 0
 }
