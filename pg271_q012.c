@@ -16,7 +16,7 @@ int main (int argc, char* argv[] ){
     * Note that input string would still be read in this case
     * Do not use strncpy library function
     * If source string had less than n chars then simply copy up to terminating \0  */
-     unsigned int n=0;
+  unsigned int n=0;
     const char str1[31]={'\0'};
     char str2[31]={'\0'};
     int x=-1;
