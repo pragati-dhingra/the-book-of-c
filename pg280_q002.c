@@ -28,7 +28,6 @@ int main (int argc, char* argv[] ){
     read_score(score, num);
     average = compute_average(score, num);
     printf("%.2f", average);
- 
     free(score);
     return 0;
 }
