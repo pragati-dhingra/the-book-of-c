@@ -33,6 +33,8 @@ int main (int argc, char* argv[] ){
     printf("November");
   }else if(month==12){
     printf("December");
+  }else{
+    printf("Invalid");
   }
   return 0;
 }
