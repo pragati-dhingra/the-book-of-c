@@ -35,7 +35,7 @@ int main (int argc, char* argv[] ){
   printf("December");}
   else
   {
-    printf("Invalid")
+    printf("Invalid");
   }
   return 0;
   
