@@ -10,7 +10,7 @@ int main (int argc, char* argv[] ){
   int month =0;
 	scanf("%d",&month);
 	if(month==1){
-		printf("Janruary");
+		printf("January");
 	} else if(month==2) {
 		printf("February");
 	} else if(month==3) {
