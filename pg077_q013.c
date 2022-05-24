@@ -23,5 +23,5 @@ int main (int argc, char* argv[] ){
   else if(a==12) printf("December");
   else printf("Invalid");
   
-  return 0
+  return 0;
 }
