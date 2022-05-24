@@ -11,43 +11,43 @@ int main (int argc, char* argv[] ){
   
   scanf("%d",&month);
   if(month == 1){
-    printf("january");
+    printf("January");
   }
   else if(month == 2){
-    printf("febuary");
+    printf("Febuary");
   }
   else if(month == 3){
-    printf("march");
+    printf("March");
     }
   else if(month == 4){
-    printf("april");
+    printf("April");
     }
   else if(month == 5){
-    printf("may");
+    printf("May");
     }
   else if(month == 6){
-    printf("june");
+    printf("June");
     }
   else if(month == 7){
-    printf("july");
+    printf("July");
     }
   else if(month == 8){
-    printf("august");
+    printf("August");
     }
   else if(month == 9){
-    printf("september");
+    printf("September");
     }
   else if(month == 10){
-    printf("october");
+    printf("October");
     }
   else if(month == 11){
-    printf("november");
+    printf("November");
     }
   else if(month == 12){
-    printf("december");
+    printf("December");
     }
   else if(month < 1 || month > 12){
-    printf("invalid");
+    printf("Invalid");
     }
   return 0;
 }
