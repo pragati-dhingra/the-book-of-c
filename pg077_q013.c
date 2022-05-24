@@ -50,5 +50,5 @@ int main (int argc, char* argv[] ){
     printf("Invalid");
   }
   
-  return 0
+  return 0;
 }
