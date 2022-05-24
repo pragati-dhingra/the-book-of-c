@@ -5,7 +5,9 @@ int main (int argc, char* argv[] ){
    * Input one double value followed by a newline
    * Output one double value with two decimal places on a line by itself - no newline.
    * Do not print any extra strings/prompts */
-  
-  
+  double a,b;
+  scanf("%lf",&a);
+  b = a*2.54;
+  printf("%lf",b);
   return 0;
 }
