@@ -24,10 +24,15 @@ int main (int argc, char *argv[]) {
     unsigned long result = 0;
  
         scanf("%u", &n);
- 
+ if(n<1)
+     printf("0");
+    if(n==0)
+        printf("0");
+    if(n>0)
+    {   
     result = fibonacci(n);
     printf("F(%u) = %lu\n", n, result);
-         
+    }    
              return 0;
 }
 
