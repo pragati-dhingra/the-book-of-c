@@ -57,5 +57,7 @@ int main (int argc, char* argv[] ){
   {
     printf("dec");
   }
+  else 
+    printf("invalid input");
   return 0
 }
