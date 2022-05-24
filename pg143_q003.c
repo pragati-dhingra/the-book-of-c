@@ -1,3 +1,4 @@
+#include<stdio.h>
 int main (int argc, char* argv[] ){
     /* Print numbers 10 to 1 using a for loop
     * All numbers should appear on a single line separated by a single space
