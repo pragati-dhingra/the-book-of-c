@@ -21,7 +21,7 @@ int main (int argc, char* argv[] ){
   }else if(month == 5){
       printf("May");
   }else if(month == 6){
-    print f("June");
+    printf("June");
   }else if(month == 7){
      printf("July");
   }else if(month == 8){
