@@ -36,5 +36,5 @@ int main (int argc, char* argv[] ){
 	} else {
 		printf("Invalid");
 	}
-  return 0
+  return 0;
 }
