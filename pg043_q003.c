@@ -11,7 +11,7 @@ int main (int argc, char* argv[] ){
 
   cms=2.54*inches;
 
-  printf(%.2f",cms);
+  printf("%.2f",cms);
   
   return 0;
 }
