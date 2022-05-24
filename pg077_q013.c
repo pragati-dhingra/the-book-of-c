@@ -8,8 +8,7 @@ int main (int argc, char* argv[] ){
   In case of invalid input, output should be "Invalid" (without quotes) 
   Output is case sensitive */
   int n=0;
-  printf("enter the values= ");
-  scanf("%d",&n);
+  scanf("%d",&month);
   if(n=1)
   {printf("January");
   }
