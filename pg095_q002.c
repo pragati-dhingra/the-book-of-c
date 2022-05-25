@@ -9,7 +9,7 @@ int main (int argc, char* argv[] ){
   *         Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Incorrect input 
   * Note that output is case sensitive. There should be no newline at the end of input. 
   * For example, if input was 1, output should be simply Monday */
-  int day=0
+  int day=0;
     scanf("%d",&day);
   switch(day)
   {
