@@ -10,25 +10,39 @@ int main (int argc, char* argv[] ){
           In case of invalid input, print -1 as output */
     int days=0,months=0,x=0;
     scanf("%d%d",&month,&day);
-    if(month < 1 || month > 12 || day < 1 || day > 7) {
+    if(month < 1 || month > 12 || day < 1 || day > 7) 
+    {
         printf("-1");
-    }else {
-        if(month==2){
+    }
+    else
+    {
+        if(month==2)
+        {
             x=4;
             printf("%d",x);
-        }else{
-            if(( month==1 || month==3 || month==5 || month==7 ||month==8 || month==10 ||month==12)){
-                if(( days==5 ||days==6|| days==7)){
+        }
+        else
+        {
+            if(( month==1 || month==3 || month==5 || month==7 ||month==8 || month==10 ||month==12))
+            {
+                if(( days==5 ||days==6|| days==7))
+                {
                     x=5;
                     printf("%d",x);
-                } else {
+                }
+                else
+                {
                     x=4;
                     printf("%d",x);
                 }
-            }else if( days==6 || days==7) {
+            }
+            else if( days==6 || days==7)
+            {
                 x=5;
                 printf("%d",x);
-           } else {
+           }
+           else
+           {
                 x=4;
               printf("%d",x);
            }
