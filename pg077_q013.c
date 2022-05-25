@@ -29,5 +29,5 @@ int main (int argc, char* argv[] ){
 	    }else if(month==12){
 	        printf("December");
 	    }
-  return 0
+  return 0;
 }
