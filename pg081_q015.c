@@ -29,7 +29,7 @@ int main (int argc, char* argv[] ){
               }
           } else if ( day==6 || day==7) {
             x=5;
-            print f("%d",x);
+            printf("%d",x);
           } else {
                                   x=4;
                 printf("%d",x);
