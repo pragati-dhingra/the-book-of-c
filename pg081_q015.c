@@ -8,6 +8,26 @@ int main (int argc, char* argv[] ){
           Second integer is day of week, 1 for Monday, 2 for Tuesday ...
   Output: One integer showing number of sundays in that month. No newline to be printed
           In case of invalid input, print -1 as output */
-  
-  return 0
+  int day=0;
+  scanf("%d",&day);
+  switch(day)
+  {
+    case 1: printf("monday");
+            break;
+    case 2: printf("tuesday");
+            break;
+    case 3: printf("wednesday");
+            break;
+    case 4: printf("thursday");
+            break;
+    case 5: printf("friday");
+            break;      
+    case 6: printf("saturday");
+            break;
+    case 7: printf("sunday");
+            break;
+    default: printf("invalid input");
+  }
+      
+  return 0;
 }
