@@ -23,6 +23,18 @@ int main (int argc, char* argv[] ){
             if((day==5 || day==6 || day==7)) {
                 x=5;
                             printf("%d",x);
-            } else {
+            } else { 
+              x=4;
+              printf("%d",x);
+            }
+          } else if ( day== 6 || day==7) { 
+            x=5; 
+            printf("%d",x);
+          } else {
+                        x=4;
+            printf("%d",x);
+          }
+        }
+  }
   return 0
 }
