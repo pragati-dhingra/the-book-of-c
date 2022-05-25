@@ -11,7 +11,7 @@ int main (int argc, char* argv[] ){
   int day=0, month=0, x=0;
   scanf("%d%d", &month, &day);
   
-  if ( month < 1 || month > 12 || day <1 || day > 7)
+  if ( month < 1 || month > 12 || day <1 || day > 7 )
   {
     printf("-1");
   }
