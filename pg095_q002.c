@@ -37,5 +37,6 @@ int main (int argc, char* argv[] ){
             break;
         default: 
             printf("Incorrect input");
-  return 0
+    }
+  return 0;
 }
