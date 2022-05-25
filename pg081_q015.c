@@ -13,7 +13,7 @@ int main (int argc, char* argv[] ){
   
   if(month<1 || month>12 || day<1 | day>7){
     printf("-1");
-  }else{
+  } else {
     if(month==2){
       x=4;
          printf("%d",x);
