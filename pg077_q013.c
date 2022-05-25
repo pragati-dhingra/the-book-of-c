@@ -34,7 +34,7 @@ printf("November");
 }else if(month==12){
 printf("December");	
 }else if(month<1||month>12){
-printf("invalid");	
+printf("Invalid");	
 }
   return 0
 }
