@@ -8,7 +8,7 @@ int main (int argc, char* argv[] ){
           Second integer is day of week, 1 for Monday, 2 for Tuesday ...
   Output: One integer showing number of sundays in that month. No newline to be printed
           In case of invalid input, print -1 as output */
-  int day=0,month=0,x=0;
+   int day=0,month=0,x=0;
   scanf("%d%d",&month,&day);
   if(month<1 || month>12 || day<1 || day>7){
     printf("-1");
