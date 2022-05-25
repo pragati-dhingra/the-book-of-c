@@ -27,7 +27,7 @@ int main (int argc, char* argv[]){
              x=4;
              printf("%d",x);
            }
-      } else if( day==6 ||day==7 ) {
+      } else if ( day==6 ||day==7 ) {
              x=5;
              printf("%d",x);
       } else {
