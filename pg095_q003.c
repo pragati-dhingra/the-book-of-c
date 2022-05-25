@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main (int argc, char* argv[] ){
+int main(int argc, char* argv[] ){
   /* Write a program using switch case that takes year as input and prints the name of cricket world cup winning country for that year, 
 
 a.	1975: West Indies
