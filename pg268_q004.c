@@ -21,6 +21,5 @@ int main (int argc, char* argv[] ){
         }
     }
     printf("%d", count);
-    
     return 0;
 }
