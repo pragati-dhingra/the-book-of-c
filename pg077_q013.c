@@ -1,4 +1,4 @@
-#include <stdio.h>
+ #include <stdio.h>
 
 int main (int argc, char* argv[] ){
   /* Write a program that reads the month number (1-12) and prints its equivalent name (January for 1, February for 2, and so on).
@@ -57,6 +57,10 @@ int main (int argc, char* argv[] ){
 	{
 		printf("December");
 	}
+	else if(month>12||month<1)
+	{
+		printf("Invalid");
+	}	
 	return 0;
 
 	}
