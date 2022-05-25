@@ -26,12 +26,16 @@ int main (int argc, char* argv[] ){
               } else {
                   x=4;
                   printf("%d",x);
-              } else {
-                                      x=4;
-                printf("%d",x);
               }
+          } else if ( day==6 || day==7) {
+            x=5;
+            print f("%d",x);
+          } else {
+                                  x=4;
+                printf("%d",x);
           }
       }
-            
+  }
+             
   return 0;
 }
