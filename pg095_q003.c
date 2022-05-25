@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main (int argc, char* argv[] ){
+viod main (int argc, char* argv[] ){
   /* Write a program using switch case that takes year as input and prints the name of cricket world cup winning country for that year, 
 
 a.	1975: West Indies
@@ -18,6 +18,38 @@ If world cup was not played in the year entered by the user, program should prin
 There should be no newlines after the printed output
 Winners post 2015 are not required.
 */
+  int y;
+  printf("enter the year:");
+  scanf("%d",&y);
+  switch(y)
+  {
+    case 1975:("west indies");
+      break;
+    case 1979:("west indies");
+      break;
+    case 1983:("india");
+      break;
+    case 1987:("australia");
+      break:
+      case 1992:("pakistan");
+      break;
+    case 1996:("srilanka");
+      break;
+    case 1999:("australia");
+      break;
+    case 2003:("australia);
+      break;
+     case 2007:("australia);
+      break;
+    case 2011:("india");
+      break;
+     case 2015:("australia");
+      break;
+                default:
+                printf("invalid data");
+                }
+                
+               
   
-  return 0
+  return 0,
 }
