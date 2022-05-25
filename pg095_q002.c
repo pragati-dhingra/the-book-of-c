@@ -9,6 +9,24 @@ int main (int argc, char* argv[] ){
   *         Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Incorrect input 
   * Note that output is case sensitive. There should be no newline at the end of input. 
   * For example, if input was 1, output should be simply Monday */
-  
+  int day=0;
+	scanf("%d",&day);
+	switch(day)
+	{
+		case 1:printf("monday");
+		       break;
+		case 2:printf("tuesday");
+		       break;
+		case 3:printf("wednesday");
+		       break;	        
+		case 4:printf("thursday");
+		    break;
+		case 5:printf("friday");
+		       break;
+		case 6:printf("saturday");
+		       break;
+		case 7:printf("sunday");
+		       break;
+		default: printf("incorrect input");
   return 0
 }
