@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+char * my_strcpy (char *dest, const char *src);
 int main (int argc, char* argv[] ){
     /* Write an implementation of strcpy using while loop. 
     * Your program reads a string on a line by itself, terminated by \n
