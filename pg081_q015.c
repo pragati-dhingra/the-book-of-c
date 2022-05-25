@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main (int argc, char* argv[] ){
+int main (int argc, char* argv[]){
   /* Write program that reads the month and first day of the month (1 for Monday, 2 for Tuesday, and so on)
   from the user and prints the number of Sundays in that month.
   Input: two integers on a single line separated by one space, e.g. 4 6
