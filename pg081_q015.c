@@ -32,9 +32,11 @@ int main (int argc, char* argv[] ){
             printf("%d",x);
           } else {
                         x=4;
+            
             printf("%d",x);
-          }
-        }
+         }
+     }
   }
-  return 0
+  return 0;
+  
 }
