@@ -14,7 +14,7 @@ int main (int argc, char* argv[] ){
     if (percent_used > 90) {
         /* Print Out of memory message */
         printf("OOM");
-    } else {
+    } else{
         /* Print number of free bytes */
         printf("%ld",phone_memory-memory_used);
     }
