@@ -19,24 +19,28 @@ int main (int argc, char* argv[] ){
     unsigned int n=0;
     const char str1[31]={'\0'};
     char str2[31]={'\0'};
-    int x=-1;
-    
+	
+	
     scanf("%d",&n);  
-  
-       
-    if(n>0 && n<32){
     scanf(" %30[^\n]s",str1);	
-    my_strncpy(str2,str1,n);
-    printf("%s",str2);
-	}else{
-		printf("%d",x);
-	}
+    if(n>0 && n<32){
+        my_strncpy(str2,str1,n);
+	printf(str2);
+    
+    }
+    else{
+		return -1;
+    }
+    
     return 0;
 }
 char * my_strncpy (char *dest, const char *src, unsigned int n) {
     int i = 0;
-    for(;i<n && src[i]; i++) {
+    while(i<n && src[i]!='\0' )
+    {
         dest[i] = src[i];
+        i++;
     }
+    dest[i] ='\0';
     return dest;
 }
