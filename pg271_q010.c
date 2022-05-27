@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+char * my_strcpy (char *dest, const char *src);
 int main (int argc, char* argv[] ){
     /* Write an implementation of strcpy using while loop. 
     * Your program reads a string on a line by itself, terminated by \n
@@ -11,5 +11,24 @@ int main (int argc, char* argv[] ){
     * Do not use library strcpy function
     * Returned string is printed by the calling function
     * Assume max string size of 32 chars including \0 */
+    const char str1[31]={'\0'};
+    char str2[31]={'\0'};
+    
+    scanf(" %30[^\n]s",str1);
+     
+	my_strcpy(str2,str1);
+	  
+	printf("%s",str2);
     return 0;
+}
+char * my_strcpy (char *dest, const char *src) {
+    int i = 0;
+ 
+   
+    while('\0' != src[i]) {
+        dest[i] = src[i];
+        i++;
+    }
+    dest[i] = '\0'; 
+    return dest;
 }
