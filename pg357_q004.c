@@ -6,17 +6,12 @@
     * Output is printed on a line by itself with no trailing whitespace or newline */
 
 #include <stdio.h>
- nsigned long int factorial(unsigned long n) ;
+#include <stdio.h>
+ 
 unsigned long int factorial(unsigned long n) {
-   if(n<=0)
-   {
-       return 0;
-   }
-   else  if(n == 1) {
+    if(1 == n) {
         return 1;
     }
-    else
-    {
     return n * factorial(n-1);
 }
  
@@ -25,9 +20,14 @@ int main (int argc, char *argv[]) {
     unsigned long result = 0;
  
     printf("Enter a positive number: ");
-    scanf("%lu", &num);
-      
+    scanf("%u", &num);
+ 
+    if(num <= 0) {
+        result = 0;
+    } else {
         result = factorial(num);
-      printf("%lu",result);
+    }
+    printf("%lu",result);
     return 0;
 }
+
