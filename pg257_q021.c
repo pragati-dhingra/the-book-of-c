@@ -1,3 +1,4 @@
+#include<stdio.h>
 int main (int argc, char* argv[] ){
     /* Write a program that reads in an int n where n<30. This is the number of input values.
     * Followed by n float inputs, one on each line 
