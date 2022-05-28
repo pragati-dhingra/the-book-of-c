@@ -4,9 +4,12 @@ int f(int n){
    if(n >= 1){
       return n*f(n-1);
    }
-   else {
+   else if(n==1){
       return 1;
    }
+   else 
+      return 0;
+      
 }
 int main (int argc, char* argv[] ){
     /* Write a recursive program that:
