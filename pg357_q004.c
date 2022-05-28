@@ -8,9 +8,15 @@
 #include <stdio.h>
  
 unsigned long int factorial(unsigned long n) {
-    if(1 == n) {
+   if(n<=0)
+   {
+       return 0;
+   }
+   else  if(1 == n) {
         return 1;
     }
+    else
+    {
     return n * factorial(n-1);
 }
  
@@ -20,18 +26,8 @@ int main (int argc, char *argv[]) {
  
     printf("Enter a positive number: ");
     scanf("%u", &num);
- 
-    if(num == 0 ) {
-        printf("0");
-    } 
-    if(num <1){
-          printf("0");
-    }
-    if(num>1)
-        {
-        
+      
         result = factorial(num);
-    }
-    printf("%lu",result);
+      printf("%lu",result);
     return 0;
 }
