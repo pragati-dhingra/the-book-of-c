@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     printf("%d", n);
     return 0;
 }
-int f(int n){
+int F(int n){
    if(n <= 0){
       return 0;
    } else if(n == 1) {
