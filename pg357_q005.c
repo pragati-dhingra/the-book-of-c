@@ -1,6 +1,6 @@
 
 #include <stdio.h>
-int f(int);
+int F(int);
 
 int main(int argc, char *argv[])
 {
@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     scanf("%d", &n);
     fflush(stdin);
     
-    n=f(n);
+    n=F(n);
     printf("%d", n);
     return 0;
 }
@@ -25,7 +25,7 @@ int f(int n){
    } else if(n == 1) {
       return 1;
    } else {
-      return (f(n-1) + f(n-2));
+      return (F(n-1) + F(n-2));
    }
 
 }
