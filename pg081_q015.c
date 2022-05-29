@@ -8,7 +8,8 @@ int main (int argc, char* argv[] ){
           Second integer is day of week, 1 for Monday, 2 for Tuesday ...
   Output: One integer showing number of sundays in that month. No newline to be printed
           In case of invalid input, print -1 as output */
-    int month = 0, day = 0;
+  
+  int month = 0, day = 0;
 
   
 
