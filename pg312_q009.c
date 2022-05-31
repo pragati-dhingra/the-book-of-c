@@ -52,8 +52,8 @@ int main (int argc, char *argv[]) {
 	x=valid_check(sqr);
 	if(x==1)
 	{
-	    printf("%.2f", square_perimeter(sqr));
-    	printf("%.2f", square_area(sqr));}
+	    printf("%.2f ", square_perimeter(sqr));
+    	    printf("%.2f", square_area(sqr));}
     else{
     	printf("Invalid input\n");
 		exit(0);
