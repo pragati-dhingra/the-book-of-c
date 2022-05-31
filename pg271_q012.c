@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+char * my_strncpy (char *dest,  char *src,unsigned int n);
 int main (int argc, char* argv[] ){
     /* Write an implementation of strncpy using while loop. 
     * Your program reads a int on a line by itself. This is the max number of chars to copy.
@@ -16,5 +16,33 @@ int main (int argc, char* argv[] ){
     * Note that input string would still be read in this case
     * Do not use strncpy library function
     * If source string had less than n chars then simply copy up to terminating \0  */
+    char str_src[32]={'\0'};
+    char str_dest[32]={'\0'};
+    char *ptr =NULL;
+    int n=0;
+    scanf("%d",&n);
+    
+    scanf("%31[^\n]s",str_src);
+
+    if(n<0 || n>32 )
+    {
+        printf("-1");
+        return 1;
+    }
+    else
+    {
+    ptr = my_strncpy(str_dest,str_src, n);
+    }
+    printf("%s",str_dest);
+    
     return 0;
 }
+
+char * my_strncpy (char *dest,  char *src, unsigned int n) {
+    int i = 0;
+    for(;i<n && src[i]; i++) {
+        dest[i] = src[i];
+    }
+    return dest;
+}
+ 
