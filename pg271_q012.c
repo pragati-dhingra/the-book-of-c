@@ -1,4 +1,5 @@
 #include <stdio.h>
+char *my_strncpy (char *dest, const char *src, unsigned int n);
 
 int main (int argc, char* argv[] ){
     /* Write an implementation of strncpy using while loop. 
@@ -16,5 +17,31 @@ int main (int argc, char* argv[] ){
     * Note that input string would still be read in this case
     * Do not use strncpy library function
     * If source string had less than n chars then simply copy up to terminating \0  */
+    unsigned int n=0;
+    const char str1[31]={'\0'};
+    char str2[31]={'\0'};
+	
+	
+    scanf("%d",&n);  
+    scanf(" %30[^\n]s",str1);	
+    if(n>0 && n<32){
+        my_strncpy(str2,str1,n);
+	printf(str2);
+    
+    }
+    else{
+		return -1;
+    }
+    
     return 0;
+}
+char * my_strncpy (char *dest, const char *src, unsigned int n) {
+    int i = 0;
+    while(i<n && src[i]!='\0' )
+    {
+        dest[i] = src[i];
+        i++;
+    }
+    dest[i] ='\0';
+    return dest;
 }
