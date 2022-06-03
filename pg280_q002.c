@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+double compute_average(int *, int);
+void read_score(int *, int);
 int main (int argc, char* argv[] ){
     /* Write a program that:
     * Reads an int n from the user - this is the number of input values user wishes to enter
@@ -25,7 +27,6 @@ int *score = NULL, num = 0;
     read_score(score, num);
     average = compute_average(score, num);
     printf("%.2f", average);
- 
     free(score);
     return 0;
 }
