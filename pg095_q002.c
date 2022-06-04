@@ -10,7 +10,8 @@ int main (int argc, char* argv[] ){
   * Note that output is case sensitive. There should be no newline at the end of input. 
   * For example, if input was 1, output should be simply Monday */
   
-   int day=0;
+  
+      int day=0;
   scanf("%d",&day);
   switch(day)
   {
@@ -31,6 +32,10 @@ int main (int argc, char* argv[] ){
     default: printf("Incorrect input");
   }
      
-     
   return 0;
+
 }
+  
+  
+  
+
