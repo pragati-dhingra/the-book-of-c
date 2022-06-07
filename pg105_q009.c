@@ -18,7 +18,5 @@ int main (int argc, char* argv[] ){
         /* Print number of free bytes */
         printf("%ld",phone_memory-memory_used);
     }
-    
-  
-    return 0;
+     return 0;
 }
