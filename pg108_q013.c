@@ -9,10 +9,11 @@ int main(int argc, char * argv[]) {
  if (percent<0||percent>100||average<0||average>100) {
  printf("Invalid input");
  } else { 
-    if (percent > average) {
+    if (percent > average  && perecnt>80) {
         printf("Qualify");
     } else {
         printf("Oops");
-    }}
+    }
+ }
     return 0;
 }
