@@ -25,6 +25,6 @@ int main (int argc, char* argv[] ){
         printf("%ld",phone_memory-memory_used);
     }
     
-  
+ }
     return 0;
 }
