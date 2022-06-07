@@ -13,6 +13,6 @@ if (percent < 0 || percent > 100 || average < 0 || average > 100)
         printf("Qualify");
     } else {
         printf("Oops");
-    }
+    }}
     return 0;
 }
