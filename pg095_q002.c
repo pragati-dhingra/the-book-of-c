@@ -13,21 +13,21 @@ int main (int argc, char* argv[] ){
   scanf("%d",&day);
   switch(day)
   {
-      case1:printf("Monday");
+      case 1: printf("Monday");
       break;
-      case2:printf("Tuesday");
+      case 2: printf("Tuesday");
       break;
-      case3:printf("Wednesday");
+      case 3: printf("Wednesday");
       break;
-      case4:printf("Thursday");
+      case 4: printf("Thursday");
       break;
-      case5:printf("Friday");
+      case 5: printf("Friday");
       break;
-      case6:printf("Saturday");
+      case 6: printf("Saturday");
       break;
-      case7:printf("Sunday");
+      case 7: printf("Sunday");
       break;
-    default:printf("Incorrect input");
+    default: printf("Incorrect input");
   }
   return 0;
 }
