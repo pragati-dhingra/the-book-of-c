@@ -13,7 +13,7 @@ int main (int argc, char* argv[] ){
     scanf("%d",&day);
   switch(day)
   {
-    case 1:printf("mMonday");
+    case 1:printf("Monday");
       break;
     case 2:printf("Tuesday");
       break;
