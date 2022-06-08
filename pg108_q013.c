@@ -1,3 +1,4 @@
+#include<stdio.h>
 int main(int argc, char * argv[]) {
     float percent = 0, average = 0;
     
