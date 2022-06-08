@@ -17,16 +17,16 @@ scanf("%d",&num2);
 switch(op)
 {
 	case '+':
-	printf("Result is %d",num1+num2);
+	printf("%d",num1+num2);
          break;
 	case '-':
-	printf("Result is %d",num1-num2);
+	printf("%d",num1-num2);
          break;
 	case '*':
-	printf("Result is %d",num1*num2);
+	printf("%d",num1*num2);
          break;
 	case '/':
-	printf("Result is %d",num1/num2);
+	printf("%d",num1/num2);
          break;
 	}
   return 0;
