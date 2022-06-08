@@ -25,12 +25,12 @@ Winners post 2015 are not required.
         switch(year){
             case 1975:
                   
-                   printf("West indies");
+                   printf("West Indies");
             
                     break;
             case 1979:
                   
-                   printf("West indies");
+                   printf("West Indies");
             
                     break;
            case 1983:
