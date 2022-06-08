@@ -44,7 +44,7 @@ Winners post 2015 are not required.
       printf("Sri Lanka");
       break;
     default:
-      printf("Invalid Input");
+      printf("Invalid input");
       break;
   }
   return 0;
