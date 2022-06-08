@@ -19,7 +19,7 @@ There should be no newlines after the printed output
 Winners post 2015 are not required.
 */
   int year;
-  scanf("year");
+  scanf("%d",&year);
   switch(year)
   {
     case 1975:
@@ -42,6 +42,9 @@ Winners post 2015 are not required.
       break;
     case 1996:
       printf("Sri Lanka");
+      break;
+    default:
+      printf("Invalid Input");
       break;
   }
   return 0;
