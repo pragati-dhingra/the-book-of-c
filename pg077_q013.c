@@ -7,7 +7,7 @@ int main (int argc, char* argv[] ){
   Please do not use abbreviations. First character is capital, rest are small case,  no trailing newline
   In case of invalid input, output should be "Invalid" (without quotes) 
   Output is case sensitive */
-  int n=0;
+  int n=0
   scanf("%d",&n);
   if(n==1){
     printf("January");
