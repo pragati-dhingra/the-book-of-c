@@ -6,7 +6,7 @@ int main(int argc, char * argv[]) {
     /* Add checks for both percent and average to be in 0 to 100 range, both inclusive 
      * If found out of range then print "Invalid input" and skip further processing */
 
-    if (percent > average) {
+    if (percent > average)  {
         printf("Qualify");
     } else {
         printf("Oops");
