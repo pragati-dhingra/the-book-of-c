@@ -10,7 +10,7 @@ int main (int argc, char* argv[] ){
   * Note that output is case sensitive. There should be no newline at the end of input. 
   * For example, if input was 1, output should be simply Monday */
   int week;
-  printf("Enter the week number(1-7);
+  printf("Enter the week number(1-7)");
          scanf("%d",week);
          switch(week)
          {
